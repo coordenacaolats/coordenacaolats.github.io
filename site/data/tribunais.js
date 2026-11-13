@@ -1,30 +1,8 @@
 window.LATS_TRIBUNAIS = {
- "atualizadoEm": "2026-11-13T09:48+00:00",
+ "atualizadoEm": "2026-11-13T21:39+00:00",
  "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
  "painelComIA": true,
  "emJulgamento": [
-  {
-   "tribunal": "STF",
-   "tema": "Fim da isenção de pena em crimes patrimoniais contra mulheres no ambiente familiar",
-   "titulo_original": "Relator vota pelo fim da isenção de pena em crimes patrimoniais contra mulheres no ambiente familiar",
-   "processo": "ADPF 1185 e ADPF 1241",
-   "relator": "Min. Dias Toffoli",
-   "placar": "",
-   "status": "Em julgamento",
-   "link": "https://noticias.stf.jus.br/postsnoticias/relator-vota-pelo-fim-da-isencao-de-pena-em-crimes-patrimoniais-contra-mulheres-no-ambiente-familiar/",
-   "data": "2026-11-11T23:10+00:00"
-  },
-  {
-   "tribunal": "STF",
-   "tema": "Alegação de desconhecimento da idade da vítima no estupro de vulnerável",
-   "titulo_original": "STF vai definir se alegação de desconhecimento de idade pode afastar condenação por estupro de vulnerável",
-   "processo": "ARE 1600294 (Tema 1.485)",
-   "relator": "",
-   "placar": "",
-   "status": "Em pauta",
-   "link": "https://noticias.stf.jus.br/postsnoticias/stf-vai-definir-se-alegacao-de-desconhecimento-de-idade-pode-afastar-condenacao-por-estupro-de-vulneravel/",
-   "data": "2026-11-11T22:46+00:00"
-  },
   {
    "tribunal": "STJ",
    "tema": "Exposição à eletricidade como fundamento para aposentadoria especial",
@@ -38,25 +16,25 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
-   "tema": "Limites da atuação do TCU na solução consensual de conflitos",
-   "titulo_original": "STF suspende julgamento sobre limites para atuação do TCU na solução consensual de conflitos",
-   "processo": "ADPF 1183",
-   "relator": "Min. Edson Fachin",
-   "placar": "4 x 2",
-   "status": "Pedido de vista",
-   "link": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-julgamento-sobre-limites-para-atuacao-do-tcu-na-solucao-consensual-de-conflitos/",
-   "data": "2026-11-05T22:52+00:00"
+   "tema": "Fim da isenção de pena em crimes patrimoniais contra mulheres no ambiente familiar",
+   "titulo_original": "Relator vota pelo fim da isenção de pena em crimes patrimoniais contra mulheres no ambiente familiar",
+   "processo": "ADPF 1185 e ADPF 1241",
+   "relator": "Min. Dias Toffoli",
+   "placar": "",
+   "status": "Em julgamento",
+   "link": "https://noticias.stf.jus.br/postsnoticias/relator-vota-pelo-fim-da-isencao-de-pena-em-crimes-patrimoniais-contra-mulheres-no-ambiente-familiar/",
+   "data": "2026-11-11T23:10+00:00"
   },
   {
    "tribunal": "STF",
-   "tema": "Constitucionalidade da medida provisória que regula as apostas esportivas (bets)",
-   "titulo_original": "STF suspende processos que questionam constitucionalidade de MP das bets",
-   "processo": "ADI 8027",
-   "relator": "Min. Luiz Fux",
+   "tema": "Alegação de desconhecimento da idade da vítima em condenação por estupro de vulnerável",
+   "titulo_original": "STF vai definir se alegação de desconhecimento de idade pode afastar condenação por estupro de vulnerável",
+   "processo": "ARE 1600294 (Tema 1.485)",
+   "relator": "",
    "placar": "",
-   "status": "Suspenso",
-   "link": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-processos-que-questionam-constitucionalidade-de-mp-das-bets/",
-   "data": "2026-11-09T11:49+00:00"
+   "status": "Em pauta",
+   "link": "https://noticias.stf.jus.br/postsnoticias/stf-vai-definir-se-alegacao-de-desconhecimento-de-idade-pode-afastar-condenacao-por-estupro-de-vulneravel/",
+   "data": "2026-11-11T22:46+00:00"
   },
   {
    "tribunal": "STF",
@@ -70,6 +48,17 @@ window.LATS_TRIBUNAIS = {
    "data": "2026-11-11T21:30+00:00"
   },
   {
+   "tribunal": "STF",
+   "tema": "Constitucionalidade da medida provisória que regula as apostas esportivas (bets)",
+   "titulo_original": "STF suspende processos que questionam constitucionalidade de MP das bets",
+   "processo": "ADI 8027",
+   "relator": "Min. Luiz Fux",
+   "placar": "",
+   "status": "Suspenso",
+   "link": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-processos-que-questionam-constitucionalidade-de-mp-das-bets/",
+   "data": "2026-11-09T11:49+00:00"
+  },
+  {
    "tribunal": "STJ",
    "tema": "Extinção antecipada do benefício fiscal do Perse",
    "titulo_original": "Processos sobre extinção antecipada do benefício fiscal do Perse são sobrestados",
@@ -79,9 +68,124 @@ window.LATS_TRIBUNAIS = {
    "status": "Suspenso",
    "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOcnFER0tZQS1IVDNOdDF0d0ZnT1RDNU9TVmctX0V2bU1wY2h4eW8yaEpuZlBsbGk3blZJSkxaTnJmejI2LWJxbl9BT0QtVEtJWml3T3kwX2JZVDV4OG9EVXAyRzJTY25haXVyWVpTWjdacm8wUHBJdWZDRXFWOVplX0ZzdFQ4YW5VWFdMNDlVMlVFb1BOT0syOFA4MndJLWdOa0plQUVGdkJhSjRYWVk4YW5QMW1Zb3hnV3ltLUdYUVpNNm5abXpNU1RNNTVPY0F2Y0lZZlZfOWVqdTBFUDJIN01SRXFCT2hadkRlSmRBb3F2eC1Zb1VBQ0tFamZvcnBmakU3TE9ocWVrLXdKY2pUcVZXc2tZWm9NZmIyanAzWndGNnNS?oc=5",
    "data": "2026-11-09T10:00+00:00"
+  },
+  {
+   "tribunal": "STJ",
+   "tema": "Funcionamento do cartão de crédito consignado, tema de audiência pública no STJ",
+   "titulo_original": "Audiência pública debaterá funcionamento do cartão de crédito consignado; inscrições vão até dia 19 de novembro",
+   "processo": "",
+   "relator": "",
+   "placar": "",
+   "status": "Em pauta",
+   "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNaXNlTjdWT3doeDlJSzNfd0dGV1J2eWNXUUliTkU2V2pwVlYzYTdoZVBEa203U1d2aE5kVDE3bFppN25PTVpwb0JBajBGTHdUQzhpd0N3ZzFJalhoT05KUER6UmtTWWxtbm01dzd1TTAxV3lKdjJ4bEw2S2ZGQmZYc1RQU2lCUTc0Y3RtWE9pSk4yczhTUmFnYjJjbGpHbUxkRmFTLVhNUFZrWVpDcE52Y0NyWDh1cmpUN0V1dnRiSjM3UG4tNFhjUkV4Yjl6b2VvaFFvNklIbzl0d19keE9wMjFnOEtvaG50OTVONVpLeWxpdFNxMEk3WVVzZm9KYzhrZjlzQllPT19JWHV3c2lHd0dFUlpIb2dBa2l2azM5VUFQQQ?oc=5",
+   "data": "2026-11-13T19:13+00:00"
   }
  ],
  "noticias": [
+  {
+   "tribunal": "STF",
+   "titulo": "STF sedia encontro de cortes supremas na próxima segunda-feira (16)",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVjJXUDVBcXQxaVJyMFo5bXVucGF6Z08yOWJQQ3FkVFBjVnhOQUxROF9hSlp3RXM2WjMxV3N2TEZ1NHFtRm1sZnBEOVRyZDdHak43N1lGRVBpeC01aDZtcjZsX0hDVmNheUZHcDNvVUtJWDBYTDNTeWI5cURkMTVUWVdCOWVBU1RGbjNSM2FjSjl5OVZWMThSWDhtRVpYemcyX3dFNkZxY1FHeUp3?oc=5",
+   "data": "2026-11-13T20:15+00:00",
+   "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "STF invalida emenda sobre eleição de dirigentes de Tribunais de Justiça",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVZONWZySFdRVC1MM0lERUVUSE5JSzllbE9JXzREWTBjeTN6UWpEWUp2MXg2dDNmVmlNNXZBRV9lQWNkQTZQNXF3WmZlX25NdnBicFRwVnFEOXF6ZGJ1OWMtR3kzbkZEeFVJQVEwQ0txMlNmQWdxTWFDUWk3dW5rVUxlalp3NE10UW9tVWhyTGxSb05JMTJNdmdpcTE5VzlENTFSY3ZCMHNOSnZvRmZYOFZ0WFc?oc=5",
+   "data": "2026-11-13T19:47+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "Distribuidores de energia questionam norma do DF para protesto de dívidas de serviços públicos",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMTBZQ3F3eURoSnNyQWhFdHRXQmZYb0piVmpqNzFOSW1aM3BBV1J4dnhKVXdFM1VLT1NjY0k2Q1VUZUhsaHpBNEY3MDV0cEVzV2N2YW9la1c3aDQ3aWZxSVVfNjdHcFd2em5ZZnJFWE1HU3hiVGVpZE9BNkptUXBfalYxU3VUYXZCcWdVcXBlRklBaG9tcVptOXZkcUVhQ3dVUlR1UFZqRm8wdnc2cDhxRHNUNzEyQ3k1OFJpcTRNSGd1R1Y5Rm5RM2cwb1d5N1F1M08w?oc=5",
+   "data": "2026-11-13T19:26+00:00",
+   "tipo": "nova_acao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Audiência pública debaterá funcionamento do cartão de crédito consignado; inscrições vão até dia 19 de novembro",
+   "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNaXNlTjdWT3doeDlJSzNfd0dGV1J2eWNXUUliTkU2V2pwVlYzYTdoZVBEa203U1d2aE5kVDE3bFppN25PTVpwb0JBajBGTHdUQzhpd0N3ZzFJalhoT05KUER6UmtTWWxtbm01dzd1TTAxV3lKdjJ4bEw2S2ZGQmZYc1RQU2lCUTc0Y3RtWE9pSk4yczhTUmFnYjJjbGpHbUxkRmFTLVhNUFZrWVpDcE52Y0NyWDh1cmpUN0V1dnRiSjM3UG4tNFhjUkV4Yjl6b2VvaFFvNklIbzl0d19keE9wMjFnOEtvaG50OTVONVpLeWxpdFNxMEk3WVVzZm9KYzhrZjlzQllPT19JWHV3c2lHd0dFUlpIb2dBa2l2azM5VUFQQQ?oc=5",
+   "data": "2026-11-13T19:13+00:00",
+   "tipo": "pauta",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "STF suspende prazos em razão de instabilidade nos serviços de provedor externo",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNYWtVR3RwWGRfeGphSlI3Wld0c3pyRUJrcFFZN3RSUU5xOUozNExNVTE0Um9PeGlSU2xycnYxLWxvVG5HSFlsaHpvWUpqOGExZzN4Nkd2ZmpZcV9NdUpDaHRWeHBTOTNuTm5nbDBmZFI3ZTdzTFNGRGdjTUd6Z3dxZ20xUWVIRXc5WTQzZU1fMWFtdTYxbXhONFJQYmFGcHBKVl8yYUF6SWo4ZnZMT2JfY1RCb3JzdFJSeXRwM2Zn?oc=5",
+   "data": "2026-11-13T19:03+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "9º Enajun e 6º Fonajurd debatem equidade racial, violência institucional e representatividade",
+   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQZzdLdHVVMGJZS2dsT04wazlacThVR3dLeXlPbmVTLUg5eGtaZVFrVC13WEthNVl2NHN0bmpadE9CTEo1ai1xNlVObEJuT3F5MlJiZEw5NXNQNFNpYy15SUF0d2hrbWozYUtaTHhlMVkxd2NxWGlGNlRPUDlVaWVObEljbTkwNWp5ZnFyZkxObTFpQzR1SjJfWmpuTFJESkZKbGMwVWxZajZtWVhZTnB5eVBjY1BUZC0yWjd0YVlOS2VJZ3BkNmthbFRaTlJsRFdGOFRPMTdZaFpQSWNxblB5cnc1VW9FS2dFampwTC1ZUHJtUHZDWnV0RVJBbUUtRDBPLXQtNUdCRGY3dw?oc=5",
+   "data": "2026-11-13T17:12+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "STJ recebe presidente da Suprema Corte da Índia",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbm1EaVA3b09SVlVNN0JDdjVhaWMweTl0dnpJQXBzVFc5VFp3THl3NDdWTWZsRjl2VVNqZmp3OHFDWG9iY0Vka2txTFNJMDBUeF9tT1VlcFBqR0RfVmpJUnNTTUE3aGJ6SV94bDdaZDhLc3lMTjJYaDVPS0RCM1RfY1g0U0ZFVUdWUVRIWVEwczRhLXRQdmJjNnd5WUlWcUJ3VGhvYjRqVlhYTjdjaEtza2VaNC1wZFpSaVdjVXpLdUlmTG1tLWN3czd0bzg?oc=5",
+   "data": "2026-11-13T15:57+00:00",
+   "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "Confira os destaques do Plenário Virtual desta semana",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOclV2T3ZaUUVJNUJHbHF5b1N3VWcxelVWVURkc3NpSExKWmM0TVZvTGgtZUVGcFExUmg5aDNCU2JEUlV3OFEtYWVWRFpmMTUzSEUtcDk0ME0xelNfa1RXZ1YtLUVaaDdpYklfdWdxZVhZRFh6XzhVTHQ1Tm91U3NfMVM3Vy1wV2hDZ25mVURMR3pES1g5Y1E3cWd1cUhNSjA?oc=5",
+   "data": "2026-11-13T14:05+00:00",
+   "tipo": "pauta",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "STJ participa de fórum da Ajufe sobre Reforma Tributária e a Justiça Federal",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOU1M3ZnNva19DamJ4OV9zQk12UHZNYURnZ24wU2xsMExpLXZBWVI2YmR2cHBaX2ZQUzViRTF3WDItaVp2QmFyTmpWYzBQSTBjOU5udUxpNk9CTXVQY0s2dEdZNXYxQXZRcmFLNkFycUE5cDhWd1o1QnVIRl9lZkZ1N05wVVVjclRXb2Z1clpIQ3V5bS1pNnoxMFpnV0JpTzR2OTF6WmVhaU9Fd3ljcWdhei1xQjJjY2lYQy1HWlhWRWI3Z2J1UzZfVXgwY1REY1pQMXdMSl85TExDV1N4UGtNM1IzSnRDbG1wZzh2MmVFOVB5YWM?oc=5",
+   "data": "2026-11-13T13:34+00:00",
+   "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Podcast STJ No Seu Dia aborda pensão alimentícia em casos de desemprego ou trabalho informal",
+   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOVVdCWWdXRGNYZ2Y0NDMwblcyNC1YTHdFczVkRnpzQ0RiUm9pLUpxbm92QmpCVjZKam9HRWotSmtDQ0VyVmhSSDQyN1ZOanZTc3B0RXduMldnbEdrUjhmeDFHWmktQjlTR3N3ZF9Ra0gxOWtqdkIzZVp4b1N6R2VGVjNET05BcjVBOG9iT2d4UEUtZUpGTFkzQVVzVEVMS1lnV1VickVwSzhhUmtuYzg1R2l2c3BVVmlPaGk5TTRndTdHYW1LS2VPOHZFYjhuMjhHTm9jOTFZRXQ4THlfZmo0UEgzQzVwUkhHb3BzSkJLRmxiS1hXRGlPcFNucUVXeFU4bmVKaHJyLUw?oc=5",
+   "data": "2026-11-13T11:40+00:00",
+   "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Corte Especial zera pauta acumulada e acelera julgamento de repetitivos",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxORDRqcXVZQ1l5bndiOVpsQ0liczJ2X2kxMHoxSEh4VzVZS0c3bGZUbTk1My0tUnNoV2FvVGJSenQwTGpoRlFrTjFwdUhJREpoa1djQkRVVUVnMWNVUktUdVFjRWE5cmdGaWZ2eVFPSVdPMlRoWmNpVzllRGhrNzM0QnExbVhQdmRXQlpLNlpHc1VyX2UwRWJRVVpTS3ozeDRUd2xoR2E1emJGODcydHk5YUhuX2tKRzVIelZOcGRyckpBRzAtbnFNT3JHT2g1V3dodG9zVV9jdWNEVWxjLUlxci1CeXYtR2VqN3R6aw?oc=5",
+   "data": "2026-11-13T11:00+00:00",
+   "tipo": "pauta",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "CPRB compõe a base de cálculo do PIS/Pasep e da Cofins, define STJ em tese vinculante",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQTHd3UURvV28wd3R3cXZmUXpDbXVYcnlqRWQtcjAxY01vc0lmVkJjNnh4OWRzS2t1MFkwcjRoUUxNQ0UyOU5iZ2VTRWtlc2Y1azB4em1HcU1oR3MyeDVYYm9YQk0wTlMzbThReV9UV1VDUkk3dTlVWXBrRTd0X0dzMEVIckZISjY3QjlZVGtfcVVVY1hRamM1ZW9HZTl0R01WM0FFMkNobWJveEtvVEFON2lOYS1ieHFRV216OWN5U3F4bG5TVnhYSzJyUUloOWhwX19oXy02TDlncWdPN2JiWUZQbDFWRnJZQnVXM3F3MUVoUzdraFppZ2RDRWwwdw?oc=5",
+   "data": "2026-11-13T10:20+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "atendimento remoto não substitui farmacêutico nas farmácias",
+   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOV01sZW9nX0tFTHVjQXJFNzIydzNKVjBtUHdEZVRwNjJ4MGo5M2JoY2NUajllT1NvZzRGSm9HMExReTRaeDFnVXZsWjRuYnB6UDljaTNnU25MYm14TFVxOUFOcDNpRkZZZ1g5alhrcmNHbnZKTVZQYlM1dWx2YXZPcURzcXBTR3ZLLWo1ZmtLOHlseGRxQXppNE9EYmh6N0hXcFQ1TGJTTzc4SkU3ZkNDcXRQMmpHQkxRYVItOUxkcVZBSjgzRGJ6VFZtQU9RU1l2VGVDOHotaDYxdlRNbU96dkNWS0o0YTAtcExVN3hibjFGbXkzOHJRR1BMaTVHUG1XcUNyOFJ0cGhLS2k5d3c?oc=5",
+   "data": "2026-11-13T10:05+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
   {
    "tribunal": "STF",
    "titulo": "STF rejeita recursos contra decisão que homologou acordo dos planos econômicos",
@@ -100,7 +204,7 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
-   "titulo": "Por questões processuais, relator nega pedido do PSD para realizar segundo turno das eleições no RJ",
+   "titulo": "Por questões processuais, relator nega pedido de segundo turno das eleições no RJ",
    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeFZtMFFkNEFoMVg1NmxwLVJsNTlObHEwQjR1UllzMldjVXozX0dYbmNtOC1fUWdaRjRrbjYzVnNLejkxMUtfUHRxTU1wQXFveFpLLU9qTmpZZzZrNS1WdTMtUHhXU3VQVV9ya2ZjQkVyZnZPbnBIR0h2T2tzMklYTld3cUJnWDFBNnRxc05JYUlHYWNkU1J1UzFXVDk0eUE5Y01WOXRTWGdDNlBTQTlpNWpqY1U3T3FrUlVZQWlpYzdwVWRNNXFBSmV6MGdvZlc5OWZpWk1LbDQ?oc=5",
    "data": "2026-11-12T22:43+00:00",
    "tipo": "decisao",
@@ -261,8 +365,16 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Trilha da Memória abre encontro nacional de juízas e juízes negros no Rio de Janeiro",
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNZUpscG9MMEVGcHdnblhTV1d5Wlp6cmU5OVdELWM5dWVoYm9HbHNsNXJocHA1TXN0VVpOOGJTNTl4eEU3UjJIYTJnWUpjZ3JsRHFUN3JFbGd2WXpjRkxxdnRtTTBVeGU1RVJnemo2Mm1rOGFIZ3JocVRwam9IeVBxa2FCRzJ4WHdkaG0yLTEtRjN6NTJwNHlCY0g0TnVlMmxSMjVpMkdpaUdzS1lqTlI2MmtoN3dLTTR2UU9OSWdFb01vVXJVYkpkYzdNT1NBRURIOXhwdUhpYkIzLUMtLWVNR2NES0ZHLVRBWTA1ZnNfVkVQOHlINEFEYXNxRlRPQQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOOGNWT0c2UXRCcm9yUi1fM0Zka21QcG1ZQTBxZFY0ZW91b0pfS1RoRElpYS0yN3h0WXNOTHFTajkwNkpaMmt6QTZySlJ1UUpwUGNrSFdMdmQ1Tk9PN0xITkNTRHpTMjcwYlFBVzdLV3R1ZXduSVhSTUU2ME9CRWs3Vi0zZEg1OUxLSXN3R0doX05VTmgxSXc0SzVUOGE2ZmdPemc2dXZnVGF0Qm92R1BULWdqV1NzTUhRcE9XbTdfNVpKTnVoaDFXOV9lbHM3UHFzMHF6SW1UVHlJWHR3b2lwZk16a3ZqZ2hMSzRvOERvbUdhenJzOHV1RWRSSWtldw?oc=5",
    "data": "2026-11-11T20:48+00:00",
+   "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Ministro Teodoro Silva Santos recebe Ordem do Mérito Aeronáutico no grau de Grande-Oficial",
+   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPT1NNYkh5VUo0TUpoQWJYSDBVd1BKUEJjRlFjbHk1LUJQV3lJRi1oR1E5UVVEdWdtRlRJNzlPWk1vYzY5YS1XRFZYejdhQjc5cFRwaXNwVEQ5NHBXTFd1bHRDOF9fYnVKU1htaUxSRktFZEdFVTZjdk80Tlktcm5KTUpEazlUSElLZEczZFdLalpOYmZRb3dYUDdqcDF6NWNmWVEzcHJKNzhWNUFrZU1HMGUxWWJxcE0yemJtTk5uQmZreUh2NTFPZDNXc09jbElSTkI3aTFoem5KWkwtRnBxV1FsVkw5LWJ6NjlEaGxoOXZSWHdmdWk2OHEyR1ZBTUJPVS0yYXFB?oc=5",
+   "data": "2026-11-11T20:01+00:00",
    "tipo": "institucional",
    "processo": ""
   },
@@ -277,7 +389,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Ministro Salomão destaca transparência e controle humano como pressupostos para confiança nos sistemas de IA",
-   "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxNNklhUUxDTjJZZFA5QVQ4UnoyOWhIRWR1cEdPa2xuYVRSZlhNNGxrekp2X2RnN1JZS0JvckhOalFnN1h1WjlTTGM1cWFvaXZjbzJ1VjJRblVwTl9IZmNOY0JXM0tOMWMxaFY5Z1VISlhvUmpZbmtDWnJ3U3NNRmF2TkQwdGktS0pLU29GdHAwcFlwX1RVai1PU2hVNUpUMkVSQVFYYUM0c3ZabU9yY1JXN2NpN2NuT3VuQ3RvWm94bWdOVlB2aU9zTk54TW5CVmI0M25Cenp3V29rUUF3ZFUybTZ2ZzRUZm83Rkh6cmVNTHluMkUyRl9SY0N1amo0ajZPbUdsdVlJcHV5X0tkXy1LM1dTY3JTZzRvS1BHQ2VR?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxNZzlSVnN0ZFhkamE0WEJPQWFWRy1NbVIyeU9TX2lxSUx1QTBRaTBvN3hWeEkwWkgySVBNaExnSTZvSm5HdnVOY1N6VFFveDJqalFEUHpmRTBTelF3eGxqREJ4ZXAtc3ZLaTVaUXl3SE1zYVBUcjJDVThiMzFwRjM0RnJBN3lFVGFYOWxoOFdyazhmOXI4SW1OakdneVQ5MUxwQVg4MmU5NGkydF94a0Y2VVN6OWhVRnZPUUhYQURtQkRiTFpOclJUR1RmWWo1cmxleElsVHpWd1JodWhfLWo3aWV5Rll1SE55bUZwc1VSb2ptQ2tjWUxaMFhXMDBlUlFFd1dyX2Q4RFdHMWYtd05MbHRJV0dCZERhdjZuNmNn?oc=5",
    "data": "2026-11-11T18:56+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -325,7 +437,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "STJ lança, nesta quarta-feira (11), obra sobre transformação digital",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUnRFZjd5NU15QnJrVjFfb0x0MDlEUDJGVGtQM1RrbTd4bU00dVlwVmJSTkdxRk9fODNJY2RqdXJmOUltejVUVzNxWDRoN3pBaFl1U0ZYWDJHbFc4dzRJVHFfMjJ5dlVXZGpZYVVBZWhvNFhLWXlOZ1ZVcGVzNWdNWWkyOVhTUXlnMnJQSE51Z3F1WEJyeUZWcUNUQ24wcThfWFdiRHczalRFR2dOLU5ERjU1MGE5dkh0RkQtelVhUWZ5b3dPTE11SnFJTEtVRGQ4ckxYc28wb1JzandpQ21BTzc2UQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQemdqTy1wVVJsY0ZSeEpyaUlQdi1NREhTSGxnTnJfT0xHUnRORjBfWXBFNHRZWldVNGxsZUJxT3BZWDU3UUFPdUVIcFFPQWNscUJXUEF4TE9DOWZBQ0FUSWJOYjdZc0toMnVOUm5yQWVyaUpBN3JLOGItbHJpRWRXa3NIRnlYNEdvdGQ3Vlc3TElaY3hVak0wa2o5T0ZuM0kxb2JqVXByUnYxM0p5ZGV0ZGhqN3BTSzU0YXNtU1U1S2Z6cHg2QVI2X3BVNGh4X0dRZWYxYmQ1MTRhZmxhS05NSGV2SQ?oc=5",
    "data": "2026-11-11T11:05+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -333,7 +445,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Podcast STJ No Seu Dia debate direitos difusos e indenização por venda irregular de agrotóxicos",
-   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPVWxTWDFwNlhlR1NyTXVLV3lMQV8zclcyMVZZa0R2R2JxUGltbmowOE1NeXVueDhpLTh4NDZzZ0l1X2IwMlVwNF9DbVZIYzhJME56bVVMeDd3STNNTTNkanNnbGVaQUwzc0JvaW5ZRWNLMHdVVEtGMHdNbzRSY1pwQzB0YUk1UjJEX2U0QlZuTE5yY0Q0akhVOGJsai1kNnRDU3p6RkdrQmJ2MDJ0c0o3TjRmOWplb21XNWRjS2NfWjJPaFJ5NzlXRS1RNWNfNEt4bk9mV3RuVm03aGdfZHdseEY4NGRLeVU2LVdQLVBCdXlGWmNKYVlqa1VJa2txVmVmNHhzT2hDWU1MQ0tC?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNR3Itc3pNOFd6b0xfaGJua3hUR0tSbHJ3ZGZJZzBoczVBZ0hhT2pNM1lwRjUzVTE3TUcwUVlIVEtjS2VBcGdzTDZOS2tiNGN3S0VYVzg0NGVYZFByaU5sR0N6TFk1TFlGTnRINkZoU2RHLS0tU0RRU0wzUzBMSllCRUdDWHJBU3RnSHUwRW4xRHlLLS1qbUtqS1pybGc5bC1mbm92NW9CY0k4WXpKQk1STzctRkFCUnZyVzhUeWVCLUZhR3FlbUIxWXc1V2VKWDRUWTdGaE11OGlZUTZxMlRzTXdIVGlHNWxsSmV4eldRS3NHWGhoUE5FSTVqUGpheFRSanl6a2VOQjFoQUR0?oc=5",
    "data": "2026-11-11T10:50+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -387,6 +499,14 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
+   "tribunal": "STF",
+   "titulo": "PSDB questiona mudanças na nomeação de dirigentes da Agência Reguladora de Serviços Públicos de Alagoas",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTUtFa2dFNTl4MFo3WmN3cHNoX00tdi12ZDVYWkdCMTlFeU1xUnRWcjhUTE9EX0JQcHZCMjVZN2Uyb1dzZ25WY3lxN0V4R2t6djlaZHNlMDUyNUhsZ2NrOFNSSFQzMUVydHpHcWxjYnZkVjRqR2xNbHFnMGdaMjM4VzV6dUFNNlVObGR0M0JBdXFUX3RsMVg0aHNFXzdKSDcwTFgtWHdSZ1hzMlh6YnQ0WUJKMDRRWWVqbjBkd2Q3a0w0eUNfb0w3ek5zdWo2SHctSndDTldOX2JQbjRKMWdV?oc=5",
+   "data": "2026-11-10T17:17+00:00",
+   "tipo": "nova_acao",
+   "processo": ""
+  },
+  {
    "tribunal": "STJ",
    "titulo": "Ministros representam Enfam e STJ em conferência sobre formação de juízes na França",
    "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxONVNIcmg5Y0NhZ2R6UVdrSGtmYnBqUUpneW9COWVCSDMtTHdORWVUTUdMTzBGdUx0TmI2bklDUzlNSXNpV3hlR0lkUDkzY05YY0U5NTV1c2ZpSDVCaHFRaDdISUlYY1JtMzhZZXNxT0FIaUNoS2Etb3poYm81TUp3blJkTlVGYzZuSEhfa1oxZS1UOWJnbkdHUzMyb2p4NEtxLWl3Yngzd0lSazBNOE5laDEwMVNDTkNYNXZKWWpXU1RtSTBzbEFWeEdHa2RIZEQzcGZjM0FnOHpKWlp6TFhzOVAyMHZPR0NSY0JfT2d4NmRJaHQ1NmhCQW02bnJvUQ?oc=5",
@@ -413,7 +533,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Crédito de ICMS sobre combustível no transporte secundário de carga",
-   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQYXlndmZQV2FucGdUY0owcjBVdDlic1dQeG9GNUpaZ1ZhYzBjWWJMTjlDeWc5Mm93TDZlMkkteEtMNHNYaDNtREhaWXYzM0NySzQxWFNKUEEwQWg3Q2NMaktOam5fWEloUGdCWUYtZC1Cb2dqRXBzWFhxT2JKWGJNd21xRW41S3hwMEZnMWFqalJ0RkVtOXZka3NZNmpLeVBtNXZIS1hMMEQ0eXJtaHZ1V0NXRVowWG0waVpaQjRDX3BkS0hPRnFOcUYxX0prSEczc0FpQkQyOW92dHFRQTQyNHNqRFVGM1F6ZW1CUEpVX3Y5THBOOWw2bUNvMldBV0tGV0F0Ty1kMVNDQ1l0Q0ZIcWpWVTJ5VXUyTkxR?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQaUhkam5pY01QNVBwT1BTSGhWQVNfQ3VpYktqQ2J2Q180d2tINTl6T0MwMVZCREM2b0IyNU5VdHQzMHpsUTVXOHJiZVhNV0JZN3pPd1B5cTFHWGdtSkJBVFZXb2JrOXVlZmpPTThYQUFVckgzWW1NOXM1Zzl2dFo0SjBjdmpZd2JfaTkxNW44QXI1MEhrOEs4WmhXVjhjbDVTVWhCOFEtRDhiS2ZqblB3LVpza2ZzbDNyZXBQMWJIdjRQRkU0enNBclVONWZOTHVObFNQMWRuUElhaXhfUEg2dnFlSW4ySXFfT0ZUTWxWOEtWM1B6dHVnZVFpODVSSXNzeTlFZjJkdWE1cVZlTFlvblVrMUNMWWFwYjBr?oc=5",
    "data": "2026-11-10T10:10+00:00",
    "tipo": "decisao",
    "processo": ""
@@ -547,14 +667,6 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
-   "tribunal": "STF",
-   "titulo": "STF promove curso internacional de direito constitucional para magistrados de países de língua portuguesa",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUk90cV93S29saWhDVzNHOGJSVDRoX0xnNENjbzcxaEJEOV9rME1yMkFlTG45RnFoRHIzcjdxLWZVQmUySHEwYlBHNnVJY0hDa1p1Y0xqM3gyVDNGRUpWQmphclVzVEFLNmRRY3ZfVmZwOXdHYlVSY2lDc1k5ejk1UzZCc01XUVc1V1U4bHY1NUJHTElqN3g4Wk8xZDZ5MDA1NGJjUklTNXllY3VXSEdrRnotWEN1ZUNRRDZYT1VWa1J3RGZLenZTUGIwbnZ6Rk1WV1Vma2ltclBndEhIN1kxWE1B?oc=5",
-   "data": "2026-11-08T21:49+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
    "tribunal": "STJ",
    "titulo": "Juiz-jornalista, ministro Og Fernandes encerra trajetória no Judiciário",
    "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOSU04REJrYjF5djFuMmdCUHRKSldyM3dhbGdCWHFZU2RwTXJtQURITW5NeVZNMmI1c3lISDc4YzB5dndBZzhWMk5MN0F4ckg1bE5VY0FOem50d2M3d3I4UDlxLVVGNGRYUTJteW4zQnc2SGFzckpSd1F1b1pUMnFqazQ2ZzUxaGdJaVZEMk5IcC02X1EwY2NiUThzbHB4eWJTSkpEaXJmaFJXVGhTU3VSZ1A3NEppOTAxSEJRY3RZcjFCWHBZdHNtSVBoQ2JjYkc5RktQX18ta1dkQkx3c3E3SHQ0OWdoWk4zNmhBWjh5a19MYmhvOUx1aDQ4SG5HSFktanhMS1JPZ2E?oc=5",
@@ -603,122 +715,10 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
-   "tribunal": "STF",
-   "titulo": "Confira os destaques da pauta do Plenário do STF para novembro",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWUw4Q1MzZzUtY2tWMzZjNG5DblloaG1xdjl6TXVSdURlVHVUT3NkbmFIVVZ2Y0szT3NLNTRzRVE5NDdMVlpZOFlndGpLN19iTGVkejdCTnlLbS1BV29NVEtCMXdWR1phT3ViV2FheTdIN21scUZ0WHVpMVFYcWNQM2k4dHl4Z2diXzd3THIxclI5eDFibktsbC1jMmFyVmdMbDZqSnczRXA?oc=5",
-   "data": "2026-11-06T19:18+00:00",
-   "tipo": "pauta",
-   "processo": ""
-  },
-  {
    "tribunal": "STJ",
    "titulo": "STJ lança livro sobre transformação digital e proteção das criações intelectuais",
    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQS2JENE9EeVRoajVyWEVoRVRDRmJDNmlEUDN1em1SVGRoVlh4OGpCeC1tQlFoYWw2UUdYMW1udVNHZzQzMWF2d0lpU2k4Z295XzdQWFdxdHNsdm5oY01NLWRZUUl4bF85MHo2bXRmMmJ0TFBUNGpwOGgyU0l4LVR3blNiTWVSeEMtSVpnT1F3OTZ5YnN6N1luWHhKRjdfMF9XY0RIRVg2RXhTNDVUeER2b2xWOHY0OG1Ha1dtRm0yQnl6YnJBeG9RU19EbXpEUHF1cjN6VnR2R3BHLVpWTDlkSmNtakRHXzFmblk2WUFZTms2SDdYUmZXMA?oc=5",
    "data": "2026-11-06T18:51+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "STJ recebe participantes do Caminhos para a Liderança de Mulheres na Justiça",
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOX0lSbWpsS253VnY1QXEyR0M3cHFzbEJXZjUxd2M3U2lkVEctdE9fNlNHeXIzeG1IdDhSeTVvNS1JbTRVaG1NMHdFWUxIckFvNTUzM1pVcmJ5ejVWQXJLZ1RSNEhzTS14d25sOEdkcENNaXBtN1RSRlZjR1otYzlTYVJQU2RyNDdJdU5ZQkZRWFpJbjg1LWtqWGtfbUFfSUhaeXJSMm1sZG96V2N1cnIxUDFUcDhncEVhbEpQaDg4d1ZZZ0UxRUVDbUpYSDNtWF9DejlvbGVacUhfYzhhbkx0dHZmU1paZW56VUZRNXdNNGZTY2c?oc=5",
-   "data": "2026-11-06T15:22+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "Relator convoca representantes da indústria para audiência de conciliação sobre nova jornada de trabalho",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOanprdmFTV1luRmNKeHhKajMyWXFWZTlvbWJpRmhTQjEtNVkxbFRaVGZQM29KbkNVa2NDWDVuQVJZbTdUcWFGMHAxNnNIQzI2VFZKektjS3lYR2xXWVE3NlMzQlNnR2VLb1QtcVk2c3dCNUxRZmV4RUJfVUtqc1JVZXk1VFZHQ3JmWUduM29sMUtIWUxUWmFvaHRYdmFEMndxTy0tVW5PUEtqeElYX0VQanNoQTNRdU16WkJJLTFtMUZkaHdXb1V4TUtvUXRjRngzOE9wRXc2R1NPNDhV?oc=5",
-   "data": "2026-11-06T13:16+00:00",
-   "tipo": "pauta",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Terceira Turma define forma de pagamento de créditos na falência por trabalho prestado na recuperação judicial",
-   "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQempFMTJLZEt4YUxXLVJEZE1TZlpRUEpXZ0owZThYY2dicENsZ3Znc0I2OVRYZ0dFd1U3QzRobGlhVmlEZERDZkNpbEdJUC1zSHFkV2RteVJtbVBUVWJ3enI2ZUFCaTk2Q2ZMeklJXzZMdUtabWkwdUkxcUxkZ1BtWmhmT0dYRm9OalFBNE54aUoyYVIwcEd5a0habDJrUGJIQ2dpS1NtSEtBTWVTdXNhWmRLSHZnTmNRMENITWZhc3RZbWpyMjRyWjdGMVpCSDBZSk1kelJmRFRrMXZwbE5jNUV4TC1uSUhHMVlxRmVsWkp6Q0lBN2NSaURuc0VxNWpOSkhialMtQVpmZmZ0RVJwQTUxaERqeGtUMXRiM3U1WVg?oc=5",
-   "data": "2026-11-06T10:05+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Condomínio deve indenizar moradores por furto em apartamento após falha da portaria no controle de acesso",
-   "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNTGZTbDJxMTdTQVN2a1BIMC1PNkc0Zmd2bGdLQ2QzV01jQ2E5ellWZGNmY3lUaE5tX0FJeFdmcVJ3WHF4U0lPNFJjZDdMaDY0M3V6cEZWY2xVVnZXbGJSc3Z2VU1EdXotZ1VXaXA2QTFGRHlfMlJ2cnZGYm9aUzJTLVNFLTNQN3UyTERTNFJUOXM0bkxpZzBoc29EYVlqOUlPXzlHREVWc2lGN1dDMEhNdmdkNHVteHJHdWx1X2Nlblg1S2FnWTZ1Qy1NektwQXJ2UTNUR1RqVjA1TzJDZ0lvQXpCRk1Dc1F1RGhqM2laUVl1S3paVnFNYUFoVDlSS0Q4SUVuLUJnX3V1d2oyV0lGVEp0MWxIMk5UOXc?oc=5",
-   "data": "2026-11-06T09:50+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Tribunais debatem desafios e expectativas sobre o novo regime de relevância do STJ",
-   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQS053UFZjWmphaktHcnZFUEdhMFpKcUF0Qm1sZTN2Zml0V19DSUR3dHQ0WE5ndUxJWDV2OU9tLUFOd2JFbjA1ZFlPTDhUNnBkaTZrZE5Cd3NvTkhTY0xnNnlEeUNuOFQ1WE1aRnYyWFo5dzVYRENpOXNDUkU1d3Z3c2NsaWNhaUp5RFhvQ3NIMnVCX0JZbTJpcUdIWXFLeGxXNnpXZ0RNQ2xjSkxSY0FGYXE3RU4zaEJpbm4wbENsay1wLWxBVzNWZDYyX3UwLTdXSXJFajE5a0ZNNTFaR2FIa2lkSGg2bV9YVDVrZlhmdDVwQzVpTEtnUnVmUQ?oc=5",
-   "data": "2026-11-05T23:54+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "STF suspende julgamento sobre limites para atuação do TCU na solução consensual de conflitos",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU05HV3IwUDV0OFpRXzRtYllSaWNiZFJiWU4yTVhHZXFzMGswNWptYjVFYkg1eHkxZ3llRDNsV1pkdUJxQ3BMOUVlcjJmbVg1V3duR1l4ODREU3N5Y1gwemZEOEpJYXVKR29SZDl2UkZNYnhCY0d1Q3V2dDhNc21WMkJYX1lPSFFEeS1OSWVkSmR5ZDlKbEZjV1FzdUtWak80ak5sN01IS01VSjE4TVZjODd0SnpScXBIQUVENmk4TGI4bGdjUGFKd1dSaW1kd2hF?oc=5",
-   "data": "2026-11-05T22:52+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "STF invalida normas sobre organização e poderes de investigação do Ministério Público do RS",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdVc4cmRZejRCbEVaQXczeFF0WlhvU2UwQUhkWktHUl9FR2VHQ2RBNmJMeDdlRHg5U2lhTVc4UFRYTzlKeHJpZzFmV002THRmVlc3c1NNMkduZFIwTFFsc1VkS3lNemlCR0VqdV82WTAxMFFPRVA2YkdsbjQtd1M2c2Y0SUJCUmNobVJMY0xTcUE2ZTRBX0Q3Nlh1U1ZQZEhSU3dGQWJaUEJPMWsxZDJBLTlLcnlxMVpIbm01TVlWREwwTWxWWnpQX0dMTVg5NDg?oc=5",
-   "data": "2026-11-05T21:40+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "Escala 6×1: STF marca audiência de conciliação para debater implementação da mudança",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYVhmMnJEb1NkUFRKNXAyZFpTWVJNeVJKZGgtbzlKS0llZ1l4N0hyTlR6WFBuUnUwYllxamlNUnMxMk9wZk82SVBsWWNGRzVfdGdHbDhqeUttNEo4WFVjUEJBUTNDNkk4aUFpSnc4RmtnTU1rSGNDcGo0a1ppVFlCRTR5WHRUa2FROU5mMFhSeG5CVjl1c0xHc1JTeGdKX0d1LUpmUmxUZzZVRWdxQzFkLTVIeVliMGNVOHlxSkJfM3RrWWJD?oc=5",
-   "data": "2026-11-05T21:09+00:00",
-   "tipo": "outros",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "STJ e CNJ assinam acordo de cooperação para compartilhamento de dados",
-   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQNWFDY1FNdVY4aWZSSk9kQllDSG9wcEtGRGd4RnNkbThhV0VWeGlqNDBlSzBZQ1d1R2JOSEppYVRnVTVxZTRZbVNEcmJUcTJyUGVxR1R1WVRyclA1TDZ4b2RqRDlnc2NuNV9RS0J0bFFzVE1hTy1NSXA4RzZFVERpZFZudU5BOVdGQ1hTVFg0NUdrOWhBNGx3eUkzR1VJYnpYSGlaM1FPdm1NNUFPdmoxcVU4b0FpTHhGQlo3UHR6bWZJZGh1ZV9wakRJVmJvNmkxQldPX0V4TWVNbVh1VEZSWURLR0Q3dHhCWDBn?oc=5",
-   "data": "2026-11-05T15:49+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "STJ reúne tribunais para debater aplicação da relevância nos recursos especiais",
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQYnc1M2huUm5ZQWVQTzZTeW1QaG02X2pGY2Zwa21RRnd0UUhvbjBFMXlrR0hDcVE4dXA5WVBBWHZCYm5LRWpyQlBqMmVTR2lzMDlxcUFKQXIySUpxSDJ0MWtyZm5qU20zbllDbWtjeXZyLW5fVGgxeTZVTTM1OURlWm9heWRPVDA5TVFOQ3hOUWFRNHdncE5NdTh6cjJkQ1RGWlNwQmpLcUJKTmdOUHV0bVNTRHdmOHlTXzlBUWU2TW0yaTF1VWRwQXJWM0VnVTJkYThYV19WbkNDVkVWZ21LQzJJd0ctZHNJV0l3N25LX3dPNWl0c3Vn?oc=5",
-   "data": "2026-11-05T15:24+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "STJ apresenta novas ferramentas e programas para fortalecer atuação como corte de precedentes",
-   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPSTc1c1JXNFN4OXVaTEowamF6Qk01TGVRSFd2eHgzVXZYbUludWpGUFNnZ19rVTR2MVlmQXI0MjI4d1lyYlJXWTFVelB3VldTNGU1c0pIYUNtN2Qzald4NFBUMUNBZGVQeGZMTHNOZXp0VlF4SUJuRGtPNVRCbGVvMGhPUGUxVTBTUmM3ekVRQjZiYzJaRzNVSHhLVHNzeVVfRXM5amd4YWppNWVic1hCOGRTemg4cVNuVjVNSkxPSUZ4eGtRbHNlWHRDMmN1RlFEUFZueHNUZkFDZFJNcXVjUHktMTlQR2NQeGtJUEtTNVFRVG9KX0t4NUd0SEdWY2p2X0ZoNkJxZlhqUQ?oc=5",
-   "data": "2026-11-05T15:06+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Rádio Decidendi aborda relação entre os repetitivos e o novo modelo da relevância",
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNMmNHOFQteEo5bEJBMjdNZ1U4Tjc0Q0ZoWFE4MHdwd2dYaXg1UVB3QUFoelRvZHN5Yl9Fbmt0US1tR3Y1SkMtTjlEVjZnVE1DbTl2MEQzU0dUMUNBUDFGNkFCM1FaTVlGRlAxbGZDcGtVSU81X2tnUERhR1BQbWFoaU9tbnJxZjB5UzUtb1B6ekR0c0ZoMVNlM1NxRWVlMUZiYjRpSTVNckpWYm9fTDNYelRXaDFxMThOZm1vVjYwSXlZWmlWWTU0bUdBblJzcXEyUjFQbHFwZ1FQeFJET3Q1Ylk2Q0tBU0hUX2lFUzBrY2FqaHBKeDhNekVR?oc=5",
-   "data": "2026-11-05T10:50+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "STJ lança tutorial sobre nova página do calendário de sessões de julgamento",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxObVhrM0ZDMUtyMWlOWmtqeE4xcU5xZV91X2k4UUtfQTBwbzREYlFyb1Vkb3dYdDJGS3hsYW01ZmJrZEU4bVNCZHBfZUs5QWhldGFMWk5xX1NzUmdYTmJYSERXY3JkX2t0TFlpNVZYS25xc3lkaGhzdW5Ta3lxbGJpRFc2MTJZbThjMzZmUjg2YXpSSWZLWWk3S0lTN3FkbWFmdmFDQWZVOWxIb19jdGtFQUoyZV9KdDh1UnBEV0JyUmh1U29tWDV4aHM2OE1WU0k4Q3dHdktfMXdNaVBBVmE1R3p2enNQVG5mZk0tdmoxb1dsQQ?oc=5",
-   "data": "2026-11-05T10:10+00:00",
    "tipo": "institucional",
    "processo": ""
   }
