@@ -232,12 +232,12 @@ window.LATS = {
          link: "" }   // ou link externo: YouTube, podcast, texto completo */
     entrevistas: [
       { nome: "Jules Queiroz", video: "assets/videos/jules-queiroz.mp4", capa: "assets/videos/jules-queiroz.jpg",
-        edicao: "", funcaoSTC: "Ex-participante da STC",
+        edicao: "", funcaoSTC: "Na STC: Amicus curiae, AGU e Ministro",
         hoje: "Advogado-Geral da Câmara dos Deputados", area: "Advocacia Pública",
         citacao: "", link: "" },
-      { nome: "Rachel Tinoco", video: "assets/videos/rachel-tinoco.mp4", capa: "assets/videos/rachel-tinoco.jpg",
-        edicao: "", funcaoSTC: "Ex-participante da STC",
-        hoje: "", area: "",
+      { nome: "Rachel Tinôco", video: "assets/videos/rachel-tinoco.mp4", capa: "assets/videos/rachel-tinoco.jpg",
+        edicao: "", funcaoSTC: "Na STC: AGU e Ministra",
+        hoje: "Juíza Federal no TRF da 3ª Região", area: "Magistratura",
         citacao: "", link: "" }
     ],
     entrevistasConvite: "https://www.instagram.com/latsufrn/",   // formulário para ex-participantes contarem sua história
