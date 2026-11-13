@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://latsufrn.com.br/sitemap.xml
