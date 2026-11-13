@@ -717,3 +717,19 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .court-logo{align-self:flex-start;display:block;background:#fff;padding:1rem 1.2rem;border-radius:2px;box-shadow:0 14px 30px -18px rgba(0,0,0,.6);transition:transform .5s var(--ease),box-shadow .5s}
 .court-logo img{height:clamp(64px,7vw,92px);width:auto}
 .court:hover .court-logo{transform:translateY(-4px);box-shadow:0 22px 40px -20px rgba(0,0,0,.7)}
+
+/* Entrevistas em vídeo */
+.ent-video{grid-template-columns:minmax(180px,42%) 1fr}
+.ent-player{position:relative;aspect-ratio:9/16;background:var(--sage-3);cursor:pointer;overflow:hidden}
+.ent-player img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease),filter .6s;filter:saturate(.85)}
+.ent-player:hover img{transform:scale(1.03);filter:none}
+.ent-player video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
+.ent-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;border:1px solid rgba(255,255,255,.8);background:rgba(52,80,63,.35);backdrop-filter:blur(4px);transition:.4s}
+.ent-play::after{content:"";position:absolute;left:52%;top:50%;transform:translate(-50%,-50%);border-left:16px solid #fff;border-block:10px solid transparent}
+.ent-player:hover .ent-play{background:var(--sand)}
+.ent-player:hover .ent-play::after{border-left-color:var(--sage-3)}
+.ent-tag{position:absolute;top:.9rem;left:.9rem;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;background:var(--sand);color:var(--sage-3);padding:.3rem .55rem}
+.ent-video .ent-txt{justify-content:flex-end;padding-bottom:1.8rem}
+@media (max-width:900px){.ent-video{grid-template-columns:1fr}.ent-player{aspect-ratio:4/5}}
+.entrevistas{grid-template-columns:repeat(auto-fill,minmax(min(460px,100%),1fr))}
+.ent-video .ent-txt h3{font-size:1.5rem}

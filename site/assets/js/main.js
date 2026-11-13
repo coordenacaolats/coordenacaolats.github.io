@@ -293,13 +293,26 @@
     const L = S.entrevistas || [];
     const convite = `<a class="ent-convite reveal" href="${esc(S.entrevistasConvite || "#")}" target="_blank" rel="noopener">
         <img src="assets/img/simbolo-navy.png" alt=""><b>Você participou da STC?</b><span>Conte para a LATS onde a tribuna levou você. Sua história pode inspirar a próxima geração.</span><em>Quero participar ↗</em></a>`;
-    ent.innerHTML = L.map(p => `<article class="ent reveal">
+    ent.innerHTML = L.map(p => p.video ? `<article class="ent ent-video reveal">
+        <div class="ent-player" data-video="${esc(p.video)}">
+          <img src="${esc(p.capa || "")}" alt="Depoimento de ${esc(p.nome)}" loading="lazy">
+          <button class="ent-play" aria-label="Assistir ao depoimento de ${esc(p.nome)}"></button>
+          <span class="ent-tag">Depoimento</span>
+        </div>
+        <div class="ent-txt">${p.area ? `<span class="ent-area">${esc(p.area)}</span>` : ""}<h3>${esc(p.nome)}</h3>
+          ${p.hoje ? `<p class="ent-hoje">${esc(p.hoje)}</p>` : ""}<p class="ent-stc">${esc(p.funcaoSTC || "")}${p.edicao ? " · " + esc(p.edicao) : ""}</p>
+          ${p.citacao ? `<blockquote>“${esc(p.citacao)}”</blockquote>` : ""}</div>
+      </article>` : `<article class="ent reveal">
         <div class="ent-foto">${p.foto ? `<img src="${esc(p.foto)}" alt="${esc(p.nome)}" loading="lazy">` : `<span>${esc((p.nome || "").split(" ").map(x => x[0]).slice(0, 2).join(""))}</span>`}</div>
         <div class="ent-txt"><span class="ent-area">${esc(p.area || "")}</span><h3>${esc(p.nome)}</h3>
           <p class="ent-hoje">${esc(p.hoje || "")}</p><p class="ent-stc">${esc(p.funcaoSTC || "")}${p.edicao ? " · " + esc(p.edicao) : ""}</p>
           ${p.citacao ? `<blockquote>“${esc(p.citacao)}”</blockquote>` : ""}
           ${p.link ? `<a class="mini-link" href="${esc(p.link)}" target="_blank" rel="noopener">Ler ou assistir a entrevista ↗</a>` : ""}</div>
       </article>`).join("") + convite;
+    $$("[data-video]", ent).forEach(box => box.addEventListener("click", () => {
+      $$("video", ent).forEach(v => v.pause());
+      box.innerHTML = `<video src="${box.dataset.video}" controls autoplay playsinline preload="auto"></video>`;
+    }, { once: true }));
   }
 
   // Capacitações com fotos

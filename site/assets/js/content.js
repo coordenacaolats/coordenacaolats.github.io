@@ -228,8 +228,18 @@ window.LATS = {
          edicao: "XIII STC · 2017", funcaoSTC: "Ministra relatora",
          hoje: "Juíza federal no TRF5", area: "Magistratura",   // Magistratura, Advocacia, Academia, Ministério Público, Advocacia Pública...
          citacao: "Uma frase marcante da entrevista.",
-         link: "" }   // vídeo, podcast ou texto completo */
-    entrevistas: [],
+         video: "assets/videos/nome.mp4", capa: "assets/videos/nome.jpg",  // depoimento em vídeo (opcional)
+         link: "" }   // ou link externo: YouTube, podcast, texto completo */
+    entrevistas: [
+      { nome: "Jules Queiroz", video: "assets/videos/jules-queiroz.mp4", capa: "assets/videos/jules-queiroz.jpg",
+        edicao: "", funcaoSTC: "Ex-participante da STC",
+        hoje: "Advogado-Geral da Câmara dos Deputados", area: "Advocacia Pública",
+        citacao: "", link: "" },
+      { nome: "Rachel Tinoco", video: "assets/videos/rachel-tinoco.mp4", capa: "assets/videos/rachel-tinoco.jpg",
+        edicao: "", funcaoSTC: "Ex-participante da STC",
+        hoje: "", area: "",
+        citacao: "", link: "" }
+    ],
     entrevistasConvite: "https://www.instagram.com/latsufrn/",   // formulário para ex-participantes contarem sua história
 
     selecionados: [
