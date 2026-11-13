@@ -27,6 +27,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -68,7 +69,7 @@ RE_INSTITUCIONAL = re.compile(
     r"cumprimenta|recebe|defende|destaca|pr[êe]mio)\b", re.I)
 RE_NOVA_ACAO = re.compile(r"\b(questiona|questionam|aciona|acionam|aju[íi]za|contesta|contestam|pede(m)? ao (STF|STJ)|vai ao STF)\b", re.I)
 RE_PROCESSO = re.compile(
-    r"\b(ADI|ADPF|ADC|ADO|RE|ARE|HC|RHC|REsp|AREsp|MS|MI|Rcl|EREsp|IAC|Tema)\s*(n[ºo°.]*\s*)?(\d[\d.]*)", re.I)
+    r"\b(ADI|ADPF|ADC|ADO|RE|ARE|HC|RHC|REsp|AREsp|MS|MI|Rcl|EREsp|IAC|Tema)\)?\s*(n[ºo°.]*\s*)?(\d[\d.]*)", re.I)
 
 
 # ---------------------------------------------------------------- coleta
@@ -149,51 +150,217 @@ def coletar(tribunal: str, consulta: str, origem: str) -> list[dict]:
     return unicos[:MAX_POR_TRIBUNAL]
 
 
-def painel_heuristico(noticias: list[dict]) -> list[dict]:
-    """Sem IA: o painel lista as notícias de pauta/julgamento mais recentes."""
-    fichas = []
-    for n in noticias:
-        if n["tipo"] != "pauta" or re.search(r"confira a pauta|destaques da pauta", n["titulo"], re.I):
+def candidatas_painel(noticias: list[dict]) -> list[dict]:
+    return [n for n in noticias
+            if n["tipo"] == "pauta" and not re.search(r"confira a pauta|destaques da pauta", n["titulo"], re.I)]
+
+
+# ---------------------------------------------------------------- texto completo das notícias
+def _norm(s: str) -> str:
+    s = unicodedata.normalize("NFD", s or "").encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9 ]+", " ", s).split()
+
+
+def texto_stf(titulo: str) -> tuple[str, str] | None:
+    """Busca a notícia na interface pública do portal de notícias do STF (WordPress).
+    Devolve (texto, link oficial) ou None."""
+    palavras = _norm(titulo)
+    termo = urllib.parse.quote(" ".join(palavras[:9]))
+    url = (f"https://noticias.stf.jus.br/wp-json/wp/v2/posts?search={termo}&per_page=5"
+           f"&_fields=link,title,content")
+    try:
+        posts = json.loads(baixar(url))
+    except Exception:
+        return None
+    alvo = set(palavras)
+    melhor, nota = None, 0.0
+    for p in posts:
+        t = set(_norm(html.unescape(p["title"]["rendered"])))
+        semelhanca = len(alvo & t) / max(1, len(alvo | t))
+        if semelhanca > nota:
+            melhor, nota = p, semelhanca
+    if not melhor or nota < 0.6:
+        return None
+    texto = html.unescape(re.sub(r"<[^>]+>", " ", melhor["content"]["rendered"]))
+    return re.sub(r"\s+", " ", texto).strip()[:6000], melhor["link"]
+
+
+_NOME = r"((?:[A-ZÁÂÃÉÊÍÓÔÕÚÇ][a-záâãéêíóôõúç]+)(?: (?:de |da |do |dos )?[A-ZÁÂÃÉÊÍÓÔÕÚÇ][a-záâãéêíóôõúç]+){0,3})"
+RE_RELATOR = [
+    re.compile(r"\b(?i:relator[a]?(?: d[aoe]s? \w+)?,? (?:o |a )?ministr[oa]) " + _NOME),
+    re.compile(r"\b(?i:ministr[oa]) " + _NOME + r"[^.]{0,60}?\b(?:é|foi|será) (?:o |a )?relator"),
+    re.compile(r"\b(?i:distribu[íi]d[ao] (?:ao|à) ministr[oa]) " + _NOME),
+]
+
+
+def extrair_sem_ia(texto: str) -> dict:
+    """Extração simples por padrões, usada quando não há chave da IA."""
+    proc = RE_PROCESSO.search(texto)
+    rel = next((m for r in RE_RELATOR for m in [r.search(texto)] if m), None)
+    placar = ""
+    if re.search(r"\bpor unanimidade\b", texto, re.I):
+        placar = "Unânime"
+    else:
+        m = re.search(r"\b(\d{1,2}) (?:votos )?a (\d{1,2})\b", texto)
+        if m:
+            placar = f"{m.group(1)} x {m.group(2)}"
+    relator = rel.group(1) if rel else ""
+    return {"processo": formatar_processo(proc), "relator": f"Min. {relator}" if relator else "", "placar": placar}
+
+
+def preencher_fichas(noticias: list[dict], anterior: list[dict], usar_ia: bool) -> list[dict]:
+    """Monta o painel: escolhe os casos, lê a notícia completa e preenche processo, relator e placar."""
+    cache = {f.get("titulo_original") or f.get("tema"): f for f in anterior or []}
+    escolhidas = candidatas_painel(noticias)[:8]
+    if usar_ia:
+        sel = selecionar_casos_ia(noticias)
+        if sel is not None:
+            escolhidas = sel
+
+    fichas, pendentes = [], []
+    for n in escolhidas:
+        base = {"tribunal": n["tribunal"], "tema": n.get("tema") or n["titulo"], "titulo_original": n["titulo"],
+                "processo": n.get("processo", ""), "relator": "", "placar": "", "status": n.get("status", "Em pauta"),
+                "link": n["link"], "data": n["data"]}
+        antigo = cache.get(n["titulo"])
+        if antigo and (antigo.get("relator") or antigo.get("placar")):
+            fichas.append({**base, **{k: antigo.get(k, "") for k in ("tema", "processo", "relator", "placar", "status", "link")}})
             continue
-        fichas.append({
-            "tribunal": n["tribunal"], "tema": n["titulo"], "processo": n["processo"],
-            "relator": "", "placar": "", "status": "Em pauta", "link": n["link"], "data": n["data"],
-        })
-    return fichas[:8]
+        if n["tribunal"] == "STF":
+            achado = texto_stf(n["titulo"])
+            if achado:
+                base["texto"], base["link"] = achado
+                if not usar_ia:
+                    base.update({k: v for k, v in extrair_sem_ia(achado[0]).items() if v})
+        fichas.append(base)
+        pendentes.append(base)
+
+    if usar_ia and pendentes:
+        notas_stj = pesquisar_stj([f for f in pendentes if f["tribunal"] == "STJ" and not f.get("texto")])
+        for f in pendentes:
+            if f["tribunal"] == "STJ" and f["titulo_original"] in notas_stj:
+                f["texto"] = notas_stj[f["titulo_original"]]
+        extrair_com_ia([f for f in pendentes if f.get("texto")])
+
+    for f in fichas:
+        f.pop("texto", None)
+    return fichas
 
 
 # ---------------------------------------------------------------- IA (opcional)
+def selecionar_casos_ia(noticias: list[dict]) -> list[dict] | None:
+    candidatas = [n for n in noticias if n["tipo"] in ("pauta", "decisao")][:40]
+    if not candidatas:
+        return []
+    dados = perguntar_claude(
+        "Selecione até 8 casos que estão em pauta ou em julgamento (não incluídos os já encerrados há dias). "
+        "Prefira casos de grande repercussão, do Plenário do STF e das Seções/Corte Especial do STJ. "
+        "Ignore notícias de pauta genéricas ('confira a pauta'). Para cada caso, escreva o tema em até 15 "
+        "palavras e indique o status provável pelo título.\n\n" + listar(candidatas),
+        ESQUEMA_SELECAO,
+    )
+    if dados is None:
+        return None
+    saida = []
+    for f in dados.get("casos", []):
+        i = f.get("indice")
+        if isinstance(i, int) and 0 <= i < len(candidatas):
+            saida.append({**candidatas[i], "tema": f["tema"], "status": f["status"]})
+    return saida
+
+
+def pesquisar_stj(fichas: list[dict]) -> dict[str, str]:
+    """O STJ bloqueia leitura automatizada do site; o Claude pesquisa em stj.jus.br com a busca na web."""
+    if not fichas:
+        return {}
+    import anthropic
+
+    client = anthropic.Anthropic()
+    pedido = (
+        "Para cada notícia do STJ abaixo, pesquise em stj.jus.br e anote, em texto corrido, o número do "
+        "processo, o nome do(a) ministro(a) relator(a), o órgão julgador e o resultado ou placar da votação, "
+        "se houver. Escreva apenas o que encontrar nas páginas do STJ. Responda com um bloco por notícia, "
+        "começando pela linha '### [n]'.\n\n" + "\n".join(f"[{i}] {f['titulo_original']}" for i, f in enumerate(fichas))
+    )
+    mensagens = [{"role": "user", "content": pedido}]
+    ferramentas = [{"type": "web_search_20260209", "name": "web_search",
+                    "allowed_domains": ["stj.jus.br"], "max_uses": min(10, 2 * len(fichas))}]
+    texto = ""
+    try:
+        for _ in range(4):  # retoma até 3 vezes se a busca pausar (pause_turn)
+            r = client.beta.messages.create(
+                model=MODELO, max_tokens=16000, betas=["server-side-fallback-2026-07-01"], fallbacks="default",
+                system=SISTEMA, output_config={"effort": "medium"}, tools=ferramentas, messages=mensagens,
+            )
+            texto += "".join(b.text for b in r.content if b.type == "text")
+            if r.stop_reason != "pause_turn":
+                break
+            mensagens = [{"role": "user", "content": pedido}, {"role": "assistant", "content": r.content}]
+    except (anthropic.APIStatusError, anthropic.APIConnectionError) as e:
+        print(f"IA: pesquisa no STJ falhou ({e.__class__.__name__}); seguindo sem ela.", file=sys.stderr)
+        return {}
+    notas = {}
+    for bloco in re.split(r"^###\s*", texto, flags=re.M):
+        m = re.match(r"\[(\d+)\]", bloco)
+        if m and int(m.group(1)) < len(fichas):
+            notas[fichas[int(m.group(1))]["titulo_original"]] = bloco[m.end():].strip()[:3000]
+    return notas
+
+
+def extrair_com_ia(fichas: list[dict]) -> None:
+    if not fichas:
+        return
+    blocos = "\n\n".join(f"[{i}] {f['tribunal']} · {f['titulo_original']}\n{f['texto']}" for i, f in enumerate(fichas))
+    dados = perguntar_claude(
+        "Para cada caso abaixo, extraia do texto o número do processo (ex.: ADI 7939, RE 1234567, Tema 1.485, "
+        "REsp 2.000.000), o nome do(a) relator(a) no formato 'Min. Nome Sobrenome', o placar (ex.: '6 x 2', "
+        "'Unânime', 'Maioria') e o status atual. Use somente o que o texto informa; se algo não estiver no "
+        "texto, deixe o campo vazio.\n\n" + blocos,
+        ESQUEMA_EXTRACAO,
+    )
+    if not dados:
+        return
+    for c in dados.get("casos", []):
+        i = c.get("indice")
+        if isinstance(i, int) and 0 <= i < len(fichas):
+            for k in ("processo", "relator", "placar", "status"):
+                if c.get(k):
+                    fichas[i][k] = c[k]
+
+
 SISTEMA = (
     "Você apoia a Liga Acadêmica de Tribunais Superiores da UFRN (LATS), que publica um informativo "
-    "para estudantes de Direito sobre o STF e o STJ. Você recebe apenas títulos e datas de notícias "
-    "oficiais dos tribunais. Escreva em português do Brasil, em tom técnico e acessível. "
-    "Nunca invente fatos: se um dado (relator, placar, número do processo, resultado) não estiver no "
-    "título, deixe o campo vazio. Não emita opinião sobre o mérito das decisões."
+    "para estudantes de Direito sobre o STF e o STJ, a partir de notícias oficiais dos tribunais. "
+    "Escreva em português do Brasil, em tom técnico e acessível. Nunca invente fatos: se um dado "
+    "(relator, placar, número do processo, resultado) não estiver no material recebido, deixe-o vazio. "
+    "Não emita opinião sobre o mérito das decisões."
 )
-
-ESQUEMA_PAINEL = {
+STATUS = ["Em pauta", "Em julgamento", "Pedido de vista", "Suspenso", "Julgado"]
+ESQUEMA_SELECAO = {
     "type": "object",
-    "properties": {
-        "fichas": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "indice": {"type": "integer", "description": "Índice da notícia na lista recebida"},
-                    "tema": {"type": "string", "description": "Tema do caso em até 15 palavras"},
-                    "processo": {"type": "string"},
-                    "relator": {"type": "string"},
-                    "placar": {"type": "string"},
-                    "status": {"type": "string", "enum": ["Em pauta", "Em julgamento", "Pedido de vista", "Suspenso", "Julgado"]},
-                },
-                "required": ["indice", "tema", "processo", "relator", "placar", "status"],
-                "additionalProperties": False,
-            },
-        }
-    },
-    "required": ["fichas"],
-    "additionalProperties": False,
+    "properties": {"casos": {"type": "array", "items": {
+        "type": "object",
+        "properties": {
+            "indice": {"type": "integer", "description": "Índice da notícia na lista recebida"},
+            "tema": {"type": "string", "description": "Tema do caso em até 15 palavras"},
+            "status": {"type": "string", "enum": STATUS},
+        },
+        "required": ["indice", "tema", "status"], "additionalProperties": False}}},
+    "required": ["casos"], "additionalProperties": False,
 }
+ESQUEMA_EXTRACAO = {
+    "type": "object",
+    "properties": {"casos": {"type": "array", "items": {
+        "type": "object",
+        "properties": {
+            "indice": {"type": "integer"},
+            "processo": {"type": "string"}, "relator": {"type": "string"}, "placar": {"type": "string"},
+            "status": {"type": "string", "enum": STATUS},
+        },
+        "required": ["indice", "processo", "relator", "placar", "status"], "additionalProperties": False}}},
+    "required": ["casos"], "additionalProperties": False,
+}
+
 
 ESQUEMA_ITEM = {
     "type": "object",
@@ -255,30 +422,6 @@ def perguntar_claude(instrucao: str, esquema: dict) -> dict | None:
 
 def listar(noticias: list[dict]) -> str:
     return "\n".join(f"[{i}] {n['tribunal']} · {n['data'][:10]} · {n['titulo']}" for i, n in enumerate(noticias))
-
-
-def painel_ia(noticias: list[dict]) -> list[dict] | None:
-    candidatas = [n for n in noticias if n["tipo"] in ("pauta", "decisao")][:40]
-    if not candidatas:
-        return []
-    dados = perguntar_claude(
-        "Selecione até 8 casos que estão em pauta ou em julgamento (não incluídos os já encerrados há dias) "
-        "e monte uma ficha para cada um. Prefira casos de grande repercussão, do Plenário do STF e das "
-        "Seções/Corte Especial do STJ. Ignore notícias de pauta genéricas ('confira a pauta').\n\n"
-        + listar(candidatas),
-        ESQUEMA_PAINEL,
-    )
-    if dados is None:
-        return None
-    fichas = []
-    for f in dados.get("fichas", []):
-        i = f.get("indice")
-        if not isinstance(i, int) or not 0 <= i < len(candidatas):
-            continue
-        n = candidatas[i]
-        fichas.append({**{k: f.get(k, "") for k in ("tema", "processo", "relator", "placar", "status")},
-                       "tribunal": n["tribunal"], "link": n["link"], "data": n["data"]})
-    return fichas
 
 
 def nova_edicao(noticias: list[dict], numero: int) -> dict | None:
@@ -372,9 +515,7 @@ def main() -> int:
         print(f"Informativo nº {numero} gerado: {edicao['titulo']}")
         return 0
 
-    painel = painel_ia(noticias) if usar_ia else None
-    if painel is None:
-        painel = painel_heuristico(noticias)
+    painel = preencher_fichas(noticias, anterior.get("emJulgamento", []), bool(usar_ia))
     gravar_js(SAIDA, PREFIXO, {
         "atualizadoEm": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"),
         "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
