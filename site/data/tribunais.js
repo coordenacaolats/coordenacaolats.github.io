@@ -1,5 +1,5 @@
 window.LATS_TRIBUNAIS = {
- "atualizadoEm": "2026-11-13T03:31+00:00",
+ "atualizadoEm": "2026-11-13T09:48+00:00",
  "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
  "painelComIA": true,
  "emJulgamento": [
@@ -16,7 +16,7 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
-   "tema": "Alegação de desconhecimento da idade da vítima no crime de estupro de vulnerável",
+   "tema": "Alegação de desconhecimento da idade da vítima no estupro de vulnerável",
    "titulo_original": "STF vai definir se alegação de desconhecimento de idade pode afastar condenação por estupro de vulnerável",
    "processo": "ARE 1600294 (Tema 1.485)",
    "relator": "",
@@ -38,14 +38,14 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
-   "tema": "Precatórios de valores pagos pelo SUS a hospitais privados",
-   "titulo_original": "STF suspende processos e bloqueia precatórios de valores pagos pelo SUS a hospitais privados",
-   "processo": "RE 1612904",
-   "relator": "Min. Gilmar Mendes",
-   "placar": "",
-   "status": "Suspenso",
-   "link": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-processos-e-bloqueia-precatorios-de-valores-pagos-pelo-sus-a-hospitais-privados/",
-   "data": "2026-11-11T21:30+00:00"
+   "tema": "Limites da atuação do TCU na solução consensual de conflitos",
+   "titulo_original": "STF suspende julgamento sobre limites para atuação do TCU na solução consensual de conflitos",
+   "processo": "ADPF 1183",
+   "relator": "Min. Edson Fachin",
+   "placar": "4 x 2",
+   "status": "Pedido de vista",
+   "link": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-julgamento-sobre-limites-para-atuacao-do-tcu-na-solucao-consensual-de-conflitos/",
+   "data": "2026-11-05T22:52+00:00"
   },
   {
    "tribunal": "STF",
@@ -59,6 +59,17 @@ window.LATS_TRIBUNAIS = {
    "data": "2026-11-09T11:49+00:00"
   },
   {
+   "tribunal": "STF",
+   "tema": "Precatórios de valores pagos pelo SUS a hospitais privados",
+   "titulo_original": "STF suspende processos e bloqueia precatórios de valores pagos pelo SUS a hospitais privados",
+   "processo": "RE 1612904",
+   "relator": "Min. Gilmar Mendes",
+   "placar": "",
+   "status": "Suspenso",
+   "link": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-processos-e-bloqueia-precatorios-de-valores-pagos-pelo-sus-a-hospitais-privados/",
+   "data": "2026-11-11T21:30+00:00"
+  },
+  {
    "tribunal": "STJ",
    "tema": "Extinção antecipada do benefício fiscal do Perse",
    "titulo_original": "Processos sobre extinção antecipada do benefício fiscal do Perse são sobrestados",
@@ -68,17 +79,6 @@ window.LATS_TRIBUNAIS = {
    "status": "Suspenso",
    "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOcnFER0tZQS1IVDNOdDF0d0ZnT1RDNU9TVmctX0V2bU1wY2h4eW8yaEpuZlBsbGk3blZJSkxaTnJmejI2LWJxbl9BT0QtVEtJWml3T3kwX2JZVDV4OG9EVXAyRzJTY25haXVyWVpTWjdacm8wUHBJdWZDRXFWOVplX0ZzdFQ4YW5VWFdMNDlVMlVFb1BOT0syOFA4MndJLWdOa0plQUVGdkJhSjRYWVk4YW5QMW1Zb3hnV3ltLUdYUVpNNm5abXpNU1RNNTVPY0F2Y0lZZlZfOWVqdTBFUDJIN01SRXFCT2hadkRlSmRBb3F2eC1Zb1VBQ0tFamZvcnBmakU3TE9ocWVrLXdKY2pUcVZXc2tZWm9NZmIyanAzWndGNnNS?oc=5",
    "data": "2026-11-09T10:00+00:00"
-  },
-  {
-   "tribunal": "STJ",
-   "tema": "Crédito de ICMS sobre combustível usado no transporte secundário de carga",
-   "titulo_original": "Crédito de ICMS sobre combustível no transporte secundário de carga",
-   "processo": "REsp 2.234.803 e REsp 2.234.802 (Tema de Relevância 1.477)",
-   "relator": "Min. Afrânio Vilela",
-   "placar": "",
-   "status": "Suspenso",
-   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQYXlndmZQV2FucGdUY0owcjBVdDlic1dQeG9GNUpaZ1ZhYzBjWWJMTjlDeWc5Mm93TDZlMkkteEtMNHNYaDNtREhaWXYzM0NySzQxWFNKUEEwQWg3Q2NMaktOam5fWEloUGdCWUYtZC1Cb2dqRXBzWFhxT2JKWGJNd21xRW41S3hwMEZnMWFqalJ0RkVtOXZka3NZNmpLeVBtNXZIS1hMMEQ0eXJtaHZ1V0NXRVowWG0waVpaQjRDX3BkS0hPRnFOcUYxX0prSEczc0FpQkQyOW92dHFRQTQyNHNqRFVGM1F6ZW1CUEpVX3Y5THBOOWw2bUNvMldBV0tGV0F0Ty1kMVNDQ1l0Q0ZIcWpWVTJ5VXUyTkxR?oc=5",
-   "data": "2026-11-10T10:10+00:00"
   }
  ],
  "noticias": [
@@ -387,26 +387,10 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
-   "tribunal": "STF",
-   "titulo": "PSDB questiona mudanças na nomeação de dirigentes da Agência Reguladora de Serviços Públicos de Alagoas",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTUtFa2dFNTl4MFo3WmN3cHNoX00tdi12ZDVYWkdCMTlFeU1xUnRWcjhUTE9EX0JQcHZCMjVZN2Uyb1dzZ25WY3lxN0V4R2t6djlaZHNlMDUyNUhsZ2NrOFNSSFQzMUVydHpHcWxjYnZkVjRqR2xNbHFnMGdaMjM4VzV6dUFNNlVObGR0M0JBdXFUX3RsMVg0aHNFXzdKSDcwTFgtWHdSZ1hzMlh6YnQ0WUJKMDRRWWVqbjBkd2Q3a0w0eUNfb0w3ek5zdWo2SHctSndDTldOX2JQbjRKMWdV?oc=5",
-   "data": "2026-11-10T17:17+00:00",
-   "tipo": "nova_acao",
-   "processo": ""
-  },
-  {
    "tribunal": "STJ",
    "titulo": "Ministros representam Enfam e STJ em conferência sobre formação de juízes na França",
    "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxONVNIcmg5Y0NhZ2R6UVdrSGtmYnBqUUpneW9COWVCSDMtTHdORWVUTUdMTzBGdUx0TmI2bklDUzlNSXNpV3hlR0lkUDkzY05YY0U5NTV1c2ZpSDVCaHFRaDdISUlYY1JtMzhZZXNxT0FIaUNoS2Etb3poYm81TUp3blJkTlVGYzZuSEhfa1oxZS1UOWJnbkdHUzMyb2p4NEtxLWl3Yngzd0lSazBNOE5laDEwMVNDTkNYNXZKWWpXU1RtSTBzbEFWeEdHa2RIZEQzcGZjM0FnOHpKWlp6TFhzOVAyMHZPR0NSY0JfT2d4NmRJaHQ1NmhCQW02bnJvUQ?oc=5",
    "data": "2026-11-10T16:40+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "STF lança podcast com entrevistas e debates sobre direito constitucional",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWDNLb2IxQ3NqekF5NTNldW1XTWNvR1N6dFpVYVM1VVY5VndGZUtFb1l4b2dsbFJBYzd5R1hEYTMwcGY2Z29XTERYanNJTjZnc285N0QzZkxBZkItVXpPZVdzMkNpSlFyMEluN056TlpOSlZUTXI4eEhnemxHdXExZ2YxTkd1RmV4UVI5dWhfNTRUTU5RQ1VQa05WTExDSXRPM08wUF96c2pjQ01QRTBmYXlNN3lPZw?oc=5",
-   "data": "2026-11-10T13:00+00:00",
    "tipo": "institucional",
    "processo": ""
   },
@@ -676,10 +660,26 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
-   "titulo": "STF rejeita recurso de ex-prefeito de Duque de Caxias (RJ) condenado por crime ambiental",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbVFCclJuU0Jwdy04MEZSWUdlTDVQdXhtcldWWTZNXy1SamtQaWJhTnp3ZVhwSWVXU1c3NFhGSWNUbGREY3hjSnU0ZmJhaFQzSFZ1cFVUZy15dkt3aDE5X2J2MjlXalpMU25iMEFYOEp4TVBTWUFabUEwU2Z4N3VJeGg0V2NzM3lfcjBHMXFDQmEtQTcxbUZEVEQ3d2tIZV9Cd2ZVM1FsdE50MGY1SlZGUXhXNldDTjBTSGMtR0c3MElhYUp2cmJTRQ?oc=5",
-   "data": "2026-11-05T23:42+00:00",
+   "titulo": "STF suspende julgamento sobre limites para atuação do TCU na solução consensual de conflitos",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU05HV3IwUDV0OFpRXzRtYllSaWNiZFJiWU4yTVhHZXFzMGswNWptYjVFYkg1eHkxZ3llRDNsV1pkdUJxQ3BMOUVlcjJmbVg1V3duR1l4ODREU3N5Y1gwemZEOEpJYXVKR29SZDl2UkZNYnhCY0d1Q3V2dDhNc21WMkJYX1lPSFFEeS1OSWVkSmR5ZDlKbEZjV1FzdUtWak80ak5sN01IS01VSjE4TVZjODd0SnpScXBIQUVENmk4TGI4bGdjUGFKd1dSaW1kd2hF?oc=5",
+   "data": "2026-11-05T22:52+00:00",
    "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "STF invalida normas sobre organização e poderes de investigação do Ministério Público do RS",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdVc4cmRZejRCbEVaQXczeFF0WlhvU2UwQUhkWktHUl9FR2VHQ2RBNmJMeDdlRHg5U2lhTVc4UFRYTzlKeHJpZzFmV002THRmVlc3c1NNMkduZFIwTFFsc1VkS3lNemlCR0VqdV82WTAxMFFPRVA2YkdsbjQtd1M2c2Y0SUJCUmNobVJMY0xTcUE2ZTRBX0Q3Nlh1U1ZQZEhSU3dGQWJaUEJPMWsxZDJBLTlLcnlxMVpIbm01TVlWREwwTWxWWnpQX0dMTVg5NDg?oc=5",
+   "data": "2026-11-05T21:40+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "Escala 6×1: STF marca audiência de conciliação para debater implementação da mudança",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYVhmMnJEb1NkUFRKNXAyZFpTWVJNeVJKZGgtbzlKS0llZ1l4N0hyTlR6WFBuUnUwYllxamlNUnMxMk9wZk82SVBsWWNGRzVfdGdHbDhqeUttNEo4WFVjUEJBUTNDNkk4aUFpSnc4RmtnTU1rSGNDcGo0a1ppVFlCRTR5WHRUa2FROU5mMFhSeG5CVjl1c0xHc1JTeGdKX0d1LUpmUmxUZzZVRWdxQzFkLTVIeVliMGNVOHlxSkJfM3RrWWJD?oc=5",
+   "data": "2026-11-05T21:09+00:00",
+   "tipo": "outros",
    "processo": ""
   },
   {
