@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informativo LATS · STF e STJ em julgamento · LATS UFRN</title>
+<meta name="description" content="Informativo semanal da Liga Acadêmica de Tribunais Superiores da UFRN: decisões do STF e do STJ, casos em julgamento e notícias oficiais atualizadas diariamente.">
+<meta name="theme-color" content="#072A3E">
+<link rel="icon" href="assets/img/simbolo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-liga">
+
+<header class="header always">
+  <a href="index.html" class="brand" aria-label="LATS — início"><img src="assets/img/logo-h.png" alt="LATS"></a>
+  <div class="header-right">
+    <div class="header-social" data-social></div>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="overlay" aria-label="Menu">
+  <nav>
+    <a href="#em-julgamento"><small>01</small>Em julgamento</a>
+    <a href="#informativo"><small>02</small>Informativo LATS</a>
+    <a href="#noticias"><small>03</small>Últimas notícias</a>
+    <a href="glossario.html"><small>04</small>Glossário</a>
+    <a href="stc.html" class="stc-link"><small>05</small>Simulação STC</a>
+    <a href="index.html"><small>←</small>Voltar à Liga</a>
+  </nav>
+  <aside>
+    <img src="assets/img/logo-stack.png" alt="">
+    <div><p class="eyebrow">Contato</p><a data-href="email" data-text="email" href="#"></a></div>
+    <div><p class="eyebrow">Redes</p><div class="header-social" data-social style="display:flex"></div></div>
+  </aside>
+</div>
+
+<section class="page-hero">
+  <canvas data-waves="214,230,242" aria-hidden="true"></canvas>
+  <div class="container">
+    <a href="index.html" class="crumb">← LATS</a>
+    <span class="eyebrow">Acompanhe os Tribunais</span>
+    <h1 class="h-display">Informativo <em>LATS</em></h1>
+    <p class="lead">O que o STF e o STJ decidiram, o que está em julgamento e as notícias oficiais das Cortes, atualizadas todos os dias.</p>
+    <p class="updated" id="atualizado"></p>
+  </div>
+</section>
+
+<!-- EM JULGAMENTO -->
+<section class="section light" id="em-julgamento">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Painel</span><h2 class="h-display reveal">Em <em>julgamento</em></h2></div>
+      <p class="lead reveal">Casos que estão na pauta ou em votação no STF e no STJ, com tema, relator e placar quando informados pelos tribunais.</p>
+    </div>
+    <div class="painel" id="painel" data-painel="12"></div>
+  </div>
+</section>
+
+<!-- INFORMATIVO -->
+<section class="section" id="informativo">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Edição semanal</span><h2 class="h-display reveal">O que os Tribunais <em>decidiram</em></h2></div>
+      <div class="ed-select reveal" id="ed-select"></div>
+    </div>
+    <article class="edicao" id="edicao"></article>
+  </div>
+</section>
+
+<!-- NOTÍCIAS -->
+<section class="section deep" id="noticias">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Fonte oficial</span><h2 class="h-display reveal">Últimas <em>notícias</em></h2></div>
+      <p class="lead reveal">Notícias publicadas pelos próprios tribunais em stf.jus.br e stj.jus.br.</p>
+    </div>
+    <div class="feed-bar">
+      <div class="filters" id="f-tribunal"></div>
+      <div class="filters" id="f-tipo"></div>
+    </div>
+    <ol class="feed" id="feed"></ol>
+    <p class="note-dark">As notícias são coletadas automaticamente e levam aos sites oficiais. Os resumos do Informativo são produzidos com auxílio de inteligência artificial e revisados pela equipe da LATS antes da publicação.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div><img src="assets/img/logo-side.png" alt="LATS — Liga Acadêmica de Tribunais Superiores"></div>
+      <div><h5>Navegar</h5><ul><li><a href="index.html">A Liga</a></li><li><a href="informativo.html">Informativo</a></li><li><a href="glossario.html">Glossário</a></li><li><a href="stc.html">Simulação STC</a></li></ul></div>
+      <div><h5>Contato</h5><ul><li><a data-href="email" data-text="email" href="#"></a></li><li><a data-href="instagram" href="#" target="_blank" rel="noopener">Instagram</a></li><li><a data-href="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> LATS UFRN — Liga Acadêmica de Tribunais Superiores</span><span>Universidade Federal do Rio Grande do Norte</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/content.js"></script>
+<script src="data/tribunais.js"></script>
+<script src="data/informativos.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/tribunais.js"></script>
+</body>
+</html>

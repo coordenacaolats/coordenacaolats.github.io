@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulação de Tribunais Constitucionais · LATS UFRN</title>
+<meta name="description" content="Simulação de Tribunais Constitucionais (STC) — evento de extensão da Liga Acadêmica de Tribunais Superiores da UFRN.">
+<meta name="theme-color" content="#557568">
+<link rel="icon" href="assets/img/simbolo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-stc">
+
+<header class="header always">
+  <a href="index.html" class="brand" aria-label="LATS — início"><img src="assets/img/logo-h.png" alt="LATS"></a>
+  <div class="header-right">
+    <div class="header-social" data-social></div>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="overlay" aria-label="Menu">
+  <nav>
+    <a href="#sobre-stc"><small>01</small>A Simulação</a>
+    <a href="#historia"><small>02</small>Nossa história</a>
+    <a href="#hall"><small>03</small>Hall da STC</a>
+    <a href="#entrevistas"><small>04</small>Onde estão hoje</a>
+    <a href="#funcoes"><small>05</small>Funções</a>
+    <a href="#cronograma"><small>06</small>Cronograma</a>
+    <a href="#capacitacoes"><small>07</small>Capacitações</a>
+    <a href="#selecionados"><small>08</small>Selecionados</a>
+    <a href="index.html"><small>←</small>Voltar à Liga</a>
+  </nav>
+  <aside>
+    <img src="assets/img/logo-stack.png" alt="">
+    <div><p class="eyebrow">Contato</p><a data-href="email" data-text="email" href="#"></a></div>
+    <div><p class="eyebrow">Redes</p><div class="header-social" data-social style="display:flex"></div></div>
+  </aside>
+</div>
+
+<section class="hero stc-hero" id="topo">
+  <canvas data-waves="214,204,190" aria-hidden="true"></canvas>
+  <a href="index.html" class="back">← LATS</a>
+  <div class="hero-inner">
+    <span class="ed"><span data-stc="edicao">XVIII</span> EDIÇÃO · <span data-stc="dataSessao"></span></span>
+    <h1>Simulação de<br>Tribunais Constitucionais<span>LATS · UFRN</span></h1>
+    <p class="lead" data-stc="chamada"></p>
+    <div class="actions">
+      <a class="btn btn-solid" data-stc-link="inscricaoLink" href="#">Inscrição <span class="arrow"></span></a>
+      <a class="btn" data-stc-link="editalLink" href="#">Edital &amp; regulamento <span class="arrow"></span></a>
+    </div>
+  </div>
+  <a href="#sobre-stc" class="scroll-cue">Role<i></i></a>
+</section>
+
+<!-- O QUE É -->
+<section class="section light" id="sobre-stc">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-symbol reveal"><img src="assets/img/simbolo-sage.png" alt=""></div>
+      <div class="about-text reveal">
+        <span class="eyebrow">O que é a STC?</span>
+        <h2 class="h-display">Da sala de aula à <em>tribuna</em>.</h2>
+        <p>A Simulação de Tribunais Constitucionais reproduz um julgamento perante o Supremo Tribunal Federal. Ao longo de suas etapas, os participantes exercem as funções de Ministros, Advogados do Requerente, Advocacia-Geral da União e Procuradoria-Geral da República, conduzindo integralmente a apreciação de uma ação de controle concentrado de constitucionalidade.</p>
+        <p id="funcionamento"></p>
+      </div>
+    </div>
+    <div class="caso reveal" id="caso"></div>
+    <p class="reveal" style="margin-top:1.6rem"><a class="btn" data-stc-link="casoLink" href="#">Ler o caso concreto <span class="arrow"></span></a></p>
+  </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="section historia" id="historia">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Nossa história</span><h2 class="h-display reveal">Uma tradição <em>retomada</em></h2></div>
+      <p class="lead reveal">Dezessete edições até 2021. Gerações de estudantes do Curso de Direito da UFRN na tribuna. Em 2026, a Simulação volta pelas mãos da LATS.</p>
+    </div>
+    <div class="h-timeline" id="historia-tl"></div>
+    <div class="big-number reveal"><b>XVII</b><span>edições realizadas até 2021</span><b>XVIII</b><span>a edição de 2026, agora organizada pela LATS</span></div>
+    <div class="arquivo">
+      <div class="arquivo-head reveal"><h3 class="sub-title">Acervo das edições</h3><div class="ed-tabs" id="ed-tabs" role="tablist"></div></div>
+      <div class="ed-panel" id="ed-panel"></div>
+    </div>
+  </div>
+</section>
+
+<!-- HALL DA STC -->
+<section class="section deep" id="hall">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Hall da STC</span><h2 class="h-display reveal">Casos <em>julgados</em></h2></div>
+      <p class="lead reveal">O que o Plenário decidiu em cada edição e quem se destacou na tribuna.</p>
+    </div>
+    <div class="hall" id="hall-tabela"></div>
+  </div>
+</section>
+
+<!-- ENTREVISTAS -->
+<section class="section light" id="entrevistas">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Legado</span><h2 class="h-display reveal">Onde estão <em>hoje</em></h2></div>
+      <p class="lead reveal">Ex-participantes da Simulação contam como a experiência na tribuna marcou suas trajetórias na magistratura, na advocacia e na academia.</p>
+    </div>
+    <div class="entrevistas" id="entrevistas-lista"></div>
+  </div>
+</section>
+
+<!-- FUNÇÕES -->
+<section class="section light" id="funcoes">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Quem é quem no Plenário</span><h2 class="h-display reveal">Quem compõe a <em>Corte</em></h2></div>
+      <p class="lead reveal">Onze Ministros julgam a ação. Três litigantes, com quatro integrantes cada, ocupam a tribuna para sustentar suas posições.</p>
+    </div>
+    <div class="roles" id="roles"></div>
+  </div>
+</section>
+
+<!-- CARDS DO EDITAL -->
+<section class="section deep cards-section">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Entenda a STC</span><h2 class="h-display reveal">Edital em <em>cards</em></h2></div>
+      <div class="cards-nav reveal"><button data-scroll="-1" data-target="#cards" aria-label="Anterior">←</button><button data-scroll="1" data-target="#cards" aria-label="Próximo">→</button></div>
+    </div>
+  </div>
+  <div class="cards-track" id="cards"></div>
+</section>
+
+<!-- CRONOGRAMA -->
+<section class="section" id="cronograma">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Cronograma</span><h2 class="h-display reveal">Etapas da <em>edição</em></h2></div>
+      <p class="lead reveal">Do edital à Sessão de Julgamento.</p>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- CAPACITAÇÕES -->
+<section class="section light" id="capacitacoes">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Formação</span><h2 class="h-display reveal">Capacitações</h2></div>
+      <p class="lead reveal">Encontros com quem atua nas Cortes, para preparar os debates e a construção das teses.</p>
+    </div>
+    <div class="cap-list" id="caps"></div>
+  </div>
+</section>
+
+<!-- SELECIONADOS -->
+<section class="section deep" id="selecionados">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Resultado</span><h2 class="h-display reveal">Selecionados</h2></div>
+    </div>
+    <div class="selected" id="selected"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container"><div class="gallery" id="gallery"></div></div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div><img src="assets/img/logo-side.png" alt="LATS — Liga Acadêmica de Tribunais Superiores"></div>
+      <div><h5>Simulação</h5><ul><li><a href="#sobre-stc">Sobre</a></li><li><a href="#historia">História</a></li><li><a href="#cronograma">Cronograma</a></li><li><a href="#capacitacoes">Capacitações</a></li><li><a href="index.html">Voltar à LATS</a></li></ul></div>
+      <div><h5>Contato</h5><ul><li><a data-href="email" data-text="email" href="#"></a></li><li><a data-href="instagram" href="#" target="_blank" rel="noopener">Instagram</a></li><li><a data-href="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> LATS UFRN — Simulação de Tribunais Constitucionais</span><span>Universidade Federal do Rio Grande do Norte</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

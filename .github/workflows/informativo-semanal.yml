@@ -1,0 +1,51 @@
+# Toda segunda-feira, o Claude redige a nova edição do Informativo LATS
+# e abre um Pull Request. Um membro da Liga revisa o texto e, ao aprovar
+# (botão "Merge"), a edição é publicada no site.
+name: Informativo LATS semanal
+
+on:
+  schedule:
+    - cron: "0 11 * * 1"   # segunda-feira, 08h (horário de Brasília)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  redigir:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verificar chave da API
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Cadastre o segredo ANTHROPIC_API_KEY em Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+      - run: pip install anthropic
+      - name: Redigir a edição da semana
+        run: python scripts/atualizar_tribunais.py --informativo
+      - name: Abrir Pull Request para revisão
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: informativo/semana
+          delete-branch: true
+          commit-message: "Informativo LATS: nova edição para revisão"
+          title: "Informativo LATS — nova edição para revisão"
+          body: |
+            O Claude redigiu a edição desta semana a partir das notícias oficiais do STF e do STJ.
+
+            **Antes de aprovar, confira:**
+            - [ ] Os resumos correspondem ao que foi decidido (abra os links).
+            - [ ] Não há opinião sobre o mérito nem dado que não esteja na notícia.
+            - [ ] O título e a abertura estão adequados.
+
+            Para corrigir um texto, edite `site/data/informativos.js` nesta branch.
+            Ao clicar em **Merge**, a edição é publicada no site automaticamente.
+          labels: informativo

@@ -1,0 +1,60 @@
+# Atualiza as notícias do STF/STJ duas vezes por dia e publica o site no GitHub Pages.
+# Também publica a cada alteração enviada para a branch main.
+name: Atualizar e publicar site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 9,21 * * *"   # 06h e 18h (horário de Brasília)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar SDK da Anthropic (só se houver chave)
+        if: env.ANTHROPIC_API_KEY != ''
+        run: pip install anthropic
+      - name: Coletar notícias do STF e do STJ
+        run: python scripts/atualizar_tribunais.py
+      - name: Salvar alterações
+        run: |
+          git config user.name "LATS bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/data/tribunais.js
+          git diff --cached --quiet || (git commit -m "Atualiza notícias dos tribunais" && git push)
+
+  publicar:
+    needs: atualizar
+    if: always() && (needs.atualizar.result == 'success' || needs.atualizar.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
