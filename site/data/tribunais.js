@@ -20,7 +20,7 @@ window.LATS_TRIBUNAIS = {
    "titulo_original": "STF vai definir se alegação de desconhecimento de idade pode afastar condenação por estupro de vulnerável",
    "processo": "ARE 1600294 (Tema 1.485)",
    "relator": "",
-   "placar": "Unânime",
+   "placar": "",
    "status": "Em pauta",
    "link": "https://noticias.stf.jus.br/postsnoticias/stf-vai-definir-se-alegacao-de-desconhecimento-de-idade-pode-afastar-condenacao-por-estupro-de-vulneravel/",
    "data": "2026-11-11T22:46+00:00"

@@ -314,8 +314,9 @@ def extrair_com_ia(fichas: list[dict]) -> None:
     dados = perguntar_claude(
         "Para cada caso abaixo, extraia do texto o número do processo (ex.: ADI 7939, RE 1234567, Tema 1.485, "
         "REsp 2.000.000), o nome do(a) relator(a) no formato 'Min. Nome Sobrenome', o placar (ex.: '6 x 2', "
-        "'Unânime', 'Maioria') e o status atual. Use somente o que o texto informa; se algo não estiver no "
-        "texto, deixe o campo vazio.\n\n" + blocos,
+        "'Unânime', 'Maioria') e o status atual. O placar deve ser o da votação do mérito do caso, em "
+        "andamento ou concluída; não use o placar do reconhecimento de repercussão geral, de afetação ou de "
+        "admissibilidade. Use somente o que o texto informa; se algo não estiver no texto, deixe o campo vazio.\n\n" + blocos,
         ESQUEMA_EXTRACAO,
     )
     if not dados:
