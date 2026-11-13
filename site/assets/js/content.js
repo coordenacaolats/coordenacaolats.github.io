@@ -88,7 +88,8 @@ window.LATS = {
       publicadoEm: "Dilemas do ordenamento jurídico em perspectiva: dos fundamentos teóricos à aplicação do direito. Editora Noeses, pp. 337–367.",
       palavras: ["Composição do STF", "Art. 101 da CF", "Magistratura de carreira", "Indicação presidencial", "Sabatina no Senado"],
       resumo: "Até que ponto os requisitos do art. 101 da Constituição — notável saber jurídico e reputação ilibada — abrem espaço para indicações que deixam de fora a magistratura de carreira? O capítulo analisa a composição histórica do STF, o papel homologatório do Senado e a presença de um único juiz de carreira na Corte atual, e discute propostas de reforma à luz de modelos estrangeiros, como a densificação dos requisitos, a quarentena para ocupantes de cargos políticos e a reserva de vagas à magistratura.",
-      link: "assets/docs/escolha-ministros-stf-magistratura.pdf" }
+      link: "artigos/escolha-ministros-stf-magistratura.html",
+      pdf: "assets/docs/escolha-ministros-stf-magistratura.pdf" }
     /* Para adicionar outro trabalho, copie o bloco acima. Campos opcionais:
        membro (vínculo do autor com a LATS), orientacao, publicadoEm, palavras. */
   ],

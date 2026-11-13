@@ -117,7 +117,7 @@
         ${p.orientacao ? `<div class="authors"><b>Orientação</b> ${esc(p.orientacao)}</div>` : ""}
         ${p.publicadoEm ? `<div class="authors"><b>Publicado em</b> <i>${esc(p.publicadoEm)}</i></div>` : ""}
         ${(p.palavras || []).length ? `<div class="pub-tags">${p.palavras.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
-        ${/\.pdf$/i.test(p.link || "") ? `<span class="pub-pdf">Ler o texto completo (PDF) ↗</span>` : ""}</div>
+        ${p.link && !/^#?$/.test(p.link) ? `<span class="pub-pdf">${/\.pdf$/i.test(p.link) ? "Ler o texto completo (PDF) ↗" : "Resumo, sumário e texto completo →"}</span>` : ""}</div>
       <span class="go"><span class="arrow"></span></span>
     </a>`);
 

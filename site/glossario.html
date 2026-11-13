@@ -98,6 +98,7 @@
       <p>${esc(g.definicao)}</p>
       ${g.base ? `<p class="vb"><b>Base legal</b> ${esc(g.base)}</p>` : ""}
       ${(g.ver || []).length ? `<p class="vv"><b>Veja também</b> ${g.ver.map(v => nomes.has(v) ? `<a href="#${slug(v)}">${esc(v)}</a>` : esc(v)).join(" · ")}</p>` : ""}
+      ${g.leia ? `<p class="vv vleia"><b>Leia mais</b> <a href="${esc(g.leia.url)}">${esc(g.leia.titulo)}</a></p>` : ""}
       <a class="vlink" href="#${slug(g.termo)}" aria-label="Link para ${esc(g.termo)}">#</a>
     </article>`;
 

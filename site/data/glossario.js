@@ -6,6 +6,15 @@
    A ordem alfabética é feita automaticamente.
    ===================================================================== */
 window.LATS_GLOSSARIO = [
+  { termo: "Composição do STF", tribunal: "STF",
+    definicao: "O Supremo Tribunal Federal é composto por onze Ministros, escolhidos entre brasileiros natos com mais de 35 e menos de 70 anos, de notável saber jurídico e reputação ilibada. São nomeados pelo Presidente da República depois de aprovados pela maioria absoluta do Senado Federal. Diferentemente do STJ, a Constituição não reserva vagas a carreiras específicas.",
+    base: "CF, arts. 12, § 3º, IV, e 101", ver: ["Sabatina", "Composição do STJ", "Plenário"], leia: { titulo: "Artigo: a escolha dos Ministros do STF e a magistratura de carreira", url: "artigos/escolha-ministros-stf-magistratura.html" } },
+  { termo: "Composição do STJ", tribunal: "STJ",
+    definicao: "O Superior Tribunal de Justiça tem, no mínimo, 33 Ministros, nomeados pelo Presidente da República entre brasileiros com mais de 35 e menos de 70 anos, de notável saber jurídico e reputação ilibada, após aprovação pela maioria absoluta do Senado. Um terço das vagas cabe a juízes dos Tribunais Regionais Federais, um terço a desembargadores dos Tribunais de Justiça e um terço, em partes iguais, a advogados e membros do Ministério Público.",
+    base: "CF, art. 104", ver: ["Composição do STF", "Sabatina", "Corte Especial"], leia: { titulo: "Artigo: a escolha dos Ministros do STF e a magistratura de carreira", url: "artigos/escolha-ministros-stf-magistratura.html" } },
+  { termo: "Sabatina", tribunal: "STF · STJ",
+    definicao: "Arguição pública do indicado a Ministro de tribunal superior pela Comissão de Constituição, Justiça e Cidadania (CCJ) do Senado. Depois da sabatina e do parecer da comissão, a indicação é votada pelo Plenário do Senado, por voto secreto, e precisa da maioria absoluta para ser aprovada.",
+    base: "CF, arts. 52, III, a, 101, parágrafo único, e 104, parágrafo único", ver: ["Composição do STF", "Composição do STJ"], leia: { titulo: "Artigo: a escolha dos Ministros do STF e a magistratura de carreira", url: "artigos/escolha-ministros-stf-magistratura.html" } },
   { termo: "Ação Direta de Inconstitucionalidade", sigla: "ADI", tribunal: "STF",
     definicao: "Ação de controle concentrado que pede ao STF a declaração de inconstitucionalidade de lei ou ato normativo federal ou estadual em face da Constituição Federal. A decisão de mérito tem eficácia contra todos (erga omnes) e efeito vinculante.",
     base: "CF, art. 102, I, a; Lei nº 9.868/1999", ver: ["Ação Declaratória de Constitucionalidade", "Legitimados do art. 103", "Efeito vinculante", "Modulação de efeitos"] },
