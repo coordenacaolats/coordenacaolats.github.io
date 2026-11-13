@@ -80,9 +80,17 @@ window.LATS = {
      tribunal: "STF", "STJ" ou "STF · STJ"
      link: PDF (coloque em assets/docs/) ou link externo */
   publicacoes: [
-    { tipo: "Artigo", tribunal: "STF", titulo: "EXEMPLO — A modulação de efeitos no controle concentrado de constitucionalidade", autores: "Nome Sobrenome; Nome Sobrenome", data: "2026-10-20", resumo: "Análise da prática recente do Supremo na modulação temporal de suas decisões e seus impactos na segurança jurídica.", link: "#" },
-    { tipo: "Informativo", tribunal: "STJ", titulo: "EXEMPLO — Informativo LATS nº 1: precedentes qualificados no STJ", autores: "Diretoria de Pesquisa", data: "2026-09-15", resumo: "Resumo comentado dos principais temas repetitivos julgados no trimestre.", link: "#" },
-    { tipo: "Artigo", tribunal: "STF · STJ", titulo: "EXEMPLO — Repercussão geral e recursos repetitivos: diálogo entre as Cortes", autores: "Nome Sobrenome", data: "2026-08-02", resumo: "Como os filtros recursais moldam a pauta dos Tribunais Superiores.", link: "#" }
+    { tipo: "Capítulo de livro", tribunal: "STF", data: "2026",
+      titulo: "Reflexões acerca da escolha dos Ministros do Supremo Tribunal Federal e sobre o baixo prestígio à carreira da magistratura em sua composição",
+      autores: "Vítor Augusto Monteiro Heronildes · Igor Freitas Perdigão",
+      membro: "Vítor Augusto Monteiro Heronildes, Coordenador Geral da LATS",
+      orientacao: "Prof. Dr. Ricardo Tinôco de Góes (UFRN · ESMARN), Juiz de Direito",
+      publicadoEm: "Dilemas do ordenamento jurídico em perspectiva: dos fundamentos teóricos à aplicação do direito. Editora Noeses, pp. 337–367.",
+      palavras: ["Composição do STF", "Art. 101 da CF", "Magistratura de carreira", "Indicação presidencial", "Sabatina no Senado"],
+      resumo: "Até que ponto os requisitos do art. 101 da Constituição — notável saber jurídico e reputação ilibada — abrem espaço para indicações que deixam de fora a magistratura de carreira? O capítulo analisa a composição histórica do STF, o papel homologatório do Senado e a presença de um único juiz de carreira na Corte atual, e discute propostas de reforma à luz de modelos estrangeiros, como a densificação dos requisitos, a quarentena para ocupantes de cargos políticos e a reserva de vagas à magistratura.",
+      link: "assets/docs/escolha-ministros-stf-magistratura.pdf" }
+    /* Para adicionar outro trabalho, copie o bloco acima. Campos opcionais:
+       membro (vínculo do autor com a LATS), orientacao, publicadoEm, palavras. */
   ],
 
   /* =================================================================

@@ -75,7 +75,7 @@
 
   /* ---------- Renderizações ---------- */
   const initials = n => n.replace(/^(Prof\.|Dr\.|Dra\.|Profa\.)\s*/g, "").split(/\s+/).filter(Boolean).map(s => s[0]).slice(0, 2).join("").toUpperCase();
-  const fmtDate = d => { if (!d) return ""; const dt = new Date(d + "T12:00:00"); return isNaN(dt) ? d : dt.toLocaleDateString("pt-BR", { month: "short", year: "numeric" }).replace(".", ""); };
+  const fmtDate = d => { if (!d) return ""; if (/^\d{4}$/.test(d)) return d; const dt = new Date(d + "T12:00:00"); return isNaN(dt) ? d : dt.toLocaleDateString("pt-BR", { month: "short", year: "numeric" }).replace(".", ""); };
 
   function filters(container, items, key, render) {
     if (!container) return;
@@ -109,9 +109,15 @@
 
   // Publicações
   filters($("#pubs"), (D.publicacoes || []).slice().sort((a, b) => (b.data || "").localeCompare(a.data || "")), "tipo", p => `
-    <a class="pub reveal" href="${esc(p.link || "#")}"${ext(p.link || "")}>
+    <a class="pub reveal" href="${esc(p.link || "#")}"${/^https?:|\.pdf$/i.test(p.link || "") ? ' target="_blank" rel="noopener"' : ""}>
       <div class="meta"><b>${esc(p.tipo)}</b><span>${esc(p.tribunal || "")}</span><span>${fmtDate(p.data)}</span></div>
-      <div><h3>${esc(p.titulo)}</h3>${p.resumo ? `<p>${esc(p.resumo)}</p>` : ""}${p.autores ? `<div class="authors">${esc(p.autores)}</div>` : ""}</div>
+      <div><h3>${esc(p.titulo)}</h3>${p.resumo ? `<p>${esc(p.resumo)}</p>` : ""}
+        ${p.autores ? `<div class="authors"><b>Autores</b> ${esc(p.autores)}</div>` : ""}
+        ${p.membro ? `<div class="authors"><b>Na LATS</b> ${esc(p.membro)}</div>` : ""}
+        ${p.orientacao ? `<div class="authors"><b>Orientação</b> ${esc(p.orientacao)}</div>` : ""}
+        ${p.publicadoEm ? `<div class="authors"><b>Publicado em</b> <i>${esc(p.publicadoEm)}</i></div>` : ""}
+        ${(p.palavras || []).length ? `<div class="pub-tags">${p.palavras.map(t => `<span>${esc(t)}</span>`).join("")}</div>` : ""}
+        ${/\.pdf$/i.test(p.link || "") ? `<span class="pub-pdf">Ler o texto completo (PDF) ↗</span>` : ""}</div>
       <span class="go"><span class="arrow"></span></span>
     </a>`);
 
