@@ -1,5 +1,5 @@
 window.LATS_TRIBUNAIS = {
- "atualizadoEm": "2026-11-14T21:27+00:00",
+ "atualizadoEm": "2026-11-15T09:38+00:00",
  "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
  "painelComIA": true,
  "emJulgamento": [
@@ -15,17 +15,6 @@ window.LATS_TRIBUNAIS = {
    "data": "2026-11-11T23:10+00:00"
   },
   {
-   "tribunal": "STF",
-   "tema": "Alegação de desconhecimento da idade da vítima e condenação por estupro de vulnerável",
-   "titulo_original": "STF vai definir se alegação de desconhecimento de idade pode afastar condenação por estupro de vulnerável",
-   "processo": "ARE 1600294 (Tema 1.485)",
-   "relator": "",
-   "placar": "",
-   "status": "Em pauta",
-   "link": "https://noticias.stf.jus.br/postsnoticias/stf-vai-definir-se-alegacao-de-desconhecimento-de-idade-pode-afastar-condenacao-por-estupro-de-vulneravel/",
-   "data": "2026-11-11T22:46+00:00"
-  },
-  {
    "tribunal": "STJ",
    "tema": "Exposição à eletricidade como fundamento para aposentadoria especial",
    "titulo_original": "Primeira Seção discute se exposição à eletricidade ainda garante direito à aposentadoria especial",
@@ -38,14 +27,36 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
-   "tema": "Precatórios de valores pagos pelo SUS a hospitais privados",
-   "titulo_original": "STF suspende processos e bloqueia precatórios de valores pagos pelo SUS a hospitais privados",
-   "processo": "RE 1612904",
-   "relator": "Min. Gilmar Mendes",
+   "tema": "Alegação de desconhecimento da idade da vítima no crime de estupro de vulnerável",
+   "titulo_original": "STF vai definir se alegação de desconhecimento de idade pode afastar condenação por estupro de vulnerável",
+   "processo": "ARE 1600294 (Tema 1.485)",
+   "relator": "",
    "placar": "",
-   "status": "Suspenso",
-   "link": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-processos-e-bloqueia-precatorios-de-valores-pagos-pelo-sus-a-hospitais-privados/",
-   "data": "2026-11-11T21:30+00:00"
+   "status": "Em pauta",
+   "link": "https://noticias.stf.jus.br/postsnoticias/stf-vai-definir-se-alegacao-de-desconhecimento-de-idade-pode-afastar-condenacao-por-estupro-de-vulneravel/",
+   "data": "2026-11-11T22:46+00:00"
+  },
+  {
+   "tribunal": "STJ",
+   "tema": "Audiência pública sobre o funcionamento do cartão de crédito consignado",
+   "titulo_original": "Audiência pública debaterá funcionamento do cartão de crédito consignado; inscrições vão até dia 19 de novembro",
+   "processo": "",
+   "relator": "",
+   "placar": "",
+   "status": "Em pauta",
+   "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNaXNlTjdWT3doeDlJSzNfd0dGV1J2eWNXUUliTkU2V2pwVlYzYTdoZVBEa203U1d2aE5kVDE3bFppN25PTVpwb0JBajBGTHdUQzhpd0N3ZzFJalhoT05KUER6UmtTWWxtbm01dzd1TTAxV3lKdjJ4bEw2S2ZGQmZYc1RQU2lCUTc0Y3RtWE9pSk4yczhTUmFnYjJjbGpHbUxkRmFTLVhNUFZrWVpDcE52Y0NyWDh1cmpUN0V1dnRiSjM3UG4tNFhjUkV4Yjl6b2VvaFFvNklIbzl0d19keE9wMjFnOEtvaG50OTVONVpLeWxpdFNxMEk3WVVzZm9KYzhrZjlzQllPT19JWHV3c2lHd0dFUlpIb2dBa2l2azM5VUFQQQ?oc=5",
+   "data": "2026-11-13T19:13+00:00"
+  },
+  {
+   "tribunal": "STJ",
+   "tema": "Revogação antecipada do benefício fiscal do Perse; processos suspensos após reconhecimento de relevância",
+   "titulo_original": "Primeira Seção reconhece relevância e suspende processos sobre revogação antecipada do benefício fiscal do Perse",
+   "processo": "Tema 1.483",
+   "relator": "Min. Francisco Falcão",
+   "placar": "",
+   "status": "Em pauta",
+   "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPQ0lkVFg1NkhlOHUya01FMXVoelpsbWtOS2NDa0pUdFV1ZnBvNTZoOFRoWkh6THY5Yy0zQnhicjhvTmQxQ3R0Mkw5Z1poVGxIaGR1d0paRVlpZkw0MXl5SnNoZGpGUU9CTzlCM3g4QWxvMXQxTGdvZ1NoQTR6b2xtcFhLamNZR09hOXB2eUE2YTV0ckxRYjdSTGUxT18tNFhMdkdxd0lPS2lsVllZN1IzTG9Id0N5VXdZUXRRdHcwYVNUSVo1SGpPTWRwTXdKMnBmdktVczlwTjJuSktGUllJNVhxVjJ2NXNfcFc0YzVrXzQ0cGVlclE4MGJpYS1GYzZCQUdMZ2ViaGZrUjJQdnZhRHp4NGhnWEdVNTNFcmk0aGVLcmI3?oc=5",
+   "data": "2026-11-09T10:00+00:00"
   },
   {
    "tribunal": "STF",
@@ -59,26 +70,15 @@ window.LATS_TRIBUNAIS = {
    "data": "2026-11-09T11:49+00:00"
   },
   {
-   "tribunal": "STJ",
-   "tema": "Extinção antecipada do benefício fiscal do Perse",
-   "titulo_original": "Processos sobre extinção antecipada do benefício fiscal do Perse são sobrestados",
-   "processo": "Tema de Relevância 1.483",
-   "relator": "Min. Francisco Falcão",
+   "tribunal": "STF",
+   "tema": "Precatórios de valores pagos pelo SUS a hospitais privados",
+   "titulo_original": "STF suspende processos e bloqueia precatórios de valores pagos pelo SUS a hospitais privados",
+   "processo": "RE 1612904",
+   "relator": "Min. Gilmar Mendes",
    "placar": "",
    "status": "Suspenso",
-   "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOcnFER0tZQS1IVDNOdDF0d0ZnT1RDNU9TVmctX0V2bU1wY2h4eW8yaEpuZlBsbGk3blZJSkxaTnJmejI2LWJxbl9BT0QtVEtJWml3T3kwX2JZVDV4OG9EVXAyRzJTY25haXVyWVpTWjdacm8wUHBJdWZDRXFWOVplX0ZzdFQ4YW5VWFdMNDlVMlVFb1BOT0syOFA4MndJLWdOa0plQUVGdkJhSjRYWVk4YW5QMW1Zb3hnV3ltLUdYUVpNNm5abXpNU1RNNTVPY0F2Y0lZZlZfOWVqdTBFUDJIN01SRXFCT2hadkRlSmRBb3F2eC1Zb1VBQ0tFamZvcnBmakU3TE9ocWVrLXdKY2pUcVZXc2tZWm9NZmIyanAzWndGNnNS?oc=5",
-   "data": "2026-11-09T10:00+00:00"
-  },
-  {
-   "tribunal": "STJ",
-   "tema": "Funcionamento do cartão de crédito consignado, debatido em audiência pública",
-   "titulo_original": "Audiência pública debaterá funcionamento do cartão de crédito consignado; inscrições vão até dia 19 de novembro",
-   "processo": "",
-   "relator": "",
-   "placar": "",
-   "status": "Em pauta",
-   "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxNaXNlTjdWT3doeDlJSzNfd0dGV1J2eWNXUUliTkU2V2pwVlYzYTdoZVBEa203U1d2aE5kVDE3bFppN25PTVpwb0JBajBGTHdUQzhpd0N3ZzFJalhoT05KUER6UmtTWWxtbm01dzd1TTAxV3lKdjJ4bEw2S2ZGQmZYc1RQU2lCUTc0Y3RtWE9pSk4yczhTUmFnYjJjbGpHbUxkRmFTLVhNUFZrWVpDcE52Y0NyWDh1cmpUN0V1dnRiSjM3UG4tNFhjUkV4Yjl6b2VvaFFvNklIbzl0d19keE9wMjFnOEtvaG50OTVONVpLeWxpdFNxMEk3WVVzZm9KYzhrZjlzQllPT19JWHV3c2lHd0dFUlpIb2dBa2l2azM5VUFQQQ?oc=5",
-   "data": "2026-11-13T19:13+00:00"
+   "link": "https://noticias.stf.jus.br/postsnoticias/stf-suspende-processos-e-bloqueia-precatorios-de-valores-pagos-pelo-sus-a-hospitais-privados/",
+   "data": "2026-11-11T21:30+00:00"
   }
  ],
  "noticias": [
@@ -179,14 +179,6 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
-   "tribunal": "STF",
-   "titulo": "Confira os destaques do Plenário Virtual desta semana",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOclV2T3ZaUUVJNUJHbHF5b1N3VWcxelVWVURkc3NpSExKWmM0TVZvTGgtZUVGcFExUmg5aDNCU2JEUlV3OFEtYWVWRFpmMTUzSEUtcDk0ME0xelNfa1RXZ1YtLUVaaDdpYklfdWdxZVhZRFh6XzhVTHQ1Tm91U3NfMVM3Vy1wV2hDZ25mVURMR3pES1g5Y1E3cWd1cUhNSjA?oc=5",
-   "data": "2026-11-13T14:05+00:00",
-   "tipo": "pauta",
-   "processo": ""
-  },
-  {
    "tribunal": "STJ",
    "titulo": "STJ participa de fórum da Ajufe sobre Reforma Tributária e a Justiça Federal",
    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOU1M3ZnNva19DamJ4OV9zQk12UHZNYURnZ24wU2xsMExpLXZBWVI2YmR2cHBaX2ZQUzViRTF3WDItaVp2QmFyTmpWYzBQSTBjOU5udUxpNk9CTXVQY0s2dEdZNXYxQXZRcmFLNkFycUE5cDhWd1o1QnVIRl9lZkZ1N05wVVVjclRXb2Z1clpIQ3V5bS1pNnoxMFpnV0JpTzR2OTF6WmVhaU9Fd3ljcWdhei1xQjJjY2lYQy1HWlhWRWI3Z2J1UzZfVXgwY1REY1pQMXdMSl85TExDV1N4UGtNM1IzSnRDbG1wZzh2MmVFOVB5YWM?oc=5",
@@ -272,6 +264,14 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPWlFDTFRTZUx4N0N3bi12dzBnZ29ISjFxVDhuQTFHTnE5OVNHeE9XQzNBWlFsMUtmMkZuRmk1RUxvYkNhZXRjc0JsNDVsVGx0OWRmT1JnX0trZk5nd0FrWnN3RnhHMmJpSTA2OVpVazNWYTBUZEd3RUtJbXNQMGZkeGVoNkw0ci12WXFoVTliMTlsSFJfVTFlcUFBVzg0ZTlzcjNoY3pXTng2amo4a3dmNkMzOVJQeTNka2FheWpMdjlsR09oOW53LVpTV29qTFpDRFdWTVptSVYzVk9FTGQybjM3bVNlb2s?oc=5",
    "data": "2026-11-12T20:34+00:00",
    "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "Supremo valida regra do Amazonas sobre prescrição nos processos no Tribunal de Contas estadual",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWmVYWGFxNnpoLXBxR3g1SE9ObkRNZGtNZHA5MUFlOUVDRGN4V3ZyQVNWOGotdHFGN1dEalo2d2dzLXVxWEl5em5vd3NPSTM0NjJFUnlwTzlKQkdRR09aU3dac2dCbEhkbTZ3YllMMzVZcy0tamJIRU5Sdzd3V2VUeTgzbmthd3NzUF9ZMXQ5VGZDNUdBY0tJQUtTVDlYME95SEdISThoSkZkeDQ3cGRGUVdLby1JZjJ5bzJ1Yi1BeHk5ZnJXZFNGQ0JySEZ0Zw?oc=5",
+   "data": "2026-11-12T20:21+00:00",
+   "tipo": "decisao",
    "processo": ""
   },
   {
@@ -397,7 +397,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Trilha da Memória abre encontro nacional de juízas e juízes negros no Rio de Janeiro",
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOOGNWT0c2UXRCcm9yUi1fM0Zka21QcG1ZQTBxZFY0ZW91b0pfS1RoRElpYS0yN3h0WXNOTHFTajkwNkpaMmt6QTZySlJ1UUpwUGNrSFdMdmQ1Tk9PN0xITkNTRHpTMjcwYlFBVzdLV3R1ZXduSVhSTUU2ME9CRWs3Vi0zZEg1OUxLSXN3R0doX05VTmgxSXc0SzVUOGE2ZmdPemc2dXZnVGF0Qm92R1BULWdqV1NzTUhRcE9XbTdfNVpKTnVoaDFXOV9lbHM3UHFzMHF6SW1UVHlJWHR3b2lwZk16a3ZqZ2hMSzRvOERvbUdhenJzOHV1RWRSSWtldw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNZUpscG9MMEVGcHdnblhTV1d5Wlp6cmU5OVdELWM5dWVoYm9HbHNsNXJocHA1TXN0VVpOOGJTNTl4eEU3UjJIYTJnWUpjZ3JsRHFUN3JFbGd2WXpjRkxxdnRtTTBVeGU1RVJnemo2Mm1rOGFIZ3JocVRwam9IeVBxa2FCRzJ4WHdkaG0yLTEtRjN6NTJwNHlCY0g0TnVlMmxSMjVpMkdpaUdzS1lqTlI2MmtoN3dLTTR2UU9OSWdFb01vVXJVYkpkYzdNT1NBRURIOXhwdUhpYkIzLUMtLWVNR2NES0ZHLVRBWTA1ZnNfVkVQOHlINEFEYXNxRlRPQQ?oc=5",
    "data": "2026-11-11T20:48+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -508,6 +508,14 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
+   "titulo": "Associação questiona regras do CNJ sobre leilões judiciais",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPa0ktUEVZU0VCYlMzYVh2V2NHS1Z4Q2dJUlMwclJzckt6NVl3dFRnM1JydXBHalRiOFFoUlVNY2JmclAzSmlmQzJ2enhMLTRxbmI1c3Z2YWxYMnlfN2tIRDN6eXFuRkhKTmJGdTVoMk5oYWsweko2bk9DUlNkX2E5T3hSQ3BmS3ozdHc3ajdKNDhaMGE0d2FGUFZEeTlOU2Z0MU9B?oc=5",
+   "data": "2026-11-10T19:57+00:00",
+   "tipo": "nova_acao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
    "titulo": "Companhia de saneamento do RJ deve pagar dívidas judiciais por precatórios, decide STF",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOd0xMUS1lNEtEcG9PNGo1aGJCOC0tLUZEOVJKZzlmX1ZQc1NlWVVvbDBBV2tVbWdKdGRhMFNoaDNvSFAwY2JoaVRLUUUxS0VIbXJzWGJlZjlGX2JnUmlNTWpoa29FeWM1ZEVhYVhURDJMYzM3OFhFbXRUa3ZKUUM1eC1KcVVJdDJrdW1GUHRUUkRqaXNtTWFjQTdENFZpY0JHZll4T1ZhSkoyM25GaDBlOXNxaDQ1LXhtcUFHTlNocXNSZ0hyci1r?oc=5",
    "data": "2026-11-10T19:06+00:00",
@@ -557,7 +565,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Crédito de ICMS sobre combustível no transporte secundário de carga",
-   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQYXlndmZQV2FucGdUY0owcjBVdDlic1dQeG9GNUpaZ1ZhYzBjWWJMTjlDeWc5Mm93TDZlMkkteEtMNHNYaDNtREhaWXYzM0NySzQxWFNKUEEwQWg3Q2NMaktOam5fWEloUGdCWUYtZC1Cb2dqRXBzWFhxT2JKWGJNd21xRW41S3hwMEZnMWFqalJ0RkVtOXZka3NZNmpLeVBtNXZIS1hMMEQ0eXJtaHZ1V0NXRVowWG0waVpaQjRDX3BkS0hPRnFOcUYxX0prSEczc0FpQkQyOW92dHFRQTQyNHNqRFVGM1F6ZW1CUEpVX3Y5THBOOWw2bUNvMldBV0tGV0F0Ty1kMVNDQ1l0Q0ZIcWpWVTJ5VXUyTkxR?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQaUhkam5pY01QNVBwT1BTSGhWQVNfQ3VpYktqQ2J2Q180d2tINTl6T0MwMVZCREM2b0IyNU5VdHQzMHpsUTVXOHJiZVhNV0JZN3pPd1B5cTFHWGdtSkJBVFZXb2JrOXVlZmpPTThYQUFVckgzWW1NOXM1Zzl2dFo0SjBjdmpZd2JfaTkxNW44QXI1MEhrOEs4WmhXVjhjbDVTVWhCOFEtRDhiS2ZqblB3LVpza2ZzbDNyZXBQMWJIdjRQRkU0enNBclVONWZOTHVObFNQMWRuUElhaXhfUEg2dnFlSW4ySXFfT0ZUTWxWOEtWM1B6dHVnZVFpODVSSXNzeTlFZjJkdWE1cVZlTFlvblVrMUNMWWFwYjBr?oc=5",
    "data": "2026-11-10T10:10+00:00",
    "tipo": "decisao",
    "processo": ""
@@ -676,8 +684,8 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STJ",
-   "titulo": "Processos sobre extinção antecipada do benefício fiscal do Perse são sobrestados",
-   "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxOcnFER0tZQS1IVDNOdDF0d0ZnT1RDNU9TVmctX0V2bU1wY2h4eW8yaEpuZlBsbGk3blZJSkxaTnJmejI2LWJxbl9BT0QtVEtJWml3T3kwX2JZVDV4OG9EVXAyRzJTY25haXVyWVpTWjdacm8wUHBJdWZDRXFWOVplX0ZzdFQ4YW5VWFdMNDlVMlVFb1BOT0syOFA4MndJLWdOa0plQUVGdkJhSjRYWVk4YW5QMW1Zb3hnV3ltLUdYUVpNNm5abXpNU1RNNTVPY0F2Y0lZZlZfOWVqdTBFUDJIN01SRXFCT2hadkRlSmRBb3F2eC1Zb1VBQ0tFamZvcnBmakU3TE9ocWVrLXdKY2pUcVZXc2tZWm9NZmIyanAzWndGNnNS?oc=5",
+   "titulo": "Primeira Seção reconhece relevância e suspende processos sobre revogação antecipada do benefício fiscal do Perse",
+   "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPQ0lkVFg1NkhlOHUya01FMXVoelpsbWtOS2NDa0pUdFV1ZnBvNTZoOFRoWkh6THY5Yy0zQnhicjhvTmQxQ3R0Mkw5Z1poVGxIaGR1d0paRVlpZkw0MXl5SnNoZGpGUU9CTzlCM3g4QWxvMXQxTGdvZ1NoQTR6b2xtcFhLamNZR09hOXB2eUE2YTV0ckxRYjdSTGUxT18tNFhMdkdxd0lPS2lsVllZN1IzTG9Id0N5VXdZUXRRdHcwYVNUSVo1SGpPTWRwTXdKMnBmdktVczlwTjJuSktGUllJNVhxVjJ2NXNfcFc0YzVrXzQ0cGVlclE4MGJpYS1GYzZCQUdMZ2ViaGZrUjJQdnZhRHp4NGhnWEdVNTNFcmk0aGVLcmI3?oc=5",
    "data": "2026-11-09T10:00+00:00",
    "tipo": "decisao",
    "processo": ""
@@ -696,14 +704,6 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVkRFRjE5dGVGemkxT2NOdmdfd1AwODV2QkFabXFadklLXzhkbXA3eHB1c1JzX2M1RWJuTHRwZUs1WWpaQVVrMDhDMzN3SHR2aWhTWC1JNXUxTmUzRXh1akpfYm10aFFsaUZOWEtWaVY4S0NXbG9wU0hhZHBqblBKMzhxeElYMkNja0tyT1NKOVUyZmtjY2xnWVJMT1FUcWlLVzFZdldYYk5haFA0ellFdGg2S0FUT3NCU3BOZTlMRUJxb3J4RThlYkZMYlltQ3d1ZGFGODVDUEdKZk5GZnctV0JkWDllUG5N?oc=5",
    "data": "2026-11-06T23:03+00:00",
    "tipo": "outros",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "Presidente do STF e do CNJ participa da instalação do Programa Destrava no Rio Grande do Sul",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPV0xzN1dMNFBST1ctbEQybThsYlVzZkE5bWFSaWsxMnNoV3FUeUpGWW8zaGxzRm0wdVh0bno2Z2dVUVg1RUFQVlpUb3U1TFZ4SXVFMXlKalA0TG44cnFGaUtfVjRCcXk0b0pzLUVuSVZfbDlzR3M0U0hQMEpLLUdmUU9XX3hnNEp1MzBkSnlvXzhNd3ROTEpQVXBXYVpMNWRGSUFRSEtObXRRLWl6RW1iSUxZLTRuWElmMENRWnhpOERtaktZZTk2ckJ1V201YXNy?oc=5",
-   "data": "2026-11-06T21:56+00:00",
-   "tipo": "institucional",
    "processo": ""
   },
   {
