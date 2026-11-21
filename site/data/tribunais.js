@@ -1,5 +1,5 @@
 window.LATS_TRIBUNAIS = {
- "atualizadoEm": "2026-11-21T09:39+00:00",
+ "atualizadoEm": "2026-11-21T21:29+00:00",
  "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
  "painelComIA": true,
  "emJulgamento": [
@@ -88,11 +88,19 @@ window.LATS_TRIBUNAIS = {
    "relator": "",
    "placar": "",
    "status": "Em pauta",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQTEUtUU9SaXJidHNJSU13SDNUaWg4SUFCbFpuWDJNM1dPUml1WmtYRkpvaWdYRnZtNlQ2b3NVQWl3ek01cGd3UzhHU2Y4THZLX3FVVkMtbjBQV2hXWmJMVzk3dVJmdXAwOTJDNHhMalR3MTNSS216UndRNVN2MGRIRUNOZm1ZZXVIS1I1WktuUnFTR2lCdzVKeHV6OTNZbWh5OE5SU2tic0dZQUVTSl9jV2NnQTVfd0FiRkZ2bHJ1M3Fza2VZTGV3VzJuY01JVzlxYk51Mm1wTEw3NF9nSXV0bzBCWS1pY1hKSXVBdkFwSTlrd29PbFE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNcS1peVcxZnkwNUY0ZDdfNUg1M1VhNFN6b2I2XzNNV1BpYXJfRUFUVlFNbkVIVFQ4YWVNWTJBRF9vYUVEbkM2eVcxb2k4SHRpYk1ZdXdieXFEZl9xejRMUGZxQUhVZ0hFTU8wSmVpR2szRUJ5MzRLaUFxZnlWYWZ0NG5DVmRuNEltS0EzRUtXQTlOMF9QNll6NjF1WmQ0VC1Xb3VIUlZCbkRudC1aQUliZlBDa05JZUpjSTRUSjhSXzJnSFBWaHVpUEFJNDVVcWFPVEw5S1lHWl83bEI1V05Iam90U3BjdGEtdHlRNlYwejFmelBZUmc?oc=5",
    "data": "2026-11-18T11:15+00:00"
   }
  ],
  "noticias": [
+  {
+   "tribunal": "STF",
+   "titulo": "Efeitos da decisão sobre crimes patrimoniais em família é destaque no Supremo na Semana",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcUVEU1lDSHJfeklFM053MmVoV3VfN3RxbEdRLUgzcm4zSDBxS1B2b0Q1eWV6eHdPbzVuU2g4WW41ankwM3g0TW04U19RSnhTemhjUzZSVW1tSUlTMDJyX0hLZmh5b1BpWU10WG9YVlNWWGxtOC1OZjloU0EwVnVwSEFpbUowQW5kczAzZ2w3NDVqTWx3Z1lyaS1ENHpKdDR4R3B6SlMyTElBWExMN2Fvcjh3UGV5cF9HdUxqRlpyT1RWc1FZU0EtZUZB?oc=5",
+   "data": "2026-11-21T15:00+00:00",
+   "tipo": "outros",
+   "processo": ""
+  },
   {
    "tribunal": "STF",
    "titulo": "Confira os destaques do Plenário Virtual desta semana",
@@ -384,7 +392,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "STJ avança na aplicação do Protocolo para Julgamento com Perspectiva de Gênero",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQTEUtUU9SaXJidHNJSU13SDNUaWg4SUFCbFpuWDJNM1dPUml1WmtYRkpvaWdYRnZtNlQ2b3NVQWl3ek01cGd3UzhHU2Y4THZLX3FVVkMtbjBQV2hXWmJMVzk3dVJmdXAwOTJDNHhMalR3MTNSS216UndRNVN2MGRIRUNOZm1ZZXVIS1I1WktuUnFTR2lCdzVKeHV6OTNZbWh5OE5SU2tic0dZQUVTSl9jV2NnQTVfd0FiRkZ2bHJ1M3Fza2VZTGV3VzJuY01JVzlxYk51Mm1wTEw3NF9nSXV0bzBCWS1pY1hKSXVBdkFwSTlrd29PbFE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNcS1peVcxZnkwNUY0ZDdfNUg1M1VhNFN6b2I2XzNNV1BpYXJfRUFUVlFNbkVIVFQ4YWVNWTJBRF9vYUVEbkM2eVcxb2k4SHRpYk1ZdXdieXFEZl9xejRMUGZxQUhVZ0hFTU8wSmVpR2szRUJ5MzRLaUFxZnlWYWZ0NG5DVmRuNEltS0EzRUtXQTlOMF9QNll6NjF1WmQ0VC1Xb3VIUlZCbkRudC1aQUliZlBDa05JZUpjSTRUSjhSXzJnSFBWaHVpUEFJNDVVcWFPVEw5S1lHWl83bEI1V05Iam90U3BjdGEtdHlRNlYwejFmelBZUmc?oc=5",
    "data": "2026-11-18T11:15+00:00",
    "tipo": "pauta",
    "processo": ""
@@ -663,8 +671,8 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STJ",
-   "titulo": "Informativo destaca legitimidade do MP em ação civil pública e exigência de farmacêutico em drogarias - STJ",
-   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQbkhwdkxscXFjaUVIMHdNR1hwWk84QmRsbkZUUzBkVlFTZTNqSG15M1RpVVJhYWRuM3JoOWczN2pocEN1cDMyUC1qRTlyVmNQcGRWOERGUnhjNUxoV3BTT3VXQktYZFBGc0FlX1lKdWFqVTZvdnJkOE05ZVlmeVZOWnEyNlhMUkxiSmN4eUFjLVpYT1R5a2MwSEtNalctWmRZclVFMndZdWluWl9Ebk1KNWV5SDkyRzRWU3VtYXEyUDE3QkVHTDB5blZFQUhGamxXX244Zk9JRVpJeGptNXBzMWdzM3JWdzd4eGZwWE14X0J4UjlKeFo1bzJwcmNjWENGdUZzZnR5cFlSdVFHOXFZSzJpZ3M?oc=5",
+   "titulo": "Informativo destaca legitimidade do MP em ação civil pública e exigência de farmacêutico em drogarias",
+   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPU2ZqdEd4MUVoYlVXWEZXNmdfSTFYUDJmWnI4dFJvdEV5b01qYl85RjhXZW1tODhUNXhIajZOeW1maTBST2w4WWVwOXl2RGdkY0E5Slg0eENsTDhkX3ptaEJsT0lDU0hCWGJFRWMwejB2M3RuM1Q0VGxyOTlmVjNvVjFqcjFOZnZIWDZLN3J1eG1FZ01PTEpZbm9XZ2xkSjlwU2FtcE94YnE4b1l4OE40M3UwOGxSaTNqaHMyUl9KWDQ0RTM3X3VEejNieWZ4dU4xYW5DcUdYV0x2TkFVckVlR0pIeUdlTXNQOXpzQ3NNa2RjTkQtWk52WFphRXRvcFIwdG9yOHE0SU13N2d4ZVBTNGhIb20?oc=5",
    "data": "2026-11-16T11:00+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -683,22 +691,6 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOaUFMUjJLWlhTRGRtR0FBTmF5eHRQUWxfeDRyOF9KLVFYR19WYkdFMVNOZlNpUWNyWVN5U2NzSk1WSzRzVk03cU43SzdTUEs5enBHMjA4akRfS20yOEpwQUgyQ2p1d0E2SzZkTkp6MXpoVjhxVzJHUzYwVUpoOURFVUM3b0NVd1o4ZG8xTUdTQWxGa1lzM0lic1BJb052ZUxHTGJ3UkpHY19xWUtwak9YYUFGSENTQlBacFVEMl80U2NCT3pqWDB3U0V1N2hZTFFrdWxBV0c1VFVxZ1lmRkRpbFcxQmluZ3hLS1NoRW5TTzdjT0VhR2N4VG95d1IxZzd1QWZlS0NUQ1E5X1I5dVlCV1VkcmZtQkY2bWZhSzM0TElQbnRSU3c?oc=5",
    "data": "2026-11-16T09:55+00:00",
    "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "Supremo na Semana comenta fim da isenção de pena em crimes patrimoniais contra familiar",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQUI1ZWdBRHBxazA4REdDalFiN2diTV9mN1NQaU02SzVmLU1YclVaWUUxOElSV2s2TjRiUldTZXdYb2pHSm83dVBsZy1xTjZ5LTZEQkR0T2VibTNlVTBjTVp1RFEzemNXa0VvaWRHZTdLRkliTTFiZ2l5cG03andEbE41TDRUemJzOFNHZjBvemdwQzg3VG9TWjM0UHA4MktockNUeXZ1V1g2WFJQZVpIUnJsaVRNcm1RanM1cm9QbUh5ZHlQYnpwbGdB?oc=5",
-   "data": "2026-11-14T15:00+00:00",
-   "tipo": "outros",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "Reconhecer papel do Judiciário na desigualdade racial é condição para superá-la, afirma Fachin",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPOXNhOTM2QWVfWV8wanE3REo0ZkVYeU9ncUJEUE9qTWUtZlJWT0VIeGgwOHB1cHlSTTFudUk4TTAzOE5uUDUtSVRWWXhaTWNEV09YZEZzMzRjZ24zWDV3cEUwR0Q4NFZEei1ZeVp4aVVEVGRRZzEySjdpTkU0OC1IY3lSYm1SRTFQTFRZeC02eFpXVk9vd2VhUkVMenpMbWdXRXUwVnhDejAwZy1TaHdGS2FlakNISGNhNnhVOGdIbnd2TDRUaWZFOUxfa0gxYVJ2Y0E?oc=5",
-   "data": "2026-11-14T00:00+00:00",
-   "tipo": "outros",
    "processo": ""
   },
   {
