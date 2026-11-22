@@ -73,3 +73,12 @@ Rodem `python3 -m http.server 8123` dentro desta pasta e abram http://localhost:
 Para atualizar as notícias no seu computador, rode:
 
     python3 scripts/atualizar_tribunais.py
+
+## Informativo por e-mail e Comentário LATS
+
+- Toda segunda, a revisão do Informativo traz o arquivo `informativo/comentario-da-semana.md`.
+  Cole ali o comentário do membro (autor, função, decisão, link, título e texto). Em branco = edição sem comentário.
+- Ao aprovar (Merge), a edição vai para o site e o e-mail sai pela Brevo para a lista de inscritos.
+- Configuração no GitHub (Settings › Secrets and variables › Actions):
+  segredo `BREVO_API_KEY`; variáveis `BREVO_LIST_ID`, `BREVO_SENDER_EMAIL` e, se quiser, `BREVO_SENDER_NAME`.
+- Formulário de inscrição: cole o endereço do formulário da Brevo em `newsletter.brevoFormAction` (content.js).
