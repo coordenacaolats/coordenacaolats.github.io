@@ -68,9 +68,20 @@
     return `<div class="ed-bloco"><h4>${titulo}</h4><ol>${itens.map(i => `<li>
       <h5>${i.link ? link(i.link, esc(i.titulo)) : esc(i.titulo)}</h5>${i.resumo ? `<p>${esc(i.resumo)}</p>` : ""}</li>`).join("")}</ol></div>`;
   }
+  function comentario(c) {
+    if (!c || !c.texto || !c.texto.length) return "";
+    const dec = c.decisao ? `<p class="com-dec">Sobre ${c.link ? link(c.link, esc(c.decisao)) : esc(c.decisao)}</p>` : "";
+    return `<aside class="ed-comentario">
+        <span class="eyebrow">Comentário LATS</span>
+        <h4>${esc(c.titulo || "Comentário da semana")}</h4>${dec}
+        <div class="com-texto">${c.texto.map(p => `<p>${esc(p)}</p>`).join("")}</div>
+        <p class="com-autor"><b>${esc(c.autor)}</b>${c.funcao ? `<span>${esc(c.funcao)}</span>` : ""}</p>
+      </aside>`;
+  }
   function edicaoHTML(e) {
     return `<header class="ed-top"><span class="ed-num">Nº ${String(e.numero).padStart(2, "0")}</span>
         <div><span class="eyebrow">Semana de ${diaLongo(e.semana)}</span><h3>${esc(e.titulo)}</h3><p>${esc(e.abertura || "")}</p></div></header>
+      ${comentario(e.comentario)}
       <div class="ed-cols">${bloco("Supremo Tribunal Federal", e.stf)}${bloco("Superior Tribunal de Justiça", e.stj)}</div>
       ${bloco("Na pauta", e.pauta)}
       ${e.geradoComIA ? '<p class="ed-ia">Edição elaborada com auxílio de inteligência artificial a partir das notícias oficiais e revisada pela equipe da LATS.</p>' : ""}`;
@@ -99,4 +110,27 @@
   if (tz) tz.innerHTML = EDS.length
     ? `<span class="eyebrow">Informativo nº ${EDS[0].numero}</span><h3>${esc(EDS[0].titulo)}</h3><p>${esc(EDS[0].abertura || "")}</p>`
     : `<span class="eyebrow">Informativo LATS</span><h3>As decisões da semana no STF e no STJ</h3><p>Toda segunda-feira, um resumo do que os Tribunais Superiores decidiram e do que está na pauta.</p>`;
+
+  // ---------- Informativo por e-mail
+  document.querySelectorAll("[data-newsletter]").forEach(box => {
+    const action = ((window.LATS || {}).newsletter || {}).brevoFormAction || "";
+    if (!action) {
+      box.innerHTML = `<p class="nl-soon">As inscrições para receber o Informativo por e-mail abrem em breve.</p>`;
+      return;
+    }
+    box.innerHTML = `<form class="nl-form" method="POST" action="${esc(action)}" target="nl-frame">
+        <label class="sr-only" for="nl-email">Seu e-mail</label>
+        <input id="nl-email" type="email" name="EMAIL" placeholder="seu@email.com" autocomplete="email" required>
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="nl-hp">
+        <input type="hidden" name="locale" value="pt">
+        <button class="btn" type="submit">Quero receber <span class="arrow"></span></button>
+      </form>
+      <p class="nl-note">Uma edição por semana. Você pode cancelar quando quiser, pelo link no fim de cada e-mail.</p>
+      <iframe name="nl-frame" title="" hidden></iframe>`;
+    box.querySelector("form").addEventListener("submit", () => {
+      setTimeout(() => {
+        box.innerHTML = `<p class="nl-ok"><b>Inscrição recebida.</b> Enviamos um e-mail de confirmação: clique no link dele para começar a receber o Informativo. Se não encontrar, olhe a caixa de spam ou promoções.</p>`;
+      }, 400);
+    });
+  });
 })();

@@ -1,5 +1,6 @@
 # Atualiza as notícias do STF/STJ duas vezes por dia e publica o site no GitHub Pages.
-# Também publica a cada alteração enviada para a branch main.
+# Também publica a cada alteração enviada para a branch main. Quando uma edição do
+# Informativo é aprovada, junta o comentário do membro e envia o e-mail aos inscritos.
 name: Atualizar e publicar site
 
 on:
@@ -20,30 +21,36 @@ concurrency:
 
 jobs:
   atualizar:
-    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+      BREVO_LIST_ID: ${{ vars.BREVO_LIST_ID }}
+      BREVO_SENDER_EMAIL: ${{ vars.BREVO_SENDER_EMAIL }}
+      BREVO_SENDER_NAME: ${{ vars.BREVO_SENDER_NAME }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Instalar SDK da Anthropic (só se houver chave)
-        if: env.ANTHROPIC_API_KEY != ''
+        if: github.event_name != 'push' && env.ANTHROPIC_API_KEY != ''
         run: pip install anthropic
       - name: Coletar notícias do STF e do STJ
+        if: github.event_name != 'push'
         run: python scripts/atualizar_tribunais.py
+      - name: Informativo — comentário do membro e e-mail aos inscritos
+        run: python scripts/informativo_email.py
       - name: Salvar alterações
         run: |
           git config user.name "LATS bot"
           git config user.email "actions@users.noreply.github.com"
-          git add site/data/tribunais.js
-          git diff --cached --quiet || (git commit -m "Atualiza notícias dos tribunais" && git push)
+          git add site/data/tribunais.js site/data/informativos.js informativo/comentario-da-semana.md
+          git diff --cached --quiet || (git commit -m "Atualiza notícias e Informativo" && git pull --rebase && git push)
 
   publicar:
     needs: atualizar
-    if: always() && (needs.atualizar.result == 'success' || needs.atualizar.result == 'skipped')
+    if: always() && needs.atualizar.result != 'cancelled'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

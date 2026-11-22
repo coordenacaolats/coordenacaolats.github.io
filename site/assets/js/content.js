@@ -10,6 +10,13 @@
 window.LATS = {
 
   /* ---------- Redes e contato ---------- */
+  /* Informativo por e-mail (Brevo). Cole em brevoFormAction o endereço do formulário
+     da Brevo (Contatos › Formulários › Compartilhar/HTML: o "action" do <form>, que
+     começa com https://….sibforms.com/serve/…). Enquanto estiver vazio, o site mostra "Em breve". */
+  newsletter: {
+    brevoFormAction: ""
+  },
+
   redes: {
     instagram: "https://www.instagram.com/latsufrn/",
     instagramUser: "@latsufrn",

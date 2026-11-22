@@ -512,7 +512,14 @@ def main() -> int:
         edicao = nova_edicao(noticias, numero)
         if not edicao:
             return 1
+        edicao["email"] = "pendente"   # enviado aos inscritos quando a revisão for aprovada
         gravar_js(SAIDA_INFO, PREFIXO_INFO, ([edicao] + informativos)[:MAX_EDICOES])
+        # deixa o modelo do comentário do membro na revisão (sem apagar um já preenchido)
+        sys.path.insert(0, str(Path(__file__).parent))
+        import informativo_email as ie
+        if ie.ler_comentario() is None:
+            ie.COMENTARIO.parent.mkdir(parents=True, exist_ok=True)
+            ie.COMENTARIO.write_text(f"<!-- Informativo LATS nº {numero} -->\n" + ie.MODELO, encoding="utf-8")
         print(f"Informativo nº {numero} gerado: {edicao['titulo']}")
         return 0
 
