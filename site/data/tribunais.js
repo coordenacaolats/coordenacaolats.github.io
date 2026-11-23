@@ -1,5 +1,5 @@
 window.LATS_TRIBUNAIS = {
- "atualizadoEm": "2026-11-22T21:33+00:00",
+ "atualizadoEm": "2026-11-23T10:03+00:00",
  "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
  "painelComIA": true,
  "emJulgamento": [
@@ -22,7 +22,7 @@ window.LATS_TRIBUNAIS = {
    "relator": "",
    "placar": "",
    "status": "Em pauta",
-   "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNX2N3dVlLN0JQQkhaZGpjNy12QjRiZG1OQ1RLSmMxWDJ5NktYczJWa0M4ZU56SmYyS3RIVkpTdHVfM3FTOUJSU2pCbHRjZlY4bjh5bmRBcEUwNHU2OXA1TWRGMmhLTUprYTYzUHJoNEZoa1FYR0NMcnd2OGk5bVQtMlREcUctZFVtbThNZ3Faa0dLZDVhajdoUnhhNVk5N3dZZE9lNVhmT0tVSVhRR1EwMUlYdTRUWmlRZXBVbWdaY1NtMDM4dHB0dWt3cVF5REpKcFp4dTFCYlNQZ3lLdF9lX3NiWk5tTEUwcFdtQnI5YTFKeUlDUk5RRE1ESGhrZEtwRmtNeWNSSDV0dW5xdmt1c0pMTlhYRjU4MkJBY2xDLS15UVdySmc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPWkl1Xy1SRWZVZ0tZTzhOdm8zdjNmZEx2WWExcXY4NUNfME16TkxmZFBDVGFZa2NrV0h3SEhQT3ZMd2hUdEptSG5SOTlGWjlSbXdyM0hWMzJaNVdxcEE4enhZa2l0eUhyY3NJd2tZbWpGYnNUamp4SXNMb1k0dVQ3bTE5QkpRQ2Fib2RkVGhtQUVpX0VQYkVIYWFuMHh4czVXMmhpaGx6dnBkanlSYVlPQzEwVFc4aHJWRWUyU0FsZnF2UU5fZ0Z2ZkRsTVBRYmJBbDZRVnF2RDdwVlpGT3B6cm1GMkJFMlMyeGJaNzF5X1FwUDRzQ1BONUgxTjBTRXdJd0M5dGJEVEo5T2hXN1F1MEc1Sk1TUlBMUkFMcTRGR0NBZnBXMGc?oc=5",
    "data": "2026-11-19T22:46+00:00"
   },
   {
@@ -184,7 +184,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "sugestões da audiência pública; prescrição e decadência para PCDs",
-   "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNX2N3dVlLN0JQQkhaZGpjNy12QjRiZG1OQ1RLSmMxWDJ5NktYczJWa0M4ZU56SmYyS3RIVkpTdHVfM3FTOUJSU2pCbHRjZlY4bjh5bmRBcEUwNHU2OXA1TWRGMmhLTUprYTYzUHJoNEZoa1FYR0NMcnd2OGk5bVQtMlREcUctZFVtbThNZ3Faa0dLZDVhajdoUnhhNVk5N3dZZE9lNVhmT0tVSVhRR1EwMUlYdTRUWmlRZXBVbWdaY1NtMDM4dHB0dWt3cVF5REpKcFp4dTFCYlNQZ3lLdF9lX3NiWk5tTEUwcFdtQnI5YTFKeUlDUk5RRE1ESGhrZEtwRmtNeWNSSDV0dW5xdmt1c0pMTlhYRjU4MkJBY2xDLS15UVdySmc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPWkl1Xy1SRWZVZ0tZTzhOdm8zdjNmZEx2WWExcXY4NUNfME16TkxmZFBDVGFZa2NrV0h3SEhQT3ZMd2hUdEptSG5SOTlGWjlSbXdyM0hWMzJaNVdxcEE4enhZa2l0eUhyY3NJd2tZbWpGYnNUamp4SXNMb1k0dVQ3bTE5QkpRQ2Fib2RkVGhtQUVpX0VQYkVIYWFuMHh4czVXMmhpaGx6dnBkanlSYVlPQzEwVFc4aHJWRWUyU0FsZnF2UU5fZ0Z2ZkRsTVBRYmJBbDZRVnF2RDdwVlpGT3B6cm1GMkJFMlMyeGJaNzF5X1FwUDRzQ1BONUgxTjBTRXdJd0M5dGJEVEo5T2hXN1F1MEc1Sk1TUlBMUkFMcTRGR0NBZnBXMGc?oc=5",
    "data": "2026-11-19T22:46+00:00",
    "tipo": "pauta",
    "processo": ""
@@ -203,6 +203,14 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMkN2RXIxa0MzLWFCUV9KcV9IdmVnNkFkX2U2TzU0WGIzNVZ6RWUySWFpVzVzZXNzZlRZc1hSOFRJTzRHX0RLZ2RtQUZfZkZXSnczdFFDN0wwR2t0TGF5NHc2RGpLZVBtNnNMcmdrVGRaVVJhU2kySDlVU0RRTmVfOHZMNWQ1cE42aEZRUi01TG9KcTNFdDZhbmpRTHNyNFJQTW85OWN5RVVvSVd5X19KckpXOWpFSFFLaEU2blZxMGpXUWM4UU5fTi1XS1d2d0d2czRkcHJR?oc=5",
    "data": "2026-11-19T21:13+00:00",
    "tipo": "pauta",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Consulta de Contatos do STJ",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNGFYa0FyYjU2YjNXTWZNM2V1VXdJcWlDYlFxenBIUERjNG02VlNzcXA5V0prMEpfdndWMDVBM1prand3d194Y1hMTEZMY2xqT1VvZUE4NEduWmN0UjBrV3ZMdEFMaVJJQ00yRV91cFVfS3U2aldWVjVRZXRRYmV2cDFGM2lNMkxzRlRjM0YycU1CaUth?oc=5",
+   "data": "2026-11-19T21:05+00:00",
+   "tipo": "decisao",
    "processo": ""
   },
   {
@@ -296,7 +304,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Rádio Decidendi: precedente sobre tributação de benefícios fiscais de ICMS é tema do podcast",
-   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNcjZXS0h0SmY1aUZQN05aYld5N0prN0lPVjB4TVFWVFpUaUw0SGFTeVlKd002Yk1vaE5vSlBjQ0ZVUHExeTJHRDJUbVhKQ01tOUIzSThQbHh2VEFkM2dHeGFXQ2FSVk9Tc1k5TWVyOTlFTlZVaDNPcDAzNnJPWHd6Uzd3QVpYaWNlQ0JFTUp3ZnFiV3NMdU5Va29JblRvSkhHRnN6VklOZGFkX252Z2Q5SFZUaHkyLWREMkY3UGNudUE4LUR3YXBvN3h2c1lRbXpOeTZ6OHZsclFqOS04TlRFNzNTZFpYS28teGhEam1pdndYeFhfdlEzbDJqSG5ON2t1UE8yaURMYw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQZ21vNllsTHZfOHM5UFRQdkJZb2M2cGJockVwRVFBdzNVeVM1RTAzZ3I2MGQ1M0tUdy1oVDJWem1hNGhzTHNrakd6eGFJbmlTNnlJcC1lTEZ1RTlkaVlhRFRuOGI4YTY0VXh2ekJkX0pqUzdTSy1hODFNMFBnSjR1Z1hxSEZOSzRFb3o1RmFsRXlHUE5wS3N4a0ZrUDZGaFZZaHI3MUdOcGM4V29KeEhrY3VqcXoxX25Ub19aWnRhZk9lM09vaXZzNzJvVVAtTUNCZXkycGdWRmFYLUxMZDc1YUN1VjVMQTBmd0FSeVBYMTFxVC1YOUZkMGJnU3BNZTI2bUpDY2RQYw?oc=5",
    "data": "2026-11-19T10:40+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -344,7 +352,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "STJ recebe reconhecimento do CNJ pelo incentivo ao uso da linguagem simples",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOdUV1cmM3Z2Zib1BaUHBBdmpXTHdURHdtWDF1QjdJRWl3Z1VWQVQ2cFREaDVxMndXRjBpYkd3d1FNdlJGYjhQdVFfZWlqUGxrS3JWRUtjemdvMVpVbl84VEVJOGFCUE1DXzFlVE5HX3N3amM3a3hpeHRHYVpFQ1M1RzRlQ0hFRXBjM09EelZiRm1xVWR3WU1hQ21icjBSNWp5SnIwZ2FGTzhLbnYtSExEM0ZoM1ZCaTFyM1BNTFh2X19QUjd6SFV3dl8yd1QtdE11eHh6akF1NlhYWUFHdDdiR0NKdnZZUTdRNDlKQ3hqWHlaUQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNeDZpQWlsWk1oZUxCR2lTcnBnSWp4LThqWTM5ZXNxUEQ3LWdGUEhwVmx5NU9LZ1IzMWlPejFJZFBCbm5Mem5sZlJTcFhmanV5SjdlcUU3NVAxZlFOZmpRTnJDMnhtaV9qakJQU21kM0h3OWFkTHFTQzlLb0ZVV0dwZTVFWUtHSVRXSE5kMFdwYXo4UGVtMV94NGlValM2VVA0MHhhRUEzNHJXOUk3TEJTWjhaSTNlRFZEOUdxVFRyMDlrSmlKNWJnWXFiLWx3STlyekE5cHkxY2RlWW1CaU9yVHoxbENhMm9WaGh5THVTeGJqZw?oc=5",
    "data": "2026-11-18T21:32+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -375,14 +383,6 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STJ",
-   "titulo": "Entender Direito aborda evolução da jurisprudência do STJ sobre agravo de instrumento",
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxON1FXRF9saXJRM2M2QUNYRlVqa3ozRnhFYlRST1JZZU5fTlBSejVyNHFuM01EalNmaWRGZzZzWEYwQUZna2lZaEJJLWlfdnZ4RjlLUVVqa04yeHVGclY1cGNXck1ZVnZMWHdTWHhCRE1WUHNWOFJ2dl9Ed180YkpzTzV5QkV4UkRyZ2owSTQ4WDZNaDNtdlc2UWZublFNdmJkWUpmVVVMdnpkcUxlQmgwektycnR4WHRscXB2dDdVWktIMVZxZzNsZUtpUG5odUFPX1lXQkFHLTdfbDlZQ1F1eHQ4Y0xzXzQ3YnZDaUt0RjBJckVJZ1JNS3ZuM0N3NlU?oc=5",
-   "data": "2026-11-18T14:47+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
    "titulo": "Clipping de Legislação - 18/11/2026",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbEtWTHpsSHFOWWlmWEVHNHhxUUhGZmtxSWY2aFItWnBUcjJMcE1abmw2ZlhUQWk4dHZfN2x6NHlud192Rm1LUmdPa1U5Q0l5R1pfdUwwVjJaNlJzVHVvS0owcVl3QzdHODFPcVZ3aWpuVEwzQXdEaXVyejJLcVdlRHZqb241RVUyNWpxUkNWaWdwQzAweTZWSA?oc=5",
    "data": "2026-11-18T14:43+00:00",
@@ -403,6 +403,14 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWEZIWTE2VDd4RDF5ald0bmpNWEpiSy1BSGNKd19TNXJuZ0Y1X2RZV0lEYTJBaDNmYzFxcjZNR0cyZm81cFRVWGhGdFFlR0lMUlJkcGlKX1JuYXFfY3d1MkkwTEhaSkpQU29sTGJMdGFVUWkzMGpnWDFoQTl1V0I5QU5uYkh3ZnhHRkQxeUp4bWFZamJUYy1XTGVtVmg2aWtGRld4c0dFU0xIQkVDdmRXUmZ6QktTT3kyTlNGRXN2MHVQWS02NmNYaXlpRzk3TzhzVnl1MHkzaw?oc=5",
    "data": "2026-11-18T12:00+00:00",
    "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Entender Direito aborda evolução da jurisprudência do STJ sobre agravo de instrumento",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxON1FXRF9saXJRM2M2QUNYRlVqa3ozRnhFYlRST1JZZU5fTlBSejVyNHFuM01EalNmaWRGZzZzWEYwQUZna2lZaEJJLWlfdnZ4RjlLUVVqa04yeHVGclY1cGNXck1ZVnZMWHdTWHhCRE1WUHNWOFJ2dl9Ed180YkpzTzV5QkV4UkRyZ2owSTQ4WDZNaDNtdlc2UWZublFNdmJkWUpmVVVMdnpkcUxlQmgwektycnR4WHRscXB2dDdVWktIMVZxZzNsZUtpUG5odUFPX1lXQkFHLTdfbDlZQ1F1eHQ4Y0xzXzQ3YnZDaUt0RjBJckVJZ1JNS3ZuM0N3NlU?oc=5",
+   "data": "2026-11-18T11:50+00:00",
+   "tipo": "decisao",
    "processo": ""
   },
   {
@@ -432,7 +440,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Presidente do STJ e do CJF lamenta morte e destaca legado de Paulo Gallotti",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQV3ZoUDJfZXhkaDNMc3JnWlZ6ekUydHZZQUdXeTVZTW0zelNtbkJFX05mcnFxODY2NVd2X3pzUVhTNXl4dDRiMVVTdUZMTEVpc2ZsZ3FGSC16V1YwTWtIb3Q4aWtDaWJmaUI2UTRIQkJta3N3UGg1ZGFVYnhLd0kwaU1iZThTRG0xR2pzU09fYkc3VTZmNDNxUFFpa3h0cmU0ZHFSeUxMcTJkTGxpci1zc1RLbzNLTkJxcDRfSHVhM2R4aGF0cVpwWnZxUzFoSy1Id0hsbDRISnRCUnFjajVVX3k5cnR1VG1VT0NyVHY0dTFIQQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPb3hEZXdjY1JtLVJQWTctRkYtbEZ6VjlvaXZhbk9EZnNwTXFNby01UWptXy0xcmJxU3U0OXVDQnZpcWRkRU4xOXBCcUtiSzR4Uk84R09jX3ZMY2xaQllqb0YwZnp5YWNTaTlaemhYZGJEUXRTQjRCUnNPcXpGSFRzeEIwd3AtQWl4YTFucGZieEdOUHlGUTNGRGczMVB2Z1U0bUl3WUJnaXczODlab05oTXRNX1RpNlRqRTBFS3VteEhUclpaTndKNGdWWkFKWlJGV1dSU29VY3Rxc0FHNVBONTRabzlHWVBIcDBvZklpblFUZw?oc=5",
    "data": "2026-11-18T10:49+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -440,7 +448,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "STJ debate prescrição em ações envolvendo pessoas com deficiência",
-   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQUFdOdUFxbG5sRE5YUHd2Zk1CZFo1bUhHRXRJMEZQRF9OMVBHeFNsU0p2Z0lDZXA0b0JIUFBOSkZOOGpocHg3dEcyYnZZUDk3UXh3OTZRdHVrdkExVENIMXZ0NXNqZmMtU2RrOTZpZFdvWWxHekhQOHhDTklFWjZmR1lzbzJQbWVJckx2d0VuQnFab3NvX0ZiUk1mNGZLNnZRcFFnclA2YlFWYzFvNkJaVFBVUnltbkF4TWNWcVZoUzF5RXE2YTAzcGxEZzI1OEo4WTBoTF9paDctSnBDenJLQ3c0VExVVV81eVN1Y3FvZXlabG9GeFl4SUI3NWs5TEJ6Y2hhc2E4OTcwY1FLTU1HTlhWaXAtTHdx?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPRjJKVDlKVEgxNW91MGV6NWo2a0hpbERxYm5UMFFvVDBXQXZmcUpqdERTSXFfcUp4bDZ5QmgwRlFRdnZiZEdRaGk4OFdxR0Q1dFlBeU9qTWYydGJwbmZ1clZreFM4ZnFTVG5MWWkzdkprak12aXpBNnlNYVFWeGJZN2FqamJ4bUFnQW91RGRFN0htVkFlSmxYYmRvSFYxZTV5R1M1TEI5MHRCQjJuTmhDbUJDRGZ1ZjdGMWVHZV9rNnZYdkRPYkQyMnRxNEdXak9qUXZmaWR5d3hZdFdxdmVuclNMUUNIdkRneUZUdEV0dFhrak1yNUJxN0NvZEQ4WnVfdGhaOEtiV25GTHJncVhtaExldVU1Szhl?oc=5",
    "data": "2026-11-18T10:40+00:00",
    "tipo": "decisao",
    "processo": ""
@@ -482,14 +490,6 @@ window.LATS_TRIBUNAIS = {
    "titulo": "Primeiro dia do Missões da Justiça e Cidadania leva serviços à população do interior gaúcho",
    "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQb0dTRFpQeGxMZXdFc2o4V1l6VTdpeWp0NHFFLXpjMUlJQUhHOXF6aWpEWUZLRnlsbWNRbXlBRHRsZWdhNC13YzM5cWQzbERqRGd6YXRvV2ZFQnhmRE9SbF9jeWx5NWdQcWh4bVhHQW0tN2hZSWNMQXJ2MVFvZjlEbGdhQTNJSUtoMmtJdmNQSlNQdWFvR1l5RUFYNWEybXRKeVd6QVFHeFdGZEtDTFFMTmxuT3lqZGtpVFV4WXF2dUVPZlRsaHl4YUstVElXUEFpSF9mNDZIQkZLU2dVNzFOLXl6YU92dVZ6VHI4dDN0aFJzQXFsUkZIczRJQWYwTDl6b293Y2lfUQ?oc=5",
    "data": "2026-11-17T22:08+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "STF valida lei que criou microrregião de água e esgoto no Pará",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWjR2ZnZiV3FFaDg4ek94TmVFajBLcmNsZVZ4anN6R3VnSG8zd2NKMi1GZkdFREE3UEhocFAwUEFBdTdQbUhqYlJYQ1N2NW10cTcxbTFPR0RMV3lxdVM0WUJuWXZzbzllcUs1TUxXRWw3RzJpZlNjRkk5emdNSGc5T0M0dnVGbGQzeTM5NWhhY2ZaYnVQTHIxS0JXWVZSclpXVEIwS2tBZ3k?oc=5",
-   "data": "2026-11-17T20:49+00:00",
    "tipo": "decisao",
    "processo": ""
   },
@@ -558,14 +558,6 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
-   "tribunal": "STF",
-   "titulo": "Fachin encerra encontro de cortes supremas do Mercosul com defesa da cooperação e da independência judicial",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOaXUzWTEwUFMwQmNRazFQVk9tRmg3a3NVUHRxMk5EMDllaE9VczBpdGNOd2ZRT2JHRjhwanVzQk9xUkZ0OVh0eHo0eXBfWU5WblpXLVd4bzlJbTAwT2xyN0V0R3o1TXZpV3lPcU10Q0FRUmFvbFZDamNOT1Z1MTktY0ZrUi1XOU1hVF90OVRWLUVyVU1hVHJzNG9odkFRSVlVbFdHMlBMMDdBZlZ1UFdFTGRLY0U5a0c4clZRaXhqWFdaQVNSaks2X0ZZNmhpTzN5VHd2NnN5aUdwTW8xVC1lU3h6VlI?oc=5",
-   "data": "2026-11-16T23:17+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
    "tribunal": "STJ",
    "titulo": "Missões da Justiça e Cidadania chega ao interior do RS nesta terça-feira (17)",
    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQR2RFbXp4OEdOX0RoMzV2cmM4eFc1MjdwX2lyeC0xN242WmZ5Slp3a1hrR3JIb19kTUViY3VKUnVRT3pkcEx1cjg1VHdFYnphanNnNnNHZVQtVXlKMlZCSFlUMl82djVnYmtPTFp2VFJoX1oyNmhJbTlOZ0ZqcmN1aGdMZFBPSGZRZmFXT2owY1R1cHJXdUlISTdzNldKVTh0eEl3WEFqaDE5WEFONm1SM3VDQ0VxcUNiSG8wNDJGV19QcTBmVXg4MGNsejM2R2drQl8tQTVZUWI0V3lJRjZGdmdPZ29iMW5tOWpzNUd1dTN5blZQ?oc=5",
@@ -614,6 +606,14 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
+   "tribunal": "STF",
+   "titulo": "Em uma década, STF reduz pela metade estoque de ações constitucionais",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcDBTZUFVVHEteGtpVE1LWE5WQUpkMW4zdnZfX0prd2ZUTWdVRUhYTjFiSkUyNWNiajg4Qmp5dnFvTmFjLUFwemlpTVQ0aFhCaF9QbUlkMWEzdkRBZ3prRlBrZXo3aDAtR0tZTEVpSENlYXhUT3BDVUZ0cUxyNWZONFlfYUtMbUNFRS1zTDFtVHg4dUJEOWVsVTB1SWw4cUJpd1oxSjZJOXlncUdLd2NqYg?oc=5",
+   "data": "2026-11-16T13:00+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
    "tribunal": "STJ",
    "titulo": "Calendário 2027 do STJ e CJF destaca decisões marcantes que mudaram a vida de brasileiros",
    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPX29rT0gtQmhrNG5RbDNaVXZ6bWFTRUwyTnFCZEltN1dlZi1ZMzNhUlZfTFdveElmMnpMVktkTUpDZ1I2S29OSmF5My1FQl8wVkFGbDFrUEJsM3pNemhfam5DdkJVN2NXOWxXeUxkSUhoX1EtRDBHckY1LTdWR1ZOM0dsR0hrd2ttYmoyVkxOaVZQNnJYemVndklYRlpMSncyX2NhMEthV0VFRXpZZEVRaDJmUmxYVlZVRGlPNjB4VGNFdEg4ZmZ3OEhMR1NTXzd1RTNKREFQSEVrTE9YUGo1dGpmWFhrU2RoR3pJWktKQXp2VjF4MW5zcVpabVg3alV6c1B4Zw?oc=5",
@@ -627,14 +627,6 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPU2ZqdEd4MUVoYlVXWEZXNmdfSTFYUDJmWnI4dFJvdEV5b01qYl85RjhXZW1tODhUNXhIajZOeW1maTBST2w4WWVwOXl2RGdkY0E5Slg0eENsTDhkX3ptaEJsT0lDU0hCWGJFRWMwejB2M3RuM1Q0VGxyOTlmVjNvVjFqcjFOZnZIWDZLN3J1eG1FZ01PTEpZbm9XZ2xkSjlwU2FtcE94YnE4b1l4OE40M3UwOGxSaTNqaHMyUl9KWDQ0RTM3X3VEejNieWZ4dU4xYW5DcUdYV0x2TkFVckVlR0pIeUdlTXNQOXpzQ3NNa2RjTkQtWk52WFphRXRvcFIwdG9yOHE0SU13N2d4ZVBTNGhIb20?oc=5",
    "data": "2026-11-16T11:00+00:00",
    "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "STJ veda restituição de PIS e Cofins para venda de cigarros",
-   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNNDNhYVl1MlEwSVRrRktxTEVvcGFoOEVkdmwtV3hha2taSnZfVUJaSGljTmNFT3BuVlo5UUxNYXU2Q1J3VUdBa2pHUFV4dUM5dzFBOVFzNndxMVRzcUtyczY0c1l6NmNiWk1JZTdOMkhEWFEzcnlDeWZZamdPQTd3VFg4RFB4T3c0eVpCOHB2a2NBUmpNdmZ3Vmt5d19uR1VjRXVIRDRPMnBjREdyMGFqaS1MdW05RGl2dmJ3SUVsMEhITC1GWGtwVzQ5YldZUmtJMExzc0RyLXZDdFdSdUI5bGN2Qno5d0dVeHNla0NhcFRCekJSUDk2SnN3QjZlc1RxU05tNzRqUzY?oc=5",
-   "data": "2026-11-16T10:10+00:00",
-   "tipo": "decisao",
    "processo": ""
   },
   {
