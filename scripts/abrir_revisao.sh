@@ -1,11 +1,14 @@
 #!/bin/bash
 # Monta a edição do Informativo LATS e abre (ou atualiza) a revisão no GitHub, sem usar a API do Claude.
-# Uso: scripts/abrir_revisao.sh noticias.json edicao.json
+# Uso: scripts/abrir_revisao.sh noticias.json edicao.json [pasta-com-fotos]
+# As fotos (.jpg) vão para site/assets/img/informativo/.
 # Trabalha numa cópia temporária: não mexe na pasta do site nem publica nada.
 # Não faz Merge. O Merge, feito por um membro da Liga, publica a edição e envia o e-mail.
 set -euo pipefail
 NOTICIAS=$(cd "$(dirname "$1")" && pwd)/$(basename "$1")
 EDICAO=$(cd "$(dirname "$2")" && pwd)/$(basename "$2")
+FOTOS=${3:-}
+[ -z "$FOTOS" ] || FOTOS=$(cd "$FOTOS" && pwd)
 RAIZ=$(cd "$(dirname "$0")/.." && pwd)
 GH=$(command -v gh || echo "$HOME/.local/bin/gh")
 RAMO=informativo/semana
@@ -35,6 +38,18 @@ git worktree add -q --detach "$TMP/site" origin/main
 cd "$TMP/site"
 python3 -B scripts/atualizar_tribunais.py --aplicar-edicao "$NOTICIAS" "$EDICAO"
 NUM=$(python3 -c "import json;t=open('site/data/informativos.js').read();print(json.loads(t[t.index('['):].rstrip().rstrip(';'))[0]['numero'])")
+if [ -n "$FOTOS" ]; then
+  mkdir -p site/assets/img/informativo
+  cp "$FOTOS"/*.jpg site/assets/img/informativo/
+  git add site/assets/img/informativo
+fi
+# toda foto citada precisa existir
+python3 -c "
+import json,os,sys
+t=open('site/data/informativos.js').read(); ed=json.loads(t[t.index('['):].rstrip().rstrip(';'))[0]
+f=[i['imagem']['arquivo'] for k in ('stf','stj','pauta') for i in ed[k] if i.get('imagem')]
+faltam=[x for x in f if not os.path.exists('site/'+x)]
+sys.exit('Foto não encontrada: '+', '.join(faltam) if faltam else 0)"
 git add site/data/informativos.js informativo/comentario-da-semana.md
 git commit -qm "Informativo LATS nº $NUM: edição para revisão
 

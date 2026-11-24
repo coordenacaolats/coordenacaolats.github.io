@@ -860,3 +860,8 @@ html{scroll-padding-top:80px}
 .stc-band-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
 .stc-band .stc-band-actions .btn{margin-top:0}
 .stc-band .stc-band-data{font-size:.95rem;margin:1.2rem 0 0}
+
+/* ---------- Informativo: foto do caso principal ---------- */
+.ed-foto{margin:0 0 1.1rem}
+.ed-foto img{display:block;width:100%;height:auto;border-radius:10px}
+.ed-foto figcaption{font-size:.78rem;opacity:.75;margin-top:.5rem}

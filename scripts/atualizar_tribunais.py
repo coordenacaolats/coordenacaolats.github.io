@@ -464,8 +464,13 @@ def montar_edicao(dados: dict, semana: list[dict], numero: int) -> dict:
         for it in itens or []:
             i = it.get("indice")
             if isinstance(i, int) and 0 <= i < len(semana):
-                saida.append({"titulo": it["titulo"], "resumo": it["resumo"],
-                              "link": it.get("link") or semana[i]["link"], "tribunal": semana[i]["tribunal"]})
+                novo = {"titulo": it["titulo"], "resumo": it["resumo"],
+                        "link": it.get("link") or semana[i]["link"], "tribunal": semana[i]["tribunal"]}
+                # foto do caso principal: {"arquivo", "alt", "credito", "fonte"}; só entra com crédito
+                img = it.get("imagem") or {}
+                if img.get("arquivo") and img.get("credito"):
+                    novo["imagem"] = {k: img[k] for k in ("arquivo", "alt", "credito", "fonte") if img.get(k)}
+                saida.append(novo)
         return saida
 
     return {

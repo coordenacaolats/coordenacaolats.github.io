@@ -65,8 +65,12 @@
   const alvo = $("#edicao");
   function bloco(titulo, itens) {
     if (!itens || !itens.length) return "";
-    return `<div class="ed-bloco"><h4>${titulo}</h4><ol>${itens.map(i => `<li>
+    return `<div class="ed-bloco"><h4>${titulo}</h4><ol>${itens.map(i => `<li>${foto(i.imagem)}
       <h5>${i.link ? link(i.link, esc(i.titulo)) : esc(i.titulo)}</h5>${i.resumo ? `<p>${esc(i.resumo)}</p>` : ""}</li>`).join("")}</ol></div>`;
+  }
+  function foto(im) {
+    if (!im || !im.arquivo || !im.credito) return "";
+    return `<figure class="ed-foto"><img src="${esc(im.arquivo)}" alt="${esc(im.alt || "")}" loading="lazy"><figcaption>Foto: ${im.fonte ? link(im.fonte, esc(im.credito)) : esc(im.credito)}</figcaption></figure>`;
   }
   function comentario(c) {
     if (!c || !c.texto || !c.texto.length) return "";

@@ -41,6 +41,8 @@ PREFIXO = "window.LATS_INFORMATIVOS = "
 COMENTARIO = RAIZ / "informativo" / "comentario-da-semana.md"
 SITE = "https://latsufrn.com.br/"
 API = "https://api.brevo.com/v3"
+# As fotos são lidas direto do repositório: no momento do envio, o site ainda está sendo publicado.
+IMAGENS = "https://raw.githubusercontent.com/coordenacaolats/coordenacaolats.github.io/main/site/"
 
 CAMPOS = {
     "autor": "Autor",
@@ -176,9 +178,18 @@ def montar_html(ed: dict) -> str:
             return ""
         d, resto = itens[0], itens[1:]
         est = f"font-family:{serif};font-weight:bold;font-size:27px;line-height:1.25;color:{NAVY};"
+        foto = ""
+        im = d.get("imagem") or {}
+        if im.get("arquivo") and im.get("credito"):
+            cred = e(im["credito"])
+            if im.get("fonte"):
+                cred = f'<a href="{e(im["fonte"])}" style="color:{CINZA};">{cred}</a>'
+            foto = (f'<img src="{IMAGENS}{e(im["arquivo"])}" width="540" alt="{e(im.get("alt"))}" '
+                    f'style="display:block;border:0;width:100%;max-width:540px;height:auto;border-radius:10px;margin:0 auto;">'
+                    f'<p style="margin:8px 0 20px;font-family:{sans};font-size:12px;line-height:1.5;color:{CINZA};text-align:center;">Foto: {cred}</p>')
         s = divisor + (
             f'<tr><td class="lado" style="{P}">{rotulo(nome)}'
-            f'<h2 class="tit" style="margin:14px 0 18px;{est}text-align:center;">{link(d, est)}</h2>'
+            f'<h2 class="tit" style="margin:14px 0 18px;{est}text-align:center;">{link(d, est)}</h2>{foto}'
             + (f'<p style="margin:0;font-family:{sans};font-size:16px;line-height:1.65;color:{INK};">{e(d["resumo"])}</p>' if d.get("resumo") else "")
             + '</td></tr>')
         est2 = f"font-family:{serif};font-weight:bold;font-size:18px;line-height:1.35;color:{NAVY};"
