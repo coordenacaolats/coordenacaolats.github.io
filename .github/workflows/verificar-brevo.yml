@@ -1,12 +1,17 @@
 # Execução manual. Sem marcar a caixa, só confere a chave da Brevo.
-# Com a caixa marcada, envia um e-mail de teste SOMENTE para o endereço do remetente.
+# Com a caixa marcada, envia um e-mail de teste SOMENTE para o endereço do segredo EMAIL_TESTE
+# (ou, se não houver, para o do remetente). Os inscritos não recebem.
 name: Verificar a Brevo
 
 on:
   workflow_dispatch:
     inputs:
       enviar_teste:
-        description: "Enviar e-mail de teste para o endereço do remetente"
+        description: "Enviar e-mail de teste (só para o endereço de teste)"
+        type: boolean
+        default: false
+      em_revisao:
+        description: "Usar a edição que está em revisão (ainda não aprovada)"
         type: boolean
         default: false
 
@@ -27,5 +32,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: python scripts/informativo_email.py --verificar
+      - if: inputs.enviar_teste && inputs.em_revisao
+        run: |
+          git fetch -q origin informativo/semana
+          git checkout FETCH_HEAD -- site/data/informativos.js informativo/comentario-da-semana.md
       - if: inputs.enviar_teste
-        run: python scripts/informativo_email.py --teste "$BREVO_SENDER_EMAIL"
+        env:
+          EMAIL_TESTE: ${{ secrets.EMAIL_TESTE }}
+          IMAGENS_RAMO: ${{ inputs.em_revisao && 'informativo/semana' || 'main' }}
+        run: python scripts/informativo_email.py --teste "${EMAIL_TESTE:-$BREVO_SENDER_EMAIL}"

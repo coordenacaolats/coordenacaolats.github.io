@@ -42,7 +42,9 @@ COMENTARIO = RAIZ / "informativo" / "comentario-da-semana.md"
 SITE = "https://latsufrn.com.br/"
 API = "https://api.brevo.com/v3"
 # As fotos são lidas direto do repositório: no momento do envio, o site ainda está sendo publicado.
-IMAGENS = "https://raw.githubusercontent.com/coordenacaolats/coordenacaolats.github.io/main/site/"
+# IMAGENS_RAMO só muda no teste, para ler as fotos da edição em revisão.
+IMAGENS = ("https://raw.githubusercontent.com/coordenacaolats/coordenacaolats.github.io/"
+           + (os.environ.get("IMAGENS_RAMO") or "main") + "/site/")
 
 CAMPOS = {
     "autor": "Autor",
@@ -268,10 +270,11 @@ def brevo(metodo: str, caminho: str, corpo: dict | None = None):
         raise SystemExit(f"Brevo {metodo} {caminho}: HTTP {err.code} — {err.read().decode(errors='replace')}")
 
 
-def criar_campanha(ed: dict) -> int:
-    assunto = f"Informativo LATS nº {ed['numero']} — {ed['titulo']}"
+def criar_campanha(ed: dict, teste: bool = False) -> int:
+    marca = "[TESTE] " if teste else ""
+    assunto = f"{marca}Informativo LATS nº {ed['numero']} — {ed['titulo']}"
     r = brevo("POST", "/emailCampaigns", {
-        "name": f"Informativo LATS nº {ed['numero']}",
+        "name": f"{marca}Informativo LATS nº {ed['numero']}",
         "subject": assunto[:200],
         "previewText": (ed.get("abertura") or "")[:150],
         "sender": {"name": os.environ.get("BREVO_SENDER_NAME") or "Informativo LATS",
@@ -326,7 +329,7 @@ def main() -> int:
         destino.write_text(montar_html(ed), encoding="utf-8")
         print(f"Prévia gravada em {destino.relative_to(RAIZ)}")
         if args.teste and configurado():
-            cid = criar_campanha({**ed, "titulo": "[TESTE] " + ed["titulo"]})
+            cid = criar_campanha(ed, teste=True)
             brevo("POST", f"/emailCampaigns/{cid}/sendTest", {"emailTo": [args.teste]})
             print(f"Teste enviado (campanha {cid}).")
         if mudou:
