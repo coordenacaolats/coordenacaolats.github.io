@@ -1,5 +1,122 @@
 window.LATS_INFORMATIVOS = [
  {
+  "numero": 2,
+  "semana": "2026-11-17",
+  "publicadoEm": "2026-11-24",
+  "titulo": "STF define a partir de quando vale o fim da isenção de pena entre familiares",
+  "abertura": "Entre 17 e 24 de novembro, o STF concluiu o julgamento sobre crimes patrimoniais em família e invalidou leis do Ceará e de Rondônia. No STJ, os destaques são a tese sobre o salário-educação de titulares de cartório, o empate que manteve a anulação do júri do Crime da 113 Sul e o regime de bens na união estável de maiores de 70 anos.",
+  "stf": [
+   {
+    "titulo": "Fim da isenção de pena em crimes patrimoniais entre familiares vale a partir do julgamento",
+    "resumo": "Por maioria, o Plenário definiu que o afastamento dos arts. 181 e 182 do Código Penal produz efeitos, em regra, a partir da conclusão do julgamento. Ficam preservadas as condenações definitivas e as ações em andamento em que a isenção já havia sido afastada com base na Lei Maria da Penha (ADPFs 1185 e 1241, relator o ministro Dias Toffoli).",
+    "link": "https://noticias.stf.jus.br/postsnoticias/fim-da-isencao-de-pena-em-crimes-patrimoniais-entre-familiares-vale-a-partir-do-julgamento-decide-stf/",
+    "tribunal": "STF",
+    "imagem": {
+     "arquivo": "assets/img/informativo/n02-stf.jpg",
+     "alt": "Plenário do STF durante a sessão de 18 de novembro de 2026",
+     "credito": "Luiz Silveira/STF. Plenário, sessão de 18/11/2026",
+     "fonte": "https://www.flickr.com/photos/supremotribunalfederal/55660058717/"
+    }
+   },
+   {
+    "titulo": "Presidente do STF autoriza retomada de auxílio emergencial a atingidos de Brumadinho",
+    "resumo": "O ministro Edson Fachin suspendeu decisão do STJ que impedia a liberação de recursos para o novo auxílio às populações atingidas pelo rompimento da barragem. A decisão, na STP 1164, não julga em definitivo as obrigações da Vale nem os efeitos do acordo de reparação de 2021.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/stf-autoriza-retomada-de-auxilio-emergencial-a-vitimas-de-brumadinho-mg/",
+    "tribunal": "STF"
+   },
+   {
+    "titulo": "STF derruba exigência de comunicação eletrônica de venda de veículos no Ceará",
+    "resumo": "O Plenário invalidou trecho de lei cearense que obrigava os cartórios a informar ao Detran-CE as transferências de veículos, por invadir a competência da União sobre trânsito e registros públicos. Na ADI 7970, o ministro Cristiano Zanin foi o relator e o ministro Gilmar Mendes ficou vencido.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/stf-derruba-exigencia-de-comunicacao-eletronica-de-transferencia-de-veiculos-no-ceara/",
+    "tribunal": "STF"
+   },
+   {
+    "titulo": "Redução de honorários de procuradores de Rondônia é inconstitucional",
+    "resumo": "Na ADI 7694, prevaleceu o entendimento de que cabe à União legislar sobre honorários sucumbenciais e de que as parcelas da atuação administrativa são protegidas pela irredutibilidade de vencimentos. Os efeitos valem a partir da publicação da ata do julgamento.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/stf-declara-inconstitucional-reducao-dos-honorarios-de-procuradores-de-rondonia/",
+    "tribunal": "STF"
+   },
+   {
+    "titulo": "Presidente do STF mantém prisão preventiva de Daniel Vorcaro",
+    "resumo": "Na Pet 15556, o ministro Edson Fachin rejeitou o pedido de soltura do banqueiro, investigado na Operação Compliance Zero. A defesa alegava falta de reavaliação periódica, ausência de motivos atuais e excesso de prazo, temas centrais no estudo da prisão preventiva.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-prisao-preventiva-de-daniel-vorcaro/",
+    "tribunal": "STF"
+   }
+  ],
+  "stj": [
+   {
+    "titulo": "Salário-educação não pode ser exigido de titulares de cartório",
+    "resumo": "Em recurso repetitivo (Tema 1.228), a Primeira Seção definiu que a pessoa física titular de cartório não deve a contribuição, porque a natureza estatal da atividade impede tratá-la como empresa. Com a tese, voltam a tramitar os processos que estavam suspensos.",
+    "link": "https://www.stj.jus.br/sites/portalp/paginas/comunicacao/noticias/2026/18112026-primeira-secao-fixa-tese-e-define-que-salario-educacao-nao-pode-ser-exigido-de-titulares-de-cartorio.aspx",
+    "tribunal": "STJ",
+    "imagem": {
+     "arquivo": "assets/img/informativo/n02-stj.jpg",
+     "alt": "Edifício-sede do Superior Tribunal de Justiça, em Brasília",
+     "credito": "Max Rocha/STJ (CC BY 4.0, reduzida). Edifício-sede do STJ",
+     "fonte": "https://www.flickr.com/photos/stjnoticias/55669744069/"
+    }
+   },
+   {
+    "titulo": "Crime da 113 Sul: Sexta Turma mantém anulação do júri de Adriana Villela",
+    "resumo": "O julgamento dos embargos do Ministério Público terminou empatado em 2 a 2, e prevaleceu o resultado mais favorável à ré. A anulação, de 2025, teve como fundamento a falta de acesso da defesa, em tempo adequado, aos depoimentos dos corréus.",
+    "link": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/18112026-Crime-da-113-Sul-Sexta-Turma-mantem-anulacao-do-juri-que-condenou-Adriana-Villela.aspx",
+    "tribunal": "STJ"
+   },
+   {
+    "titulo": "Tese do STF sobre maiores de 70 anos não alcança união estável já extinta",
+    "resumo": "Para a Terceira Turma, o Tema 1.236 do STF tem efeitos apenas prospectivos e não se aplica a uniões encerradas antes daquele julgamento, ainda que haja processo em curso. Por isso, foi mantida a separação obrigatória de bens, em decisão unânime relatada pelo ministro Ricardo Villas Bôas Cueva.",
+    "link": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/19112026-Terceira-Turma-mantem-separacao-obrigatoria-em-uniao-estavel-de-maior-de-70-anos-extinta-antes-de-.aspx",
+    "tribunal": "STJ"
+   },
+   {
+    "titulo": "Inventário é meio autônomo de proteção do patrimônio cultural",
+    "resumo": "O STJ reconheceu o inventário como forma de proteção que existe por si, ao lado de instrumentos como o tombamento. A Constituição prevê os inventários no art. 216, § 1º.",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPRTNNWFM5R3R5QjN6ZTJfZFBtUXNVZUpKWVpiZFpmS2JuTDVNM2Fya3dwQldLZFdubjhBbV9BTU9UbV9IM3poMnExbTIwQ19yMS1ZU05NcWhtZTZwbE8zTzFyQ2k0a0x0dXFWSjZ6eDBndU1MSnpYZjhJYTQxRFY3V2daQVB4LWNCQzYxRm8xSXhlZHVCZmdteHFPTGR3LVRfNlYwNmVNTUk2blI5X0Y5Uk5oX0FYYWM4NkhQMmtwY0o1MjIxZkQyRVNLeFN2STVpajk0OUJnaHZvQzBxeGJRVDlIZlZzUFBEdF9Ed0hLc1lXb1R1N1Qwb1pjZ2I5d0dqY0E?oc=5",
+    "tribunal": "STJ"
+   },
+   {
+    "titulo": "Retratação da vítima, sozinha, não basta para absolver em revisão criminal",
+    "resumo": "Segundo o STJ, a retratação que não encontra apoio nas demais provas do processo não autoriza a absolvição em revisão criminal. O tema dialoga com a estabilidade da coisa julgada penal e o valor da palavra da vítima.",
+    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNTnBKcklvYS1fQ0UtbVdIQlFRbzZXTzdzQTdoMEowMkdjS25PSkt4TGhJeGpDSDkyTnpaQXJOMjBOVGU1TGJWMFNtX05CVVRBYVRxTk91Q3Npb1dWbEpzNm1LOGdQSkNLOXczbl84OVlUTmdHX3hYQklsUGQ2Njg1d3FGVzF6ZzE4bWdfVUZmQ3FQcndISjgwRHhReHpVaUZNV2E4ekRaS2g3eG5aS3BSMDBpTVZqUW96aGJKdGlHTG9SYjdaN0c5b3hTTXlXQll2Nkp4d0Mzd3IwRGVQcEFoYm5aRWx1OEQxUVRrY1JTT29oZ0UwWlRHUjVmeUV2VHFtZEU4?oc=5",
+    "tribunal": "STJ"
+   }
+  ],
+  "pauta": [
+   {
+    "titulo": "Honorários em renegociação de dívidas com o poder público têm maioria no STF",
+    "resumo": "Na ADI 5405, há nove votos para invalidar normas de cinco leis federais que dispensam honorários ou mudam quem os paga em acordos e parcelamentos. Faltam os votos dos ministros Nunes Marques e Gilmar Mendes.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/stf-tem-maioria-a-favor-de-honorarios-advocaticios-em-renegociacoes-de-dividas-com-poder-publico/",
+    "tribunal": "STF"
+   },
+   {
+    "titulo": "STF julga condenação de emissora por críticas a policial",
+    "resumo": "Na Rcl 78354, sobre liberdade de imprensa e responsabilidade civil, cinco ministros votaram para cassar a condenação e três para mantê-la. O julgamento foi suspenso e aguarda dois votos.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/stf-tem-cinco-votos-para-anular-condenacao-de-tv-por-criticas-a-policial-acusado-de-homicidio/",
+    "tribunal": "STF"
+   },
+   {
+    "titulo": "Plenário Virtual analisa o “crime de hermenêutica” até 30 de novembro",
+    "resumo": "A ADPF 881 discute se juízes e membros do Ministério Público podem responder por prevaricação em razão da interpretação que dão à lei. Em 2022, o relator, ministro Dias Toffoli, concedeu liminar para impedir essa responsabilização.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/confira-os-destaques-do-plenario-virtual-desta-semana-9/",
+    "tribunal": "STF"
+   },
+   {
+    "titulo": "Lei da Dosimetria vai ao Plenário Virtual entre 4 e 15 de dezembro",
+    "resumo": "O ministro Alexandre de Moraes liberou para julgamento as ADIs 7966, 7967, 7968 e 7969, que questionam a Lei 15.402/2026.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/nota-do-gabinete-do-ministro-alexandre-de-moraes-7/",
+    "tribunal": "STF"
+   },
+   {
+    "titulo": "STF vai decidir sobre o divisor mínimo no cálculo da aposentadoria",
+    "resumo": "No Tema 1.499 da repercussão geral (RE 1624991), o Tribunal definirá se valeu a regra que permitiu calcular o benefício com base em uma única contribuição de maior valor. Ainda não há data para o julgamento.",
+    "link": "https://noticias.stf.jus.br/postsnoticias/stf-vai-julgar-validade-do-divisor-minimo-na-aposentadoria/",
+    "tribunal": "STF"
+   }
+  ],
+  "geradoComIA": true,
+  "email": "pendente"
+ },
+ {
   "numero": 1,
   "semana": "2026-11-06",
   "publicadoEm": "2026-11-13",

@@ -1,3 +1,4 @@
+<!-- Informativo LATS nº 2 -->
 <!--
   COMENTÁRIO DA SEMANA — Informativo LATS
 
