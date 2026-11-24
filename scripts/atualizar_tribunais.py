@@ -405,7 +405,9 @@ def perguntar_claude(instrucao: str, esquema: dict) -> dict | None:
         print("IA: limite de uso atingido; seguindo sem IA.", file=sys.stderr)
         return None
     except anthropic.APIStatusError as e:
-        print(f"IA: erro da API ({e.status_code}); seguindo sem IA.", file=sys.stderr)
+        corpo = e.body if isinstance(e.body, dict) else {}
+        motivo = str((corpo.get("error") or {}).get("message", ""))[:200]
+        print(f"IA: erro da API ({e.status_code}) {motivo}; seguindo sem IA.", file=sys.stderr)
         return None
     except anthropic.APIConnectionError:
         print("IA: falha de conexão; seguindo sem IA.", file=sys.stderr)

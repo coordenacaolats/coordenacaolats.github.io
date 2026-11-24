@@ -1,8 +1,14 @@
-# Execução manual: confere a chave da Brevo. Não envia e-mail.
+# Execução manual. Sem marcar a caixa, só confere a chave da Brevo.
+# Com a caixa marcada, envia um e-mail de teste SOMENTE para o endereço do remetente.
 name: Verificar a Brevo
 
 on:
   workflow_dispatch:
+    inputs:
+      enviar_teste:
+        description: "Enviar e-mail de teste para o endereço do remetente"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -10,11 +16,16 @@ permissions:
 jobs:
   verificar:
     runs-on: ubuntu-latest
+    env:
+      BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+      BREVO_LIST_ID: ${{ vars.BREVO_LIST_ID }}
+      BREVO_SENDER_EMAIL: ${{ vars.BREVO_SENDER_EMAIL }}
+      BREVO_SENDER_NAME: ${{ vars.BREVO_SENDER_NAME }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: python scripts/informativo_email.py --verificar
-        env:
-          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+      - if: inputs.enviar_teste
+        run: python scripts/informativo_email.py --teste "$BREVO_SENDER_EMAIL"
