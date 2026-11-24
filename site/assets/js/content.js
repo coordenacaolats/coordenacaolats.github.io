@@ -131,8 +131,8 @@ window.LATS = {
      link: link do Google Forms (ou outro)
      tema: "liga" (azul) ou "stc" (verde) */
   formularios: [
+    { titulo: "Assista à XVIII STC", descricao: "Inscrição de espectadores para a Sessão de Julgamento da Simulação de Tribunais Constitucionais. Gratuita e individual, nos turnos da manhã, da tarde ou ambos.", status: "aberto", prazo: "27 de novembro, das 8h às 16h30", link: "https://docs.google.com/forms/d/e/1FAIpQLSdW8jYBSOS1wLX2O4W4kQYN_cCpc1gIT7dZOMOo6Y58jpTHCQ/viewform", tema: "stc" },
     { titulo: "Processo Seletivo LATS", descricao: "Seleção de novos membros para pesquisa, ensino e extensão.", status: "em breve", prazo: "", link: "", tema: "liga" },
-    { titulo: "XVIII Simulação de Tribunais Constitucionais", descricao: "Inscrições para a nova edição da STC.", status: "encerrado", prazo: "", link: "stc.html", tema: "stc" },
     { titulo: "Envio de artigos", descricao: "Submeta seu artigo para publicação nos canais da Liga.", status: "aberto", prazo: "Fluxo contínuo", link: "", tema: "liga" },
     { titulo: "Lista de interesse / Newsletter", descricao: "Receba avisos de eventos, aulas e seleções.", status: "aberto", prazo: "", link: "", tema: "liga" }
   ],
@@ -155,7 +155,7 @@ window.LATS = {
     titulo: "Simulação de Tribunais Constitucionais",
     chamada: "A bancada está pronta. O caso está posto. Só falta você na tribuna.",
     dataSessao: "27 de novembro de 2026",
-    inscricaoLink: "https://linktr.ee/latsufrn",  // troque pelo link direto do formulário
+    inscricaoLink: "https://docs.google.com/forms/d/e/1FAIpQLSdW8jYBSOS1wLX2O4W4kQYN_cCpc1gIT7dZOMOo6Y58jpTHCQ/viewform",  // inscrição de espectadores
     editalLink: "https://linktr.ee/latsufrn",     // PDF do edital (ex.: "assets/docs/edital-stc.pdf")
     casoLink: "",                                 // PDF do caso concreto
 
@@ -223,7 +223,7 @@ window.LATS = {
       { data: "27/10", titulo: "Selecionados", texto: "Divulgação dos acadêmicos selecionados para a equipe de participantes." },
       { data: "29/10", titulo: "Capacitação — Advogados do Requerente", texto: "Com o Dr. Jules Queiroz, Advogado-Geral da Câmara dos Deputados." },
       { data: "10/11", titulo: "Capacitação — AGU", texto: "Com o Prof. Dr. Cláudio Seefelder, Adjunto do Advogado-Geral da União." },
-      { data: "27/11", titulo: "Sessão de Julgamento", texto: "Sustentações orais, votos dos Ministros e proclamação do resultado pelo Plenário." }
+      { data: "27/11", titulo: "Sessão de Julgamento", texto: "Das 8h às 16h30: sustentações orais, votos dos Ministros e proclamação do resultado pelo Plenário. Aberta a espectadores, com inscrição gratuita." }
     ],
 
     capacitacoes: [

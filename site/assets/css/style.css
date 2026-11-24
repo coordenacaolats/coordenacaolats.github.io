@@ -855,3 +855,8 @@ html{scroll-padding-top:80px}
 .nl-soon{margin:0;font-size:1rem}
 .nl-ok{color:var(--navy);line-height:1.6}
 @media (max-width:860px){.nl-grid{grid-template-columns:1fr}}
+
+/* ---------- Faixa STC: inscrição de espectadores ---------- */
+.stc-band-actions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.stc-band .stc-band-actions .btn{margin-top:0}
+.stc-band .stc-band-data{font-size:.95rem;margin:1.2rem 0 0}
