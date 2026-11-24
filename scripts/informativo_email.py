@@ -17,6 +17,7 @@ Configuração (GitHub > Settings > Secrets and variables > Actions):
 Uso:
   python scripts/informativo_email.py            # junta comentário e envia, se pendente
   python scripts/informativo_email.py --previa   # só grava a prévia do e-mail em HTML
+  python scripts/informativo_email.py --verificar       # só confere a chave da Brevo
   python scripts/informativo_email.py --teste a@b.com   # envia só um teste para o endereço
 
 Sem dependências externas.
@@ -283,7 +284,15 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--previa", action="store_true", help="grava a prévia do e-mail em informativo/previa-email.html")
     ap.add_argument("--teste", metavar="EMAIL", help="envia só um e-mail de teste da edição mais recente")
+    ap.add_argument("--verificar", action="store_true", help="só confere se a Brevo aceita a chave (não envia nada)")
     args = ap.parse_args()
+
+    if args.verificar:
+        if not os.environ.get("BREVO_API_KEY"):
+            raise SystemExit("Falta BREVO_API_KEY.")
+        r = brevo("GET", "/emailCampaigns?limit=1")
+        print(f"A Brevo aceitou a chave. Campanhas na conta: {r.get('count', 0)}.")
+        return 0
 
     eds = ler_info()
     if not eds:
