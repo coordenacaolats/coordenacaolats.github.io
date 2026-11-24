@@ -102,67 +102,143 @@ def dia_longo(iso: str) -> str:
     return f"{d.day} de {meses[d.month - 1]} de {d.year}"
 
 
+def data_da_edicao(ed: dict) -> tuple[str, str]:
+    """Data do envio, no alto do e-mail: ('24/11/2026', 'terça-feira')."""
+    dias = "segunda-feira terça-feira quarta-feira quinta-feira sexta-feira sábado domingo".split()
+    d = dt.date.today() if ed.get("email") == "pendente" else dt.date.fromisoformat(ed.get("publicadoEm", ed["semana"])[:10])
+    return d.strftime("%d/%m/%Y"), dias[d.weekday()]
+
+
 def montar_html(ed: dict) -> str:
-    NAVY, ICE, SAND, INK = "#072A3E", "#D6E6F2", "#C9B79C", "#1b2b36"
+    NAVY, ICE, SAND, OURO, INK, CINZA = "#072A3E", "#D6E6F2", "#D6CCBE", "#8F7A58", "#1b2b36", "#5b6b77"
     serif = "Georgia,'Times New Roman',serif"
     sans = "Helvetica,Arial,sans-serif"
+    P = "padding:0 40px;"
+    url = SITE + "informativo.html#informativo"
 
-    def bloco(titulo, itens):
-        if not itens:
-            return ""
-        lis = "".join(
-            f'<tr><td style="padding:0 0 18px 0;">'
-            f'<a href="{e(i.get("link"))}" style="font-family:{serif};font-size:18px;line-height:1.35;color:{NAVY};text-decoration:none;font-weight:bold;">{e(i["titulo"])}</a>'
-            + (f'<p style="margin:6px 0 0;font-family:{sans};font-size:15px;line-height:1.6;color:{INK};">{e(i.get("resumo"))}</p>' if i.get("resumo") else "")
-            + "</td></tr>" for i in itens)
-        return (f'<tr><td style="padding:26px 36px 4px;"><p style="margin:0 0 14px;font-family:{sans};font-size:11px;letter-spacing:3px;'
-                f'text-transform:uppercase;color:#7a8a96;border-bottom:1px solid #e3e9ee;padding-bottom:8px;">{e(titulo)}</p>'
-                f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{lis}</table></td></tr>')
+    def rotulo(texto):
+        return (f'<p style="margin:0;font-family:{sans};font-size:13px;font-weight:bold;letter-spacing:2px;line-height:1.5;'
+                f'text-transform:uppercase;color:{OURO};text-align:center;">{e(texto)}</p>')
+
+    def link(i, estilo):
+        if not i.get("link"):
+            return f'<span style="{estilo}">{e(i["titulo"])}</span>'
+        return f'<a href="{e(i["link"])}" style="{estilo}text-decoration:none;">{e(i["titulo"])}</a>'
+
+    divisor = (
+        '<tr><td class="lado" style="padding:34px 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>'
+        f'<td style="vertical-align:middle;"><div style="border-top:1px solid {SAND};font-size:0;line-height:0;">&nbsp;</div></td>'
+        f'<td width="46" align="center" style="width:46px;"><img src="{SITE}assets/img/email/divisor.png" width="20" alt="" style="display:block;border:0;width:20px;height:auto;margin:0 auto;"></td>'
+        f'<td style="vertical-align:middle;"><div style="border-top:1px solid {SAND};font-size:0;line-height:0;">&nbsp;</div></td>'
+        '</tr></table></td></tr>')
 
     com = ed.get("comentario")
+
+    # ---- quadro "Nesta edição"
+    linhas = []
+    if com:
+        linhas.append(("Comentário", com["titulo"]))
+    linhas += [("STF", i["titulo"]) for i in (ed.get("stf") or [])[:3]]
+    linhas += [("STJ", i["titulo"]) for i in (ed.get("stj") or [])[:3]]
+    quadro = "".join(
+        f'<tr><td style="padding:{"0" if n == 0 else "14px"} 0 0;font-family:{sans};font-size:15px;line-height:1.5;color:{INK};text-align:center;">'
+        f'<span style="font-size:11px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:{OURO};">{e(t)}</span><br>{e(x)}</td></tr>'
+        for n, (t, x) in enumerate(linhas))
+    if quadro:
+        quadro = (
+            f'<tr><td class="lado" style="padding:34px 40px 18px;">{rotulo("Nesta edição")}</td></tr>'
+            f'<tr><td class="lado" style="{P}"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+            f'style="background:#F3F8FC;border:1px solid {NAVY};border-radius:10px;border-collapse:separate;"><tr><td style="padding:26px 24px;">'
+            f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{quadro}</table></td></tr></table></td></tr>')
+
+    # ---- comentário do membro da Liga
     bloco_com = ""
     if com:
-        paras = "".join(f'<p style="margin:0 0 12px;font-family:{serif};font-size:17px;line-height:1.65;color:{INK};">{e(p)}</p>' for p in com["texto"])
+        paras = "".join(f'<p style="margin:0 0 16px;font-family:{serif};font-size:17px;line-height:1.65;color:{INK};">{e(p)}</p>' for p in com["texto"])
         dec = ""
         if com.get("decisao"):
-            dec = (f'<a href="{e(com["link"])}" style="color:{NAVY};">{e(com["decisao"])}</a>' if com.get("link") else e(com["decisao"]))
-            dec = f'<p style="margin:0 0 14px;font-family:{sans};font-size:13px;color:#5b6b77;">Sobre: {dec}</p>'
-        bloco_com = (
-            f'<tr><td style="padding:26px 36px 8px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
-            f'style="background:#f1f6fa;border-left:4px solid {NAVY};"><tr><td style="padding:24px 26px;">'
-            f'<p style="margin:0 0 8px;font-family:{sans};font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7a8a96;">Comentário LATS</p>'
-            f'<p style="margin:0 0 10px;font-family:{serif};font-size:22px;line-height:1.3;color:{NAVY};">{e(com["titulo"])}</p>'
-            f'{dec}{paras}'
-            f'<p style="margin:14px 0 0;font-family:{sans};font-size:14px;color:{NAVY};"><b>{e(com["autor"])}</b>'
-            + (f'<br><span style="color:#5b6b77;">{e(com.get("funcao"))}</span>' if com.get("funcao") else "")
-            + '</p></td></tr></table></td></tr>')
+            alvo = f'<a href="{e(com["link"])}" style="color:{NAVY};font-weight:bold;">{e(com["decisao"])}</a>' if com.get("link") else f'<b>{e(com["decisao"])}</b>'
+            dec = f'<p style="margin:14px 0 0;font-family:{sans};font-size:14px;line-height:1.5;color:{CINZA};text-align:center;">Sobre: {alvo}</p>'
+        funcao = f'<br><span style="color:{CINZA};">{e(com["funcao"])}</span>' if com.get("funcao") else ""
+        bloco_com = divisor + (
+            f'<tr><td class="lado" style="{P}">{rotulo("Comentário LATS")}'
+            f'<h2 class="tit" style="margin:14px 0 0;font-family:{serif};font-weight:bold;font-size:27px;line-height:1.25;color:{NAVY};text-align:center;">{e(com["titulo"])}</h2>'
+            f'{dec}</td></tr>'
+            f'<tr><td class="lado" style="padding:24px 40px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+            f'style="background:{ICE};border-radius:10px;border-collapse:separate;"><tr><td style="padding:28px 28px 26px;">{paras}'
+            f'<p style="margin:4px 0 0;padding-top:16px;border-top:1px solid #b4c9d9;font-family:{sans};font-size:14px;line-height:1.5;color:{NAVY};">'
+            f'por <b>{e(com["autor"])}</b>{funcao}</p></td></tr></table></td></tr>')
 
-    url = SITE + "informativo.html#informativo"
+    # ---- tribunais: a primeira decisão em destaque, as demais em sequência
+    def tribunal(nome, itens):
+        if not itens:
+            return ""
+        d, resto = itens[0], itens[1:]
+        est = f"font-family:{serif};font-weight:bold;font-size:27px;line-height:1.25;color:{NAVY};"
+        s = divisor + (
+            f'<tr><td class="lado" style="{P}">{rotulo(nome)}'
+            f'<h2 class="tit" style="margin:14px 0 18px;{est}text-align:center;">{link(d, est)}</h2>'
+            + (f'<p style="margin:0;font-family:{sans};font-size:16px;line-height:1.65;color:{INK};">{e(d["resumo"])}</p>' if d.get("resumo") else "")
+            + '</td></tr>')
+        est2 = f"font-family:{serif};font-weight:bold;font-size:18px;line-height:1.35;color:{NAVY};"
+        for i in resto:
+            s += (f'<tr><td class="lado" style="padding:22px 40px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>'
+                  f'<td style="border-left:3px solid {SAND};padding:2px 0 2px 18px;">{link(i, est2)}'
+                  + (f'<p style="margin:7px 0 0;font-family:{sans};font-size:15px;line-height:1.6;color:{INK};">{e(i["resumo"])}</p>' if i.get("resumo") else "")
+                  + '</td></tr></table></td></tr>')
+        return s
+
+    # ---- na pauta
+    pauta = ""
+    if ed.get("pauta"):
+        est3 = f"font-family:{sans};font-weight:bold;font-size:15px;line-height:1.45;color:{NAVY};"
+        itens = "".join(
+            f'<tr><td style="padding:{"0" if n == 0 else "18px"} 0 0;">{link(i, est3)}'
+            + (f'<p style="margin:5px 0 0;font-family:{sans};font-size:14px;line-height:1.6;color:{INK};">{e(i["resumo"])}</p>' if i.get("resumo") else "")
+            + '</td></tr>' for n, i in enumerate(ed["pauta"]))
+        pauta = divisor + (
+            f'<tr><td class="lado" style="{P}">{rotulo("Na pauta")}'
+            f'<h2 class="tit" style="margin:14px 0 20px;font-family:{serif};font-weight:bold;font-size:27px;line-height:1.25;color:{NAVY};text-align:center;">O que vem por aí nos Tribunais</h2></td></tr>'
+            f'<tr><td class="lado" style="{P}"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+            f'style="background:#F7F4EF;border:1px solid {SAND};border-radius:10px;border-collapse:separate;"><tr><td style="padding:26px 24px;">'
+            f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{itens}</table></td></tr></table></td></tr>')
+
+    dia, semana = data_da_edicao(ed)
+    nota_ia = (f'<p style="margin:24px 0 0;font-family:{sans};font-size:12px;line-height:1.6;color:{CINZA};text-align:center;">Resumos elaborados com auxílio de inteligência artificial '
+               'a partir das notícias oficiais do STF e do STJ e revisados pela equipe da LATS.</p>') if ed.get("geradoComIA") else ""
+
     return f"""<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(ed['titulo'])}</title></head>
-<body style="margin:0;padding:0;background:#eef2f5;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eef2f5;"><tr><td align="center" style="padding:24px 12px;">
-<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;background:#ffffff;">
-<tr><td style="background:{NAVY};padding:30px 36px;">
-  <img src="{SITE}assets/img/logo-h.png" width="150" alt="LATS" style="display:block;border:0;width:150px;height:auto;">
-  <p style="margin:18px 0 0;font-family:{sans};font-size:11px;letter-spacing:3px;text-transform:uppercase;color:{SAND};">Informativo LATS · Nº {int(ed['numero']):02d} · Semana de {dia_longo(ed['semana'])}</p>
+<meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light">
+<title>{e(ed['titulo'])}</title>
+<style>@media (max-width:520px){{.lado{{padding-left:22px!important;padding-right:22px!important}}.tit{{font-size:23px!important}}.h1{{font-size:27px!important}}}}</style></head>
+<body style="margin:0;padding:0;background:#ffffff;">
+<div style="display:none;max-height:0;overflow:hidden;">{e((ed.get('abertura') or '')[:150])}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff;"><tr><td align="center" style="padding:0;">
+<table role="presentation" width="620" cellpadding="0" cellspacing="0" style="max-width:620px;width:100%;background:#ffffff;">
+<tr><td align="center" style="background:{NAVY};padding:30px 24px 26px;">
+  <a href="{SITE}" style="text-decoration:none;"><img src="{SITE}assets/img/email/logo-topo.png" width="150" alt="LATS" style="display:block;border:0;width:150px;height:auto;margin:0 auto;"></a>
+  <p style="margin:16px 0 0;font-family:{sans};font-size:12px;letter-spacing:2px;text-transform:uppercase;color:{SAND};">Informativo · Nº {int(ed['numero']):02d}</p>
 </td></tr>
-<tr><td style="padding:32px 36px 6px;">
-  <h1 style="margin:0 0 14px;font-family:{serif};font-weight:normal;font-size:28px;line-height:1.2;color:{NAVY};">{e(ed['titulo'])}</h1>
-  <p style="margin:0;font-family:{sans};font-size:15px;line-height:1.65;color:{INK};">{e(ed.get('abertura'))}</p>
+<tr><td class="lado" style="padding:34px 40px 0;text-align:center;">
+  <p style="margin:0;font-family:{sans};font-size:17px;font-weight:bold;line-height:1.5;color:{NAVY};">{dia}<br>{semana}</p>
+  <h1 class="h1" style="margin:22px 0 18px;font-family:{serif};font-weight:bold;font-size:33px;line-height:1.2;color:{NAVY};">{e(ed['titulo'])}</h1>
+  <p style="margin:0;font-family:{sans};font-size:16px;line-height:1.65;color:{INK};">{e(ed.get('abertura'))}</p>
 </td></tr>
+{quadro}
 {bloco_com}
-{bloco("Supremo Tribunal Federal", ed.get("stf"))}
-{bloco("Superior Tribunal de Justiça", ed.get("stj"))}
-{bloco("Na pauta", ed.get("pauta"))}
-<tr><td style="padding:10px 36px 34px;">
-  <a href="{url}" style="display:inline-block;background:{NAVY};color:{ICE};font-family:{sans};font-size:12px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:14px 22px;">Ler no site</a>
-  {'<p style="margin:22px 0 0;font-family:' + sans + ';font-size:12px;line-height:1.5;color:#7a8a96;">Resumos elaborados com auxílio de inteligência artificial a partir das notícias oficiais do STF e do STJ e revisados pela equipe da LATS.</p>' if ed.get("geradoComIA") else ""}
+{tribunal("Supremo Tribunal Federal", ed.get("stf"))}
+{tribunal("Superior Tribunal de Justiça", ed.get("stj"))}
+{pauta}
+{divisor}
+<tr><td class="lado" align="center" style="padding:0 40px 40px;">
+  <p style="margin:0 0 20px;font-family:{serif};font-size:20px;line-height:1.4;color:{NAVY};">Até a próxima semana!</p>
+  <a href="{url}" style="display:inline-block;background:{NAVY};color:#ffffff;font-family:{sans};font-size:14px;font-weight:bold;text-decoration:none;padding:14px 28px;border-radius:8px;">Ler no site da LATS</a>
+  {nota_ia}
 </td></tr>
-<tr><td style="background:{NAVY};padding:22px 36px;font-family:{sans};font-size:12px;line-height:1.6;color:#9fb3c2;">
+<tr><td align="center" style="background:{NAVY};padding:26px 32px;font-family:{sans};font-size:12px;line-height:1.8;color:#b5c6d3;text-align:center;">
   Liga Acadêmica de Tribunais Superiores · UFRN<br>
-  <a href="{SITE}" style="color:{ICE};">latsufrn.com.br</a> · <a href="https://www.instagram.com/latsufrn/" style="color:{ICE};">@latsufrn</a><br>
-  Você recebe este e-mail porque se inscreveu no Informativo LATS. <a href="{{{{ unsubscribe }}}}" style="color:{ICE};">Cancelar inscrição</a>
+  <a href="{SITE}" style="color:{ICE};">latsufrn.com.br</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/latsufrn/" style="color:{ICE};">@latsufrn</a><br><br>
+  Você recebe este e-mail porque se inscreveu no Informativo LATS.<br><a href="{{{{ unsubscribe }}}}" style="color:{ICE};">Cancelar inscrição</a>
 </td></tr>
 </table></td></tr></table></body></html>"""
 
