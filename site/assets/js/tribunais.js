@@ -118,19 +118,28 @@
       box.innerHTML = `<p class="nl-soon">As inscrições para receber o Informativo por e-mail abrem em breve.</p>`;
       return;
     }
-    box.innerHTML = `<form class="nl-form" method="POST" action="${esc(action)}" target="nl-frame">
+    box.innerHTML = `<form class="nl-form" method="POST" action="${esc(action)}">
         <label class="sr-only" for="nl-email">Seu e-mail</label>
         <input id="nl-email" type="email" name="EMAIL" placeholder="seu@email.com" autocomplete="email" required>
         <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" class="nl-hp">
         <input type="hidden" name="locale" value="pt">
         <button class="btn" type="submit">Quero receber <span class="arrow"></span></button>
       </form>
-      <p class="nl-note">Uma edição por semana. Você pode cancelar quando quiser, pelo link no fim de cada e-mail.</p>
-      <iframe name="nl-frame" title="" hidden></iframe>`;
-    box.querySelector("form").addEventListener("submit", () => {
-      setTimeout(() => {
-        box.innerHTML = `<p class="nl-ok"><b>Inscrição recebida.</b> Enviamos um e-mail de confirmação: clique no link dele para começar a receber o Informativo. Se não encontrar, olhe a caixa de spam ou promoções.</p>`;
-      }, 400);
+      <p class="nl-note" role="status">Uma edição por semana. Você pode cancelar quando quiser, pelo link no fim de cada e-mail.</p>`;
+    const form = box.querySelector("form"), nota = box.querySelector(".nl-note"), bt = form.querySelector("button");
+    form.addEventListener("submit", async ev => {
+      ev.preventDefault();
+      bt.disabled = true;
+      nota.textContent = "Enviando…";
+      try {
+        const r = await fetch(action + "?isAjax=1", { method: "POST", body: new URLSearchParams(new FormData(form)) });
+        const j = await r.json();
+        if (!r.ok || !j.success) throw new Error("recusado");
+        box.innerHTML = `<p class="nl-ok" role="status"><b>Inscrição recebida.</b> Enviamos um e-mail de confirmação: clique no link dele para começar a receber o Informativo. Se não encontrar, olhe a caixa de spam ou promoções.</p>`;
+      } catch (_) {
+        bt.disabled = false;
+        nota.textContent = "Não foi possível concluir a inscrição. Confira o e-mail digitado e tente de novo em alguns instantes.";
+      }
     });
   });
 })();

@@ -14,7 +14,7 @@ window.LATS = {
      da Brevo (Contatos › Formulários › Compartilhar/HTML: o "action" do <form>, que
      começa com https://….sibforms.com/serve/…). Enquanto estiver vazio, o site mostra "Em breve". */
   newsletter: {
-    brevoFormAction: ""
+    brevoFormAction: "https://7641ec9c.sibforms.com/serve/MUIFANxtakTHvqkRdgO8Un2Y9bQCd-J5aFRZ7J3KVnS2ORqKJ-xy-zp2L8bbWW1NWxqVX26QuLAZOR6gzqbfi74zzlWQD6EpkG8jpvaKpW7BqPsc_E_IVMQIxPRYfOLLiv32Um1hkjie4cX-ij0vHgehisSyOjwUuIYl-Hu9G8YDh2u60CrnKXoMvIKFho-rHrVhKf2mTxnG_5Bm2g=="
   },
 
   redes: {
@@ -134,7 +134,7 @@ window.LATS = {
     { titulo: "Assista à XVIII STC", descricao: "Inscrição de espectadores para a Sessão de Julgamento da Simulação de Tribunais Constitucionais. Gratuita e individual, nos turnos da manhã, da tarde ou ambos.", status: "aberto", prazo: "27 de novembro, das 8h às 16h30", link: "https://docs.google.com/forms/d/e/1FAIpQLSdW8jYBSOS1wLX2O4W4kQYN_cCpc1gIT7dZOMOo6Y58jpTHCQ/viewform", tema: "stc" },
     { titulo: "Processo Seletivo LATS", descricao: "Seleção de novos membros para pesquisa, ensino e extensão.", status: "em breve", prazo: "", link: "", tema: "liga" },
     { titulo: "Envio de artigos", descricao: "Submeta seu artigo para publicação nos canais da Liga.", status: "aberto", prazo: "Fluxo contínuo", link: "", tema: "liga" },
-    { titulo: "Lista de interesse / Newsletter", descricao: "Receba avisos de eventos, aulas e seleções.", status: "aberto", prazo: "", link: "", tema: "liga" }
+    { titulo: "Informativo LATS por e-mail", descricao: "As principais decisões do STF e do STJ toda semana, com o comentário de um membro da Liga.", status: "aberto", prazo: "Uma edição por semana", link: "informativo.html#assinar", tema: "liga" }
   ],
 
   /* ---------- Links úteis ---------- */
