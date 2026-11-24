@@ -435,10 +435,14 @@ def listar(noticias: list[dict]) -> str:
     return "\n".join(f"[{i}] {n['tribunal']} · {n['data'][:10]} · {n['titulo']}" for i, n in enumerate(noticias))
 
 
+def noticias_da_semana(noticias: list[dict]) -> list[dict]:
+    limite = dt.date.today() - dt.timedelta(days=7)
+    return [n for n in noticias if n["tipo"] != "institucional"
+            and dt.datetime.fromisoformat(n["data"]).date() >= limite]
+
+
 def nova_edicao(noticias: list[dict], numero: int) -> dict | None:
-    hoje = dt.date.today()
-    semana = [n for n in noticias if n["tipo"] != "institucional"
-              and dt.datetime.fromisoformat(n["data"]).date() >= hoje - dt.timedelta(days=7)]
+    semana = noticias_da_semana(noticias)
     if len(semana) < 3:
         print("Informativo: poucas notícias na semana; edição não gerada.", file=sys.stderr)
         return None
@@ -449,8 +453,11 @@ def nova_edicao(noticias: list[dict], numero: int) -> dict | None:
         + listar(semana),
         ESQUEMA_INFORMATIVO,
     )
-    if dados is None:
-        return None
+    return montar_edicao(dados, semana, numero) if dados else None
+
+
+def montar_edicao(dados: dict, semana: list[dict], numero: int) -> dict:
+    hoje = dt.date.today()
 
     def resolver(itens):
         saida = []
@@ -492,11 +499,37 @@ def gravar_js(caminho: Path, prefixo: str, dados) -> None:
     caminho.write_text(prefixo + json.dumps(dados, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")
 
 
+def gravar_edicao(redigir) -> int:
+    informativos = ler_js(SAIDA_INFO, PREFIXO_INFO, [])
+    numero = max((e.get("numero", 0) for e in informativos), default=0) + 1
+    edicao = redigir(numero)
+    if not edicao:
+        return 1
+    edicao["email"] = "pendente"   # enviado aos inscritos quando a revisão for aprovada
+    gravar_js(SAIDA_INFO, PREFIXO_INFO, ([edicao] + informativos)[:MAX_EDICOES])
+    # deixa o modelo do comentário do membro na revisão (sem apagar um já preenchido)
+    sys.path.insert(0, str(Path(__file__).parent))
+    import informativo_email as ie
+    if ie.ler_comentario() is None:
+        ie.COMENTARIO.parent.mkdir(parents=True, exist_ok=True)
+        ie.COMENTARIO.write_text(f"<!-- Informativo LATS nº {numero} -->\n" + ie.MODELO, encoding="utf-8")
+    print(f"Informativo nº {numero} gerado: {edicao['titulo']}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--informativo", action="store_true", help="gera uma nova edição do Informativo LATS (requer IA)")
     ap.add_argument("--com-ia", action="store_true", help="usa o Claude também no painel diário (gera custo a cada execução)")
+    ap.add_argument("--preparar-edicao", metavar="ARQ", help="grava em ARQ (JSON) as notícias da semana, com o texto das do STF")
+    ap.add_argument("--aplicar-edicao", nargs=2, metavar=("NOTICIAS", "EDICAO"),
+                    help="monta a edição do Informativo a partir do ARQ acima e de um JSON já redigido (sem API)")
     args = ap.parse_args()
+
+    if args.aplicar_edicao:
+        semana = json.loads(Path(args.aplicar_edicao[0]).read_text(encoding="utf-8"))
+        dados = json.loads(Path(args.aplicar_edicao[1]).read_text(encoding="utf-8"))
+        return gravar_edicao(lambda n: montar_edicao(dados, semana, n))
 
     anterior = ler_js(SAIDA, PREFIXO, {})
     noticias: list[dict] = []
@@ -510,6 +543,16 @@ def main() -> int:
             noticias += [n for n in anterior.get("noticias", []) if n.get("tribunal") == tribunal]
     noticias.sort(key=lambda n: n["data"], reverse=True)
 
+    if args.preparar_edicao:
+        semana = noticias_da_semana(noticias)
+        for n in semana:
+            achado = texto_stf(n["titulo"]) if n["tribunal"] == "STF" else None
+            if achado:
+                n["texto"], n["link"] = achado
+        Path(args.preparar_edicao).write_text(json.dumps(semana, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"{len(semana)} notícias da semana em {args.preparar_edicao}")
+        return 0
+
     # o painel diário não usa IA, para não gastar crédito; a edição semanal usa
     usar_ia = (args.informativo or args.com_ia) and (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
 
@@ -518,21 +561,7 @@ def main() -> int:
         if not usar_ia:
             print("Informativo: defina ANTHROPIC_API_KEY para gerar a edição automática.", file=sys.stderr)
             return 1
-        informativos = ler_js(SAIDA_INFO, PREFIXO_INFO, [])
-        numero = max((e.get("numero", 0) for e in informativos), default=0) + 1
-        edicao = nova_edicao(noticias, numero)
-        if not edicao:
-            return 1
-        edicao["email"] = "pendente"   # enviado aos inscritos quando a revisão for aprovada
-        gravar_js(SAIDA_INFO, PREFIXO_INFO, ([edicao] + informativos)[:MAX_EDICOES])
-        # deixa o modelo do comentário do membro na revisão (sem apagar um já preenchido)
-        sys.path.insert(0, str(Path(__file__).parent))
-        import informativo_email as ie
-        if ie.ler_comentario() is None:
-            ie.COMENTARIO.parent.mkdir(parents=True, exist_ok=True)
-            ie.COMENTARIO.write_text(f"<!-- Informativo LATS nº {numero} -->\n" + ie.MODELO, encoding="utf-8")
-        print(f"Informativo nº {numero} gerado: {edicao['titulo']}")
-        return 0
+        return gravar_edicao(lambda n: nova_edicao(noticias, n))
 
     painel = preencher_fichas(noticias, anterior.get("emJulgamento", []), bool(usar_ia))
     gravar_js(SAIDA, PREFIXO, {

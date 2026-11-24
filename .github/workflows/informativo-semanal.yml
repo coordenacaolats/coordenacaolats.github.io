@@ -1,11 +1,9 @@
-# Toda segunda-feira, o Claude redige a nova edição do Informativo LATS
+# Execução manual, com custo na API: o Claude redige a nova edição do Informativo LATS
 # e abre um Pull Request. Um membro da Liga revisa o texto e, ao aprovar
 # (botão "Merge"), a edição é publicada no site e enviada por e-mail aos inscritos.
 name: Informativo LATS semanal
 
 on:
-  schedule:
-    - cron: "0 11 * * 1"   # segunda-feira, 08h (horário de Brasília)
   workflow_dispatch:
 
 permissions:
