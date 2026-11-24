@@ -1,5 +1,5 @@
 window.LATS_TRIBUNAIS = {
- "atualizadoEm": "2026-11-24T14:41+00:00",
+ "atualizadoEm": "2026-11-24T14:42+00:00",
  "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
  "painelComIA": false,
  "emJulgamento": [
@@ -89,7 +89,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Ministro Ribeiro Dantas lança livro sobre a prova no processo penal nesta terça (24)",
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPRzhRdUM1X293NGhURzV3dmZCWXhQZWFzSWMybUlRUEoyR2ZrVjViZDA5YTlpWmk2NGdmVHhvVURjb3RSd2xrc1ZLSExDWTJSN0U1NDFPbmRvNVM1dDhVV1U3a2k2LVlPbERVVi02N2FGcnRaMHdacW5tdmFHazJKUXNGWWlHS3hPMUk0NFFMV29sUzRzWkt6VkVlZVB4clpLYmszNjc4b1pFSXNkdHBIVDdnWHlKOTJBLWV3Tk1nbWdUNGIxcTZENXROa0pHemZOVVdraDdETndTN0Z5SUNSTHBIaUNCeHd5TTZZUmwxbkNzYTdQWHVWR1hGR21ZZw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQcS0wTzl3V0VBRzI0cmp4NUV6Tl9tTnNtVG43SVNGVEVlZDlDNlU2ekFjMWdEN01aU3BfbHZtdkk5eURBZ3Z6Q1VxMnRfcTZ3eU5pVTZtVDZvclNGWlYySlNFNXNPTWVoWm55cGoyRnpoWndtbjc1TzBkZEhSSF9ENWJ6ZjRZUFdweVJiYVVvYVJKLWY4TXJscVFFZlVmSHFNNnNDbXd0OUxLX1piRlh1SDdMek1wRXB5YldsSE1KWm9fTkxrcFVhOXJ4SDJvMHowYXROMlFpQlhzZllna3J3NHgwYUU3LS1Kd2Y2TkRvQngyaUhNU25DeVdxLUlwdw?oc=5",
    "data": "2026-11-24T10:15+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -108,6 +108,14 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNRUZBb1NDdVBnMnRCMXZVVndsTGgxeXVydWRrcTdoMm52V2F3cFA1cm9WenZyQTFqanlFYnZOS3NCU3h3Y3JXWGtpekZGdlh6Wk5ERkZEREZIWllhYWZnUFJlSnY4d1d3THlTV0N2aC1ZaEVnR1lDLUkweDEwbndwci1MUnA3UFZSM0ozRVIzMWhGWHdVME04NENqRDlTVlZqbkNPeHB3VmE4QVROZ040SlMtaEVKeTNGTVlZOWlTaXZzRFZtenptblV4VGRDc2V5dDktWGJ5QUNKenBVN05KZ1UzNWlueFFKWkpCbzFwbUFrM1hOelZvNk1SbmtmU00?oc=5",
    "data": "2026-11-24T09:50+00:00",
    "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Clipping de Legislação - Novembro/2026",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMkhfbTFPSzV5MlNxSGRxNHJfMDkzMzdZd0FTZXdTMWxoSmMzVWZpQlpFbmNEeWVqbk4tZU9TcjZrVVZSRmxpZlNXRWY3Zk4xTmxCbWFHY3RQVXZZZVBpRHhURFd2YXluSEJ1UWNpYnhZSmRnNFE3R2ktcVZNOGdOWlhJTU1aLXpHYnhQSkdiU3J5WDFTOHZsenlacE42ajA?oc=5",
+   "data": "2026-11-24T06:11+00:00",
+   "tipo": "decisao",
    "processo": ""
   },
   {
@@ -163,6 +171,14 @@ window.LATS_TRIBUNAIS = {
    "titulo": "STJ promove II Jornada pela Equidade Racial nos dias 26 e 27",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNeDhUVlNadUZudGhMTWJ5ZS1kcS11R3FRTUJRR2tnVFF0c2xTMndPMkpBZ1JmSHZrdlhKcXVqZVpFV0EwMXpMQW1kYU1FVHJES3hLbVlia2FEMHJmX2FPd1pGRm9PRG5WS3dHOUgxbDViYVJJWTZBaDZuY0I3WDBXQVBaZGtwWVpVbENBQUJPZ1lwNmp1VHRTWGMyWTR3aTFkMHo4WFNWUW5JT1F3eVJoRjZYejZUVEYzSlJUWjVKbFQtQnM4RDVyeWlsLXpXLS1zb3BJNGs1OEhhQzRrVEE?oc=5",
    "data": "2026-11-23T18:41+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Clipping de Legislação - 23/11/2026",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNejVqVzlMSS1kUFB1TnJob1ZlWENpa2pCZHZ2SFRmQ0FjRjU0aUpiSzd1Q3dRdTlKT0d4OTB1NEQwU2Q2TU9xTXdhdVROdmRIc0lyUXVtWWxjNzRSTl9OaU4yX3F0Um5NemdPY0lKQ0doWHBzN05ES1VxN0tRWVdDUmNHa1k4QlI2WndobUIyZGJDc1d3a2lKQQ?oc=5",
+   "data": "2026-11-23T15:16+00:00",
    "tipo": "decisao",
    "processo": ""
   },
@@ -351,6 +367,14 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
+   "tribunal": "STJ",
+   "titulo": "Clipping de Legislação - 19/11/2026",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNeWhBaURyNE9SZU9ORlY2eFhkcGJ6V003SWRoMlFHVXBrb21zamtvbVhldE1TNXIzU1NmY2trWEFnSktqY3YtejJnT0tyQ29HX0Y3TjNTeExGY005Sm4tNmNFYUhieTVETmNxM1dJSmNJa18ySmFvX3NYZmZoenNNbldUa2FhWGdyTi1YMDMxajRIYnZudnJTUQ?oc=5",
+   "data": "2026-11-19T15:00+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
    "tribunal": "STF",
    "titulo": "STF vai julgar validade do divisor mínimo na aposentadoria",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQjVZUFMtSDduaVlkWm0zQ29CSFE5WWVDNWZickc4akUxRVNUaHFSSDJVMnZvcU4xcVk4bFdaR19pMGhCc2tGSjBBZXItNUp1SWNwdFNFZEhUVlVFYmtWR1dub0hsUS1PLWFZY19jZE5RUUtlUGxRSmRtY3hkQUJGVEdTZGhJYXluR2J0YVFWdnNLcW80V3ZlWmgxY0lzMzdYWWtj?oc=5",
@@ -409,7 +433,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "Ministro Marco Aurélio Bellizze passa a compor a Corte Especial",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRGJFNVFVUHRZX0dHN1pDdFcySkF6NzRrMmtIbmlMUW5UN0g5SW9ITFZGSkVTcWdKN1ctaGRGZEhCOVM5clBlM1VIM0sxWVJQOWFNZVNSYTI4T2VXVWlqODVTR0NVQUU2MjJTX1ZsckxBSXU4ZGJQQTdLZFdPNVRNMUtYU2VrVWh4dGlNOWI0dGRWM0FrbjNjUF9tR2U2c0ZIOHBmalVoQXQ2Z1dEajdfYnVqbUZ4SlljSDVtR0VmUVZPenNhT1hjWG1heEJHOEJKZmVHeEI0SHhyc0owNlFGWUZB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQcmJ2bXkzc2J6b0RtZkdiaTdzTmpTdElsZzBuaDlycmxERjFtaGVZcUtVenA0ZkdWdlRkZ01LdUJwN2tkRWdxakFJYWtlUmJsSjFXR051dExkUzh5MEg3SWFCQmtyVS1mVU5uWUpNZ3o0VkJ1Z0tqSVl0SnF3UXVFU0RsTEJnWjNkMDM1ZXJiN04zUFZFb09HVUZ0czZQeGJKc3V2c2lCd2psc2pmTFZpREdNLUpXTFU5eWtXUTJ3T1VUSU5mYW4zMmNqWEpJaGItQ0d4Yzd2Zy1GOUFsU2d2eklR?oc=5",
    "data": "2026-11-18T22:30+00:00",
    "tipo": "decisao",
    "processo": ""
@@ -444,6 +468,14 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNMF9MdGxNcXZ0cmN4YWpDdm5MTUpWeGYzeVdqMmNWNWpjYW44a0NXbjBDYTA3a3RuS0VQeTFscGIyWVE5TGptdjlhekZfX2p4c3QwSXBJMmJQUHBuSVYya001ZmQwT05zb1ZFd2toZ2V6dHRqZ19ZUExtdUdQN1EzNWU5SFFnNVgzUTk5dVppSmpIOWpXWXhXRnhXQlVXbzdRNV82bnp0ajFzYk1fLTVPa25xMVIzS3RFS09WcEViVGc5aF93bHBLaVR2TEFjT19UQjNVV2RnVzFnZ2VobzFZTjRxM2ZPcjctbktQYzhXUmh3bDRGSGpvalo0RzRLODRzS1pWVkVQYkpwTnRhZTYxVGZ3NUR0RUk?oc=5",
    "data": "2026-11-18T19:36+00:00",
    "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Clipping de Legislação - 18/11/2026",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbEtWTHpsSHFOWWlmWEVHNHhxUUhGZmtxSWY2aFItWnBUcjJMcE1abmw2ZlhUQWk4dHZfN2x6NHlud192Rm1LUmdPa1U5Q0l5R1pfdUwwVjJaNlJzVHVvS0owcVl3QzdHODFPcVZ3aWpuVEwzQXdEaXVyejJLcVdlRHZqb241RVUyNWpxUkNWaWdwQzAweTZWSA?oc=5",
+   "data": "2026-11-18T14:43+00:00",
+   "tipo": "decisao",
    "processo": ""
   },
   {
@@ -505,24 +537,16 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "STJ debate prescrição em ações envolvendo pessoas com deficiência",
-   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPRjJKVDlKVEgxNW91MGV6NWo2a0hpbERxYm5UMFFvVDBXQXZmcUpqdERTSXFfcUp4bDZ5QmgwRlFRdnZiZEdRaGk4OFdxR0Q1dFlBeU9qTWYydGJwbmZ1clZreFM4ZnFTVG5MWWkzdkprak12aXpBNnlNYVFWeGJZN2FqamJ4bUFnQW91RGRFN0htVkFlSmxYYmRvSFYxZTV5R1M1TEI5MHRCQjJuTmhDbUJDRGZ1ZjdGMWVHZV9rNnZYdkRPYkQyMnRxNEdXak9qUXZmaWR5d3hZdFdxdmVuclNMUUNIdkRneUZUdEV0dFhrak1yNUJxN0NvZEQ4WnVfdGhaOEtiV25GTHJncVhtaExldVU1Szhl?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQUFdOdUFxbG5sRE5YUHd2Zk1CZFo1bUhHRXRJMEZQRF9OMVBHeFNsU0p2Z0lDZXA0b0JIUFBOSkZOOGpocHg3dEcyYnZZUDk3UXh3OTZRdHVrdkExVENIMXZ0NXNqZmMtU2RrOTZpZFdvWWxHekhQOHhDTklFWjZmR1lzbzJQbWVJckx2d0VuQnFab3NvX0ZiUk1mNGZLNnZRcFFnclA2YlFWYzFvNkJaVFBVUnltbkF4TWNWcVZoUzF5RXE2YTAzcGxEZzI1OEo4WTBoTF9paDctSnBDenJLQ3c0VExVVV81eVN1Y3FvZXlabG9GeFl4SUI3NWs5TEJ6Y2hhc2E4OTcwY1FLTU1HTlhWaXAtTHdx?oc=5",
    "data": "2026-11-18T10:40+00:00",
    "tipo": "decisao",
    "processo": ""
   },
   {
    "tribunal": "STJ",
-   "titulo": "Concurso da PMRN: comprovação de escolaridade é tema de direito local",
-   "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPUlBrTEd4TU9qZUtWQ1kzTUhzeWlZTnpUb3NyWVhKNlZFUElMUlRsV0dXTDd1czJfMDktUl9ndFFhdnloMExLUTZPajR2N1otaTRBcUhJM0tqNFQ4N0tYU0dpRlJfM0xTUVlEcWMya1JQaTFZeWdpU29rdTgzbkx5QlkwQ2w0SnRSRHgwZ2pUTFdVR2RZX0ptV2czNlp0U19seUxMdVlPc1M0QUlDOVRaRWlTWFRzdUZERC1PSjQ3dkJxVzltYlItbWhjSHc1aFoxRVdyWnpvakg0eTBqQlFiejRVSDNRWHpUVlFxa2p4NTVzb3dHU0R4OFNMa2NYU1JvUzlZRjJ5Wld0M1dxSmNoYm15ME9tVlRrVXl0RTRIYm0?oc=5",
-   "data": "2026-11-18T10:00+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Primeira Seção fixa tese e define que salário-educação não pode ser exigido de titulares de cartório",
-   "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNZ0JBbFN4aHpwdmtpeFRjalpUdzhfV2RXSUJQWlFnQTBYNHhVbmlpdWVNMFJqYWdYMVpkZEJ2d1VUWnh5c3NJQmhQUDhLN2FXUUpkdmNOODBMeVc4YnpxZTJuRU1SWmZqdFpBelgyeUxlVTdfZXAxUzh3UHZnd1VhUjFJTEVlM0JCR0R4S05GLVdIRmtRangyQnV3Z2t3NDY3UWd2QjBYQVpFb25yRURpaXQ2bXhsU2w2cTNZbXk4LUtUc2hkX0VCdWdNNkZGLTBYR0pTQzlxNl9JX052Zzk1STdidmNBNDVhMVhkRk5tRHJZTDBCcmt0dHZuRGJQS2FQb2RxYndZUGw3LWpOd0VkUDVfVQ?oc=5",
-   "data": "2026-11-18T09:50+00:00",
+   "titulo": "- Superior Tribunal de Justiça",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa2NDemtxUk9HdlcxakJycG9QVlRXRHNlWHlPZjltcWQzUmVleW9zazNJWEJiUVl3LVI0UklJQ092QWRPRWNNMGo2WE1MWk1WRXZfZmxpTkNrOWNpYnNkelZ4VGl3ZG1Hb2ZyTFdkZlUtOTBmR0NSNnhORjN0YVVEZDhoaWtQLWF6d002MjRnZXJnajBZ?oc=5",
+   "data": "2026-11-18T10:11+00:00",
    "tipo": "decisao",
    "processo": ""
   },
@@ -532,30 +556,6 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNc0ZGdjFjNXBBYzJIUHVkUjllM3JjQVo2dXB2enl1ZlhSVVhtOVZXaURYbDE3S3BjanAyaU5JbHQ0UW0waVRnTDA0cGlDdDRvcWV4WVdJbVUyamtRaXhnSEtPVzRqVGsyZkVmSlFFOS1ZQVFwOVRwUnB2RnlFTnB0OUh0TE9rZ3hQM1c5aEFUc2tGY1hxZjB2SXgxSXNoLXRNUDZrSFVsMmRwbXFSaDRWTm9DZHJNUnVqaDdv?oc=5",
    "data": "2026-11-18T00:24+00:00",
    "tipo": "outros",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Primeiro dia do Missões da Justiça e Cidadania leva serviços à população do interior gaúcho",
-   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQb0dTRFpQeGxMZXdFc2o4V1l6VTdpeWp0NHFFLXpjMUlJQUhHOXF6aWpEWUZLRnlsbWNRbXlBRHRsZWdhNC13YzM5cWQzbERqRGd6YXRvV2ZFQnhmRE9SbF9jeWx5NWdQcWh4bVhHQW0tN2hZSWNMQXJ2MVFvZjlEbGdhQTNJSUtoMmtJdmNQSlNQdWFvR1l5RUFYNWEybXRKeVd6QVFHeFdGZEtDTFFMTmxuT3lqZGtpVFV4WXF2dUVPZlRsaHl4YUstVElXUEFpSF9mNDZIQkZLU2dVNzFOLXl6YU92dVZ6VHI4dDN0aFJzQXFsUkZIczRJQWYwTDl6b293Y2lfUQ?oc=5",
-   "data": "2026-11-17T22:08+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Desembargadora convocada Fátima Maranhão inicia trabalhos na Sexta Turma",
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbG8tb0FuZk1XSDlGSmVtTUk3dFF1UnRKa2FZalZHdXplZzZjYmRkLXlVVDA1WUstYTZTLWVfaUZ0NTlQTVNIcWhDMjd6dXJSMHNJQlFQN3l3QXh2TUcxNUY5NThHdFRvMVVQV0oxRUZLOV9ncVFycHdNNmFuSnFtSEdKTGtiNnFzbkFPR25ibEoyY2U3am5lT3R6S0hrWXVBbWd2QzBaTFVwTXFzMkRLVEpWVEJVMjBYdXI3OWJ2V0R3WlZUODZteDBfQ1dRQ2RtMUx4eW83Sm1LMmx0elpudjBjV19KeU5TX0VsbGtB?oc=5",
-   "data": "2026-11-17T19:45+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "CNJ e MJSP promovem o evento 5 Anos do Protocolo para Julgamento com Perspectiva de Gênero",
-   "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOV2RvWkIwWXYxZGxZM0llNnpqTWJ2MmxmRzBlbE5pZkJHbEVsR2I5OVNtdVBtNktjQ3Eydm5VemlHbjBSMEZjOXp2VE9CdlZFNnc1Z05lTFlZWW9jT0ZpbFU3LTg5LWVxUHhia0lyek9yaXlnaWNhRzBkSmdBaHN5Z0QyMnRpZmxaczNGRUU2NlFXV2NNRHlvaXZPUTg2aVNwemU5LWN3c09NbkhUUDllRFBGam5weTFPTm1hNkNiMkY0QTgyaUF5dk9NbDdVWmN5dGc5aFktOUV0aXAyRG9Cd0xSSjBMRzliLWVEc01QX25DckhLUWMxQWJJc3lDMFhnVHZtTUln?oc=5",
-   "data": "2026-11-17T19:11+00:00",
-   "tipo": "institucional",
    "processo": ""
   },
   {
