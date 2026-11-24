@@ -267,7 +267,6 @@ def criar_campanha(ed: dict) -> int:
                    "email": os.environ["BREVO_SENDER_EMAIL"]},
         "htmlContent": montar_html(ed),
         "recipients": {"listIds": [int(os.environ["BREVO_LIST_ID"])]},
-        "tag": "informativo",
     })
     return int(r["id"])
 
