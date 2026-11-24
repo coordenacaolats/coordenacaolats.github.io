@@ -11,6 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -63,5 +64,16 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
+      # O pacote às vezes demora alguns segundos para aparecer na lista do GitHub
+      - name: Aguardar o pacote do site ficar disponível
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 24); do
+            n=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts?name=github-pages" -q .total_count || echo 0)
+            if [ "${n:-0}" -gt 0 ]; then echo "Pacote disponível (tentativa $i)"; sleep 5; exit 0; fi
+            sleep 5
+          done
+          echo "O pacote não apareceu na lista"; exit 1
       - id: deploy
         uses: actions/deploy-pages@v4
