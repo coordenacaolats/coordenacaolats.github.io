@@ -465,7 +465,7 @@ def montar_edicao(dados: dict, semana: list[dict], numero: int) -> dict:
             i = it.get("indice")
             if isinstance(i, int) and 0 <= i < len(semana):
                 saida.append({"titulo": it["titulo"], "resumo": it["resumo"],
-                              "link": semana[i]["link"], "tribunal": semana[i]["tribunal"]})
+                              "link": it.get("link") or semana[i]["link"], "tribunal": semana[i]["tribunal"]})
         return saida
 
     return {
