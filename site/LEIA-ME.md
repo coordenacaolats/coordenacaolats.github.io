@@ -54,13 +54,13 @@ Rodem `python3 -m http.server 8123` dentro desta pasta e abram http://localhost:
 - O robô classifica cada notícia em decisão, pauta, nova ação ou institucional e monta o painel **Em julgamento**.
 - Duas vezes por dia, às 6h e às 18h, o GitHub atualiza `site/data/tribunais.js` e republica o site. O fluxo que faz isso está em `.github/workflows/publicar.yml`.
 - **Informativo LATS:** toda segunda-feira, às 8h, o Claude redige a edição da semana e abre um *Pull Request*. Alguém da Liga lê, corrige se precisar e clica em **Merge**, e a edição vai para o site. O fluxo está em `.github/workflows/informativo-semanal.yml`.
-- **Sem a chave da IA:** o site continua funcionando. O painel mostra as notícias de pauta sem relator e placar, e o Informativo mostra um "resumo automático da semana" com as manchetes de decisões.
+- **Sem a chave da IA:** o site continua funcionando. O painel mostra os casos em pauta com os dados que o próprio texto da notícia trouxer, e o Informativo mostra um "resumo automático da semana" com as manchetes de decisões.
 
 **Para ligar (uma vez só)**
 1. Crie um repositório no GitHub e envie esta pasta inteira (inclusive `.github` e `scripts`).
 2. Em **Settings › Pages**, escolha *Source: GitHub Actions*.
 3. Em **Settings › Actions › General**, marque *Read and write permissions* e *Allow GitHub Actions to create and approve pull requests*.
-4. Para a IA, crie uma chave em console.anthropic.com e cadastre-a em **Settings › Secrets and variables › Actions** com o nome `ANTHROPIC_API_KEY`. Custa alguns centavos de dólar por semana.
+4. Para a IA, crie uma chave em console.anthropic.com e cadastre-a em **Settings › Secrets and variables › Actions** com o nome `ANTHROPIC_API_KEY`. Só a edição semanal do Informativo usa a IA (uma chamada por semana, alguns centavos de dólar). O painel diário não usa, para não gastar crédito.
 5. Em **Actions**, rode "Atualizar e publicar site" manualmente uma vez para testar.
 
 **Fixar um caso no painel:** use `emJulgamentoDestaques` no `content.js`, com relator e placar conferidos pela equipe.

@@ -24,7 +24,6 @@ jobs:
   atualizar:
     runs-on: ubuntu-latest
     env:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
       BREVO_LIST_ID: ${{ vars.BREVO_LIST_ID }}
       BREVO_SENDER_EMAIL: ${{ vars.BREVO_SENDER_EMAIL }}
@@ -34,9 +33,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Instalar SDK da Anthropic (só se houver chave)
-        if: github.event_name != 'push' && env.ANTHROPIC_API_KEY != ''
-        run: pip install anthropic
       - name: Coletar notícias do STF e do STJ
         if: github.event_name != 'push'
         run: python scripts/atualizar_tribunais.py

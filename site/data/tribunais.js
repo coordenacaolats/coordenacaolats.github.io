@@ -1,73 +1,18 @@
 window.LATS_TRIBUNAIS = {
- "atualizadoEm": "2026-11-24T14:24+00:00",
+ "atualizadoEm": "2026-11-24T14:41+00:00",
  "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
- "painelComIA": true,
+ "painelComIA": false,
  "emJulgamento": [
-  {
-   "tribunal": "STJ",
-   "tema": "STJ realiza, nesta quarta-feira (25), audiência pública sobre cessão de precatórios previdenciários",
-   "titulo_original": "STJ realiza, nesta quarta-feira (25), audiência pública sobre cessão de precatórios previdenciários",
-   "processo": "",
-   "relator": "",
-   "placar": "",
-   "status": "Em pauta",
-   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOVWN2djVzRk9ZUFZST1dqVjc0OVlfZmhmTDFfOC1ZdXVkYUFkNlRKOEhIX2R0WkJsRzVCOVNaM0lsYVgyLTAybzZmVURRMXYzeE9VcFNwbzJuTkdrRWpvcV84Q0hUbWVNcUQzd0dnTlZDa0E2V05zVmI0N04xQV91SmZJaGUzSlVxS01acjQ4a0hxWXE0a21EQXRJQTJ5YlFXRG1LR0NzSm41aHlwZ3FySnpXSFlzQUVxWmFWM0s3cEtBcDN2cE5WOGkyRlA4S0RHTzk5VU9yTTZIVlp3Ql96NzRMSVpjZS1mUmMzZndSd1ZtU2ZyX2ktRFRKSHlmUG9rcXc0N3BBT3hlUWFtejNKWWZ3?oc=5",
-   "data": "2026-11-24T12:00+00:00"
-  },
   {
    "tribunal": "STF",
    "tema": "STF vai definir alcance de regra do Código Florestal para proteção de entorno de reservatórios antigos",
    "titulo_original": "STF vai definir alcance de regra do Código Florestal para proteção de entorno de reservatórios antigos",
-   "processo": "",
+   "processo": "Tema 1.493",
    "relator": "",
    "placar": "",
    "status": "Em pauta",
    "link": "https://noticias.stf.jus.br/postsnoticias/stf-vai-definir-alcance-de-regra-do-codigo-florestal-para-protecao-de-entorno-de-reservatorios-antigos/",
    "data": "2026-11-23T23:29+00:00"
-  },
-  {
-   "tribunal": "STJ",
-   "tema": "Sessão da Terceira Turma no dia 1º de dezembro terá início às 13h",
-   "titulo_original": "Sessão da Terceira Turma no dia 1º de dezembro terá início às 13h",
-   "processo": "",
-   "relator": "",
-   "placar": "",
-   "status": "Em pauta",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNlgxS1JJdDNUbllucnF0ajItazRVWnV1aHJVeVBsd0ktU1Bsck80WDllOVFRTDdpZERNaGh1LUNNUUl4STNYOUs3dVRhbElQcVBJRzNvcmZNNktod3pqcDg2bHpfZ2hWeGpselpZT3FnZXZnSEdIdjQ5ZXpDcGVuekFYcWkxLWpGTG5WejU3N2w1MkM1MW9QNFRFQkg4WXJ5RXQwWmxpX0JJal9KWldadWpCdnFQYlNQV3hIQ2dMVFI4MW5fNlpienlPZzJmeGVlTWlfOUd0d3hBTU9JenRQcE5fbnE?oc=5",
-   "data": "2026-11-23T11:00+00:00"
-  },
-  {
-   "tribunal": "STJ",
-   "tema": "Quarta Turma antecipa sessão do dia 1º de dezembro para 10h",
-   "titulo_original": "Quarta Turma antecipa sessão do dia 1º de dezembro para 10h",
-   "processo": "",
-   "relator": "",
-   "placar": "",
-   "status": "Em pauta",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPREQzblExeWdzTVlnWEhiZC0ydFJUWUFGNVZKd2tXRmVKOHlHdUNuR1JtQVo0WVIxQWI4TUJUTC1CbHhReWtER21vWS0yT24tWFRlRFYwWl9yVjBQWGk2OGdHNUN6MTh5ZEQxU01XTzdROEtuakpQSl9KNWQ4NVA3LXFWQ1Y3Wkt5Nll5azJxX3R5QzAxNlU5QW1KdERzZzh5QUE5Tk40b2pzTktteW5ndTFHcjBJbXdMcjVHUmVycUR4ZThTT3FOQ3IwVG9lenZLZFhoSzNOaF9FZ1FE?oc=5",
-   "data": "2026-11-23T10:15+00:00"
-  },
-  {
-   "tribunal": "STF",
-   "tema": "Confira os destaques do Plenário Virtual desta semana",
-   "titulo_original": "Confira os destaques do Plenário Virtual desta semana",
-   "processo": "",
-   "relator": "",
-   "placar": "",
-   "status": "Em pauta",
-   "link": "https://noticias.stf.jus.br/postsnoticias/confira-os-destaques-do-plenario-virtual-desta-semana-9/",
-   "data": "2026-11-20T14:10+00:00"
-  },
-  {
-   "tribunal": "STJ",
-   "tema": "sugestões da audiência pública; prescrição e decadência para PCDs",
-   "titulo_original": "sugestões da audiência pública; prescrição e decadência para PCDs",
-   "processo": "",
-   "relator": "",
-   "placar": "",
-   "status": "Em pauta",
-   "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNX2N3dVlLN0JQQkhaZGpjNy12QjRiZG1OQ1RLSmMxWDJ5NktYczJWa0M4ZU56SmYyS3RIVkpTdHVfM3FTOUJSU2pCbHRjZlY4bjh5bmRBcEUwNHU2OXA1TWRGMmhLTUprYTYzUHJoNEZoa1FYR0NMcnd2OGk5bVQtMlREcUctZFVtbThNZ3Faa0dLZDVhajdoUnhhNVk5N3dZZE9lNVhmT0tVSVhRR1EwMUlYdTRUWmlRZXBVbWdaY1NtMDM4dHB0dWt3cVF5REpKcFp4dTFCYlNQZ3lLdF9lX3NiWk5tTEUwcFdtQnI5YTFKeUlDUk5RRE1ESGhrZEtwRmtNeWNSSDV0dW5xdmt1c0pMTlhYRjU4MkJBY2xDLS15UVdySmc?oc=5",
-   "data": "2026-11-19T22:46+00:00"
   },
   {
    "tribunal": "STF",
@@ -81,15 +26,15 @@ window.LATS_TRIBUNAIS = {
    "data": "2026-11-19T21:13+00:00"
   },
   {
-   "tribunal": "STJ",
-   "tema": "Dia da Consciência Negra: o que o STJ tem feito para transformar a pauta racial em prática diária",
-   "titulo_original": "Dia da Consciência Negra: o que o STJ tem feito para transformar a pauta racial em prática diária",
-   "processo": "",
+   "tribunal": "STF",
+   "tema": "STF vai julgar validade do divisor mínimo na aposentadoria",
+   "titulo_original": "STF vai julgar validade do divisor mínimo na aposentadoria",
+   "processo": "RE 1624991",
    "relator": "",
    "placar": "",
    "status": "Em pauta",
-   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPeS1SR3pCck1kMXJwZGpnbHM3SnQ3Z0FFRU82dVFVbVhrOVVqRHozZ1dTc0NJdy04VlBpcTJsRTRoZmp0OTJVSnpkUkNPcll6dEdZMjA0aVJvUGRNdElLLV94SnFDSHgtUG5fS0FIcm16Qmx2ekNfd1hfbGlxRHJ3MlBROXluUndFRDl2RmI0ZlNPR2NBQ3M3NzZWTlMtXzUyd2ZIdUxVRHlfRE1saUZGZWRvWTk3TFJWYktjQUdBeVZaMEVVeDNVV0ZXd3BvN0VXblBEUXl0elUycXQ0UzRGeUdrbWt5U0JMRTlqaS1jSGJUd3NNUWRDWHRRV3hBV2FERG1jaHloSEw1SlBjTE9v?oc=5",
-   "data": "2026-11-19T15:25+00:00"
+   "link": "https://noticias.stf.jus.br/postsnoticias/stf-vai-julgar-validade-do-divisor-minimo-na-aposentadoria/",
+   "data": "2026-11-19T14:37+00:00"
   }
  ],
  "noticias": [
@@ -651,6 +596,14 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNRVppVHVleW4tT0JjRjZzWExHQUpmbHVWZXdrTmlnbXhFaHc4T1dUaEE5eVN4ZW1rQlVHZG0zOGJNYUJRMFpmTzdfcnQtYlpJUEdQUmlRZHoxVFlXc0cweVZJQlJHRnAxY1dkYU9Na3JobU9ZUFc2blJQV3ZXSV9USVlBWDVrdERZZ2lGXzItZ2wwNWRENF9xMHQ2YURuaTNNbExPMDUxZUFRb0QxSmxJWkNVcGQ1ZTNHWlNyQTNubjNJdw?oc=5",
    "data": "2026-11-13T08:00+00:00",
    "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "Distribuidores de energia questionam norma do DF para protesto de dívidas de serviços públicos",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMTBZQ3F3eURoSnNyQWhFdHRXQmZYb0piVmpqNzFOSW1aM3BBV1J4dnhKVXdFM1VLT1NjY0k2Q1VUZUhsaHpBNEY3MDV0cEVzV2N2YW9la1c3aDQ3aWZxSVVfNjdHcFd2em5ZZnJFWE1HU3hiVGVpZE9BNkptUXBfalYxU3VUYXZCcWdVcXBlRklBaG9tcVptOXZkcUVhQ3dVUlR1UFZqRm8wdnc2cDhxRHNUNzEyQ3k1OFJpcTRNSGd1R1Y5Rm5RM2cwb1d5N1F1M08w?oc=5",
+   "data": "2026-11-13T08:00+00:00",
+   "tipo": "nova_acao",
    "processo": ""
   },
   {

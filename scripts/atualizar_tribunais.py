@@ -50,7 +50,7 @@ RE_AGENDA = re.compile(
 DIAS = 14              # janela de notícias
 MAX_POR_TRIBUNAL = 40
 MAX_EDICOES = 26       # meio ano de informativos guardados
-MODELO = "claude-opus-5-5"
+MODELO = "claude-sonnet-5-5"   # usado só na edição semanal do Informativo (uma chamada por semana)
 USER_AGENT = "LATS-UFRN-site/1.0 (+https://www.instagram.com/latsufrn/)"
 
 RE_PAUTA = re.compile(
@@ -150,9 +150,15 @@ def coletar(tribunal: str, consulta: str, origem: str) -> list[dict]:
     return unicos[:MAX_POR_TRIBUNAL]
 
 
+# notícias de agenda e balanço, que não são casos em julgamento
+RE_FORA_DO_PAINEL = re.compile(
+    r"^confira|destaques d|^sess[ãa]o d|antecipa sess[ãa]o|sess[ãa]o .*(ter[áa] in[íi]cio|adiada|cancelada)|^dia d[aeo] |"
+    r"j[áa] julgou|o que o (STF|STJ) tem feito|avan[çc]a na aplica[çc][ãa]o|sugest[õo]es da audi[êe]ncia|"
+    r"audi[êe]ncia p[úu]blica|extingue|protocolo para julgamento", re.I)
+
+
 def candidatas_painel(noticias: list[dict]) -> list[dict]:
-    return [n for n in noticias
-            if n["tipo"] == "pauta" and not re.search(r"confira a pauta|destaques da pauta", n["titulo"], re.I)]
+    return [n for n in noticias if n["tipo"] == "pauta" and not RE_FORA_DO_PAINEL.search(n["titulo"])]
 
 
 # ---------------------------------------------------------------- texto completo das notícias
@@ -231,7 +237,11 @@ def preencher_fichas(noticias: list[dict], anterior: list[dict], usar_ia: bool) 
             if achado:
                 base["texto"], base["link"] = achado
                 if not usar_ia:
-                    base.update({k: v for k, v in extrair_sem_ia(achado[0]).items() if v})
+                    dados = extrair_sem_ia(achado[0])
+                    # caso ainda não julgado, ou notícia de repercussão geral: o placar citado não é o do mérito
+                    if base["status"] == "Em pauta" or re.search(r"repercuss[ãa]o geral", achado[0], re.I):
+                        dados["placar"] = ""
+                    base.update({k: v for k, v in dados.items() if v})
         fichas.append(base)
         pendentes.append(base)
 
@@ -392,11 +402,9 @@ def perguntar_claude(instrucao: str, esquema: dict) -> dict | None:
 
     client = anthropic.Anthropic()
     try:
-        resposta = client.beta.messages.create(
+        resposta = client.messages.create(
             model=MODELO,
             max_tokens=16000,
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",
             system=SISTEMA,
             output_config={"effort": "medium", "format": {"type": "json_schema", "schema": esquema}},
             messages=[{"role": "user", "content": instrucao}],
@@ -487,7 +495,7 @@ def gravar_js(caminho: Path, prefixo: str, dados) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--informativo", action="store_true", help="gera uma nova edição do Informativo LATS (requer IA)")
-    ap.add_argument("--sem-ia", action="store_true", help="não usa o Claude mesmo que haja chave")
+    ap.add_argument("--com-ia", action="store_true", help="usa o Claude também no painel diário (gera custo a cada execução)")
     args = ap.parse_args()
 
     anterior = ler_js(SAIDA, PREFIXO, {})
@@ -502,7 +510,8 @@ def main() -> int:
             noticias += [n for n in anterior.get("noticias", []) if n.get("tribunal") == tribunal]
     noticias.sort(key=lambda n: n["data"], reverse=True)
 
-    usar_ia = not args.sem_ia and (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
+    # o painel diário não usa IA, para não gastar crédito; a edição semanal usa
+    usar_ia = (args.informativo or args.com_ia) and (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"))
 
     if args.informativo:
         # modo semanal: grava só o arquivo do Informativo (vai para revisão num Pull Request)
