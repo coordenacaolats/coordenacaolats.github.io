@@ -1,5 +1,5 @@
 window.LATS_TRIBUNAIS = {
- "atualizadoEm": "2026-11-25T21:48+00:00",
+ "atualizadoEm": "2026-11-26T09:58+00:00",
  "fonte": "Notícias oficiais de stf.jus.br e stj.jus.br, coletadas via Google Notícias",
  "painelComIA": false,
  "emJulgamento": [
@@ -39,6 +39,30 @@ window.LATS_TRIBUNAIS = {
  ],
  "noticias": [
   {
+   "tribunal": "STJ",
+   "titulo": "Confira as sugestões apresentadas em audiência pública sobre cessão de precatórios previdenciários",
+   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOaTktTUJCYjlRcjdzMHY4SFVlRXp5WlZTWV9oNEMzUlhzTDdaeFF2alFfVlJpT3JSSnM3WXdYajhFM2JKMy1HVnhtelpxVFIyQkI3d21jeDItb3JuOHhLcVRjR2pvYWwwRV96b1JzMkFIdEt4M2tzVzNoR2dWZkFjem0wc3haT3B5MkNJRWNNY1hqOGQyREFkUEZrbHk2OEI4NHZINnA4STExSHBqelpELTZCYU5Zb3R4MVR6V0Fsbno5VEkwb1pjSEx6ZTRwZDZoQXppZmRrRnhsSkFQTGpDTl9paUtCTEZlel9IZUFWQ1pBWm1UQkROUjdaTGdHSXRpSm5PM2huRV9ZTV9FR3JQMnR3?oc=5",
+   "data": "2026-11-25T22:53+00:00",
+   "tipo": "pauta",
+   "processo": ""
+  },
+  {
+   "tribunal": "STF",
+   "titulo": "STF valida exigência de indicação de valor em ações trabalhistas",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSUFSaXhBZFl6d295SmdtTTdrLUZUQ2ZuOXVPRXVRV0J3b09TcndlX1RLWjNXdmFFNDk1czFtd3dSWWhnaW5hcmtHVmcxZUJ3MFZ0a2tiQl83N29jVXo2Zjc5a3JaZTJSQXozRW52SElyaHVmbzZfTXIzeVRSRVFfZTh6ZGxwUG85MVVveGxHakFqeWtDYkFDWXhXaG1LdjFrbTcwM2dFdF9qQjQ?oc=5",
+   "data": "2026-11-25T22:38+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "STJ adere à campanha UNA-SE pelo Fim da Violência contra Mulheres e Meninas",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUnlGTlZmUVBNZXhGUDR1ZDYxZi03akhxTTJiM1RqZUQ5Y2FmdWg4MnR0eV9hbjZhaElPSGhST1hPVTlIaGtXanRnbGs0UGhaVjlEX2VHc3VSUHFSenU0RFQtYk1QdVg4QVBvWWRzeWFzS0NWVnJYa19iQ3ZLQmVoNEVEU1VWU21CZF9RaTFhZHV4bzUzcE9aN3ZHTFN5ZXB6emVDZEgyZllMUUVTUFp3UUd1NmVDOEtZVFBwQU5JU3B5aU93VU1KV2xTSTN3NDg3VWh0T09pd0lQRHlUZUhrbzVPbnFnb0VYQjNPdmU2OG90dw?oc=5",
+   "data": "2026-11-25T21:59+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
    "tribunal": "STF",
    "titulo": "Ministra Cármen Lúcia alerta para gravidade da violência contra mulheres no Brasil",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTmllVmV2eTJnb25ycUhOVUg4RXpzQ1pEZXRoOEljRnU5S3l0S2VZOGsxMWt5Y1owNjdXYldlRllZSGtQUFo3TE9XZVY0VTFtOFRwR0JaSWxDQ25yX1Q0V0VBX3NnUmgxZHFVYjZQVmx0b09EeGdsOVQtNDdSYnU2VFN0ZV9VeUdoSVRhZkZuLTZlcjZDNmpiY21MOUNhVUZyTzJJWHIzVXdxaC13MUR0TmNGQ1FZaTNhaEQ3eXB3eU1WVEU?oc=5",
@@ -68,6 +92,22 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQdmM5cUUyeGI0alhFRXNyazhnN3ljeFZzUjQyc1MyWHN4S3pXMkNjQzRFT1ZoXzVJWW1UdVVLNW12UXVpNmMyZzdpdDJ1TFcyaFJhUmprTjdNQnhsdUoxdkhTQ2hvYVBLZnduNm1vNjJ3VUdkUXZMLUlHS3VudUcxblZRNWpVNDZuX1F2ZWRuZGFOVUhIekhaUFZnc2g2dFFsazlPakxOY2tKOXVqMkRoQnpFUk9XemhRb0lBVFhXX0pJQko0Q0FhbzNRYjZBWEp1MnJMeEFoSFVmaFFjLUFqcjdUYjZGUQ?oc=5",
    "data": "2026-11-25T18:46+00:00",
    "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "- Superior Tribunal de Justiça",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUWhBVE5IemIwellqenNGX0U4a3djOXBLakZzbnRNQWhtZ1l2Z1Q4T3B2VXdtQWlrV3lRMDBjRktWYWdXUDVZd0Z5eHY5MmFyRFdFVUt3cTZVREFIUkZUNHlBaGdNNnRCUU5aYjNLUHFmanotVVRKVUNfQnphRHJfQ1IzeVYxUlNtYm9tZjgtZVF4TnVYM1pNSzdZTQ?oc=5",
+   "data": "2026-11-25T17:20+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Clipping de Legislação - 25/11/2026",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbkZWN2hnaEdRcFJ4dGxIdUdaTE40VzJaU01pX3V2N3VSMXhFeXVuRk1oX2tObUVKMzFoSWdDcWhVcmZpWkxIbnFXNC1DT1lIRXJremRCUWJNYmZNeWpTYjN0NThiVWx0MkRPYXI2WDBxalRyMDZ6REdvTHlzdm1IYVI4VGVPUGk5LUljOG01TUUteXBVMDNHaA?oc=5",
+   "data": "2026-11-25T14:34+00:00",
+   "tipo": "decisao",
    "processo": ""
   },
   {
@@ -108,6 +148,30 @@ window.LATS_TRIBUNAIS = {
    "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPVmsxckdUM0wyaWtuMXZEYkVxd0xtbDVvVTl2NkUzWnd3czlPMllDUTBuV2dsSHdfRTg3VFRyM21KUzNpMkVJaDN3UFliQ1Y4d3FrdDFwR0syNHh1TW5Cb19idXBTYkZKb1hKajhSLXpwSFVWTmZkejJnX3BXcElkOXBYdDlIRG45UWk2dXQ0ZUt5SDRtalA4N2hGbFJ5SG90cG0tcnRENjNjdEl3Uk05STdXVl9PMnFwSDZXVEdCY0owVHljYnNDSC15NmVyVUJPYkVYTXlLVzBld1M4aERMc2p3VzFqNGxnRGJ6UVIteWtaU3ZDTGUyN3Rua1NCV1owQ1Vacmx5aXVoTkZ5SFJEbW0tNnZPd3BsQUVVeXMzbFBrUQ?oc=5",
    "data": "2026-11-25T10:00+00:00",
    "tipo": "institucional",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Clipping de Legislação - Novembro/2026",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOQVhDOF9HMVIza05MSERGSlpnanpTYTYybDQ5UjZRUG5weUNCNnJoYU1QVU1VU2Z5eWw1cHp5T1F2UDJuU0FleUtVSDZNeERtcW5ydFFmRy1nOWlxTFhaTk5acnVNRENkQkcyUHN5WjJiWklGejFXVW1tM2RhLU1zRWJuZGVQb1ZUczh2NlpDa0RqMmhBSnRiUG9mRHBLNEU?oc=5",
+   "data": "2026-11-25T06:27+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Audiência Pública• 25 DE NOVEMBRO DE 2026",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTjRFOEp2SVJaejNLNlVGNnpRYndJZl81eTJKOGw3S3cxbjRjYk1HNFl2dHBtMUZaVUN0SGNkdUJVZ0ZqWmFiSGUwSS1oQjFzcmc4MTFhS0tSYU9GSkZvb3F5dEFmQWxrb2FndDZQYjdqeGh3ODJUclBnQmpiX0Flemtnd2xvSF9RTmo5c1B2VExuWHJoT2hmbW4yMHg3RHoxOUd3R0Q5NDlwQQ?oc=5",
+   "data": "2026-11-25T01:37+00:00",
+   "tipo": "pauta",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Clipping de Legislação - 24/11/2026 - STJ",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaUs1N0I5NUJfdW84OVZESGpRdzlsTXdjaWZXeG92UF9MeU16dEwxRmJHdFZhQlM5TmhBSmFjTW9KTVNYdHJic1dhMkM0XzJnb2M2R0dBVnlfQmlQRzJqZmJiNnhpV0tDUjVCNUpMVDNBOUpLZVRNUTJxenltMmZ6MVdvZHlENUZiMmtvM0Z0dXp0dnFQOExrWQ?oc=5",
+   "data": "2026-11-24T22:22+00:00",
+   "tipo": "decisao",
    "processo": ""
   },
   {
@@ -169,7 +233,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "STJ abre inscrições para o seminário internacional sobre crédito público e crise empresarial",
-   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPWEd6NWJTVHpLVngwcDhJZXVnbWgxaGMwM0E3SWdWSXQ5eHd1Q1BmYUtySTZ6cWhuemVXY3BiSmhfbm5TOGpuSktjbDRXR1d1ZVgwVjRhMTFMd1I4SlVndHBpZ20yZk5QZkZmUmxfNzRURDJpTTljSDAyYXJiS3lVdnBzS21sMDNEU1h6RFBTekE0U3VhUVNQQ0UxdDlFWkp4bm9kZlFUVGYzbUJVeE5xNkpONjQxclRyN1F3b0w5OVp6OTlybUk2em5HYzI0cTlWemNiTlI3VWsySkpiaWQzbkJWcVY2NGMybXRYTnZkb1JobE91cHZfQVg0NnJWSEdFYWozVVFxMVQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxORlVoVXFxN1RZR1d2bUVzRWRuSW94NFJhOG5DdE1SSGpwbUl4Nnkxam9NS0dlMnN0bzNHanJfN0UyMWhwYzlfem9hZDVnZnY3NFViMjhYVGVJRFhPZXdjOTMzZVl1bHBhbG1Hbkk3SDV1MmJEWmh3d1R6aExNakoxX0J1OUMxOTB1RW14VU44dXRzMF9WWW8wRG9ockFuLTFZRllFc1FueUtKbnl0LVNTV200SGREWnVWRTZRYXlKbkJwOUw1czZGTlV0S2t1VUMySzhqOUhhUHkxWkFLRTFtSk9TdnRFSm9OTXEyTXJaakswdDFtVU1FVmlWVnhOanpFM1hScUxpcUk?oc=5",
    "data": "2026-11-24T15:19+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -216,16 +280,16 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STJ",
-   "titulo": "Pesquisa Pronta destaca tese sobre retratação da vítima e absolvição em revisão criminal",
+   "titulo": "retratação da vítima não basta para absolvição em revisão penal",
    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOTWVNa3h4Y3N5aXNRYW9hMmpqYUFlRE5xRXJVNHBIOUVUbDA1ZU1RUVBEVGZUOUphQlpaTFJXSV82OTM4d1g1N0pGSjVBVlROYy1NTE1pVzBlWW4zUk9zR0s1ZXJIV2pRbGhKYzZjRVFyYnhBM3E5WnpKV1oyLWJYX3VscUxBYXIwaFE1dTJWdmwzUm9BNkRySnhPTlF0MHZfay1GZklkYk9FTjgzUHNZeGh6Qng1N3RLYlFqZndpdzJYTFpyclVSSlVjNUdEelRaT2RoZS15ZVNjQ2xwNkVGNTVDdjJCU0VDVzlCTFNsbndFOFd4WFhFSjNwWDhqNFNjMXlz?oc=5",
    "data": "2026-11-24T10:40+00:00",
-   "tipo": "institucional",
+   "tipo": "decisao",
    "processo": ""
   },
   {
    "tribunal": "STJ",
    "titulo": "Ministro Ribeiro Dantas lança livro sobre a prova no processo penal nesta terça (24)",
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQcS0wTzl3V0VBRzI0cmp4NUV6Tl9tTnNtVG43SVNGVEVlZDlDNlU2ekFjMWdEN01aU3BfbHZtdkk5eURBZ3Z6Q1VxMnRfcTZ3eU5pVTZtVDZvclNGWlYySlNFNXNPTWVoWm55cGoyRnpoWndtbjc1TzBkZEhSSF9ENWJ6ZjRZUFdweVJiYVVvYVJKLWY4TXJscVFFZlVmSHFNNnNDbXd0OUxLX1piRlh1SDdMek1wRXB5YldsSE1KWm9fTkxrcFVhOXJ4SDJvMHowYXROMlFpQlhzZllna3J3NHgwYUU3LS1Kd2Y2TkRvQngyaUhNU25DeVdxLUlwdw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPRzhRdUM1X293NGhURzV3dmZCWXhQZWFzSWMybUlRUEoyR2ZrVjViZDA5YTlpWmk2NGdmVHhvVURjb3RSd2xrc1ZLSExDWTJSN0U1NDFPbmRvNVM1dDhVV1U3a2k2LVlPbERVVi02N2FGcnRaMHdacW5tdmFHazJKUXNGWWlHS3hPMUk0NFFMV29sUzRzWkt6VkVlZVB4clpLYmszNjc4b1pFSXNkdHBIVDdnWHlKOTJBLWV3Tk1nbWdUNGIxcTZENXROa0pHemZOVVdraDdETndTN0Z5SUNSTHBIaUNCeHd5TTZZUmwxbkNzYTdQWHVWR1hGR21ZZw?oc=5",
    "data": "2026-11-24T10:15+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -241,7 +305,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "STJ recebe nova denúncia contra desembargadora do TJBA no âmbito da Operação Faroeste",
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQdzNxMGUyQl9hN3djUmNxRnM3TXdWOFFhaEhFSWV4eVZEd211N25NQ09GSmVKcXdOVEdxZVlZQ2lyTGt4bDBBUldIa3V4UEJfYUEyZEVWYWlmN2Y3Z3ltcFZiUWtoUl9FN3p0OGpEMHdTZnQ4MTRvT0l2Wkx3cmJXZXQ1OGhYcjZGcGQzQTVveWV0OGdKSkRwQXJKTGdHLVdJeGFoMzh0UlZ3TGt2YzQ1X1pMRWQtNlMwSkFmWWpQQjRRZnFWRWdIcUVIeVZ3TnB0MU12Q0hnaXNVMGszNGZJQlFSSnZZMXJOdWJ2TVQwbW9zd2stcHcyWll3QWF4MlE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNRUZBb1NDdVBnMnRCMXZVVndsTGgxeXVydWRrcTdoMm52V2F3cFA1cm9WenZyQTFqanlFYnZOS3NCU3h3Y3JXWGtpekZGdlh6Wk5ERkZEREZIWllhYWZnUFJlSnY4d1d3THlTV0N2aC1ZaEVnR1lDLUkweDEwbndwci1MUnA3UFZSM0ozRVIzMWhGWHdVME04NENqRDlTVlZqbkNPeHB3VmE4QVROZ040SlMtaEVKeTNGTVlZOWlTaXZzRFZtenptblV4VGRDc2V5dDktWGJ5QUNKenBVN05KZ1UzNWlueFFKWkpCbzFwbUFrM1hOelZvNk1SbmtmU00?oc=5",
    "data": "2026-11-24T09:50+00:00",
    "tipo": "institucional",
    "processo": ""
@@ -299,6 +363,14 @@ window.LATS_TRIBUNAIS = {
    "titulo": "STJ promove II Jornada pela Equidade Racial nos dias 26 e 27",
    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNeDhUVlNadUZudGhMTWJ5ZS1kcS11R3FRTUJRR2tnVFF0c2xTMndPMkpBZ1JmSHZrdlhKcXVqZVpFV0EwMXpMQW1kYU1FVHJES3hLbVlia2FEMHJmX2FPd1pGRm9PRG5WS3dHOUgxbDViYVJJWTZBaDZuY0I3WDBXQVBaZGtwWVpVbENBQUJPZ1lwNmp1VHRTWGMyWTR3aTFkMHo4WFNWUW5JT1F3eVJoRjZYejZUVEYzSlJUWjVKbFQtQnM4RDVyeWlsLXpXLS1zb3BJNGs1OEhhQzRrVEE?oc=5",
    "data": "2026-11-23T18:41+00:00",
+   "tipo": "decisao",
+   "processo": ""
+  },
+  {
+   "tribunal": "STJ",
+   "titulo": "Clipping de Legislação - 23/11/2026",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNejVqVzlMSS1kUFB1TnJob1ZlWENpa2pCZHZ2SFRmQ0FjRjU0aUpiSzd1Q3dRdTlKT0d4OTB1NEQwU2Q2TU9xTXdhdVROdmRIc0lyUXVtWWxjNzRSTl9OaU4yX3F0Um5NemdPY0lKQ0doWHBzN05ES1VxN0tRWVdDUmNHa1k4QlI2WndobUIyZGJDc1d3a2lKQQ?oc=5",
+   "data": "2026-11-23T15:16+00:00",
    "tipo": "decisao",
    "processo": ""
   },
@@ -362,7 +434,7 @@ window.LATS_TRIBUNAIS = {
    "tribunal": "STF",
    "titulo": "‘Direito sem juridiquês’: o que são decisões monocráticas e colegiadas?",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdnozVEhVQ2tNWkxMWnFpdmdORmZvTTV6dkpfOG14ZF9lY0EtWVRsVVNHeUhWanpOWjBCS3lyOXZkYWkyMFo5R1RRYndydXhjRWlmTklfV0s2WkVtM29Gc096UTNOZDNrM2JtM2FUZmxKQTBDTjhsVERVanNhNWJnY1ZqcDVlMG5wRnNIVHlfSlZfVWE1UzNqcTVVWVdFQ1B5OFV2QnlUYkNwYTV3UFVR?oc=5",
-   "data": "2026-11-20T12:55+00:00",
+   "data": "2026-11-20T13:00+00:00",
    "tipo": "outros",
    "processo": ""
   },
@@ -417,7 +489,7 @@ window.LATS_TRIBUNAIS = {
   {
    "tribunal": "STJ",
    "titulo": "sugestões da audiência pública; prescrição e decadência para PCDs",
-   "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPWkl1Xy1SRWZVZ0tZTzhOdm8zdjNmZEx2WWExcXY4NUNfME16TkxmZFBDVGFZa2NrV0h3SEhQT3ZMd2hUdEptSG5SOTlGWjlSbXdyM0hWMzJaNVdxcEE4enhZa2l0eUhyY3NJd2tZbWpGYnNUamp4SXNMb1k0dVQ3bTE5QkpRQ2Fib2RkVGhtQUVpX0VQYkVIYWFuMHh4czVXMmhpaGx6dnBkanlSYVlPQzEwVFc4aHJWRWUyU0FsZnF2UU5fZ0Z2ZkRsTVBRYmJBbDZRVnF2RDdwVlpGT3B6cm1GMkJFMlMyeGJaNzF5X1FwUDRzQ1BONUgxTjBTRXdJd0M5dGJEVEo5T2hXN1F1MEc1Sk1TUlBMUkFMcTRGR0NBZnBXMGc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxNX2N3dVlLN0JQQkhaZGpjNy12QjRiZG1OQ1RLSmMxWDJ5NktYczJWa0M4ZU56SmYyS3RIVkpTdHVfM3FTOUJSU2pCbHRjZlY4bjh5bmRBcEUwNHU2OXA1TWRGMmhLTUprYTYzUHJoNEZoa1FYR0NMcnd2OGk5bVQtMlREcUctZFVtbThNZ3Faa0dLZDVhajdoUnhhNVk5N3dZZE9lNVhmT0tVSVhRR1EwMUlYdTRUWmlRZXBVbWdaY1NtMDM4dHB0dWt3cVF5REpKcFp4dTFCYlNQZ3lLdF9lX3NiWk5tTEUwcFdtQnI5YTFKeUlDUk5RRE1ESGhrZEtwRmtNeWNSSDV0dW5xdmt1c0pMTlhYRjU4MkJBY2xDLS15UVdySmc?oc=5",
    "data": "2026-11-19T22:46+00:00",
    "tipo": "pauta",
    "processo": ""
@@ -463,6 +535,14 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
+   "tribunal": "STF",
+   "titulo": "Projeto ‘Diálogos Acadêmicos’ debate no STF proteção dos direitos de crianças e adolescentes",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdF9SYjRTOGhlNm0yeWlnQjB2RG55RGNCWTd3TTFyZ3hOc0ttbWxTeUx2YV9XTkFSdlU4REhJbkFBdU52eVhvMWtPVlBSbGJtMHVUbDJNX01mQjg5b3dyQ0Jncmc0ZjlBZEw4QjR0a21VNmdQM1FBSTVPaWtNOTdpSHU2alY3blhsU2xMMmlaU0E5bVd0ZlhwRjRqNjBMd1Q5d3MzeHpueHFGYUdma053SVJEM2pmcW9yN1E?oc=5",
+   "data": "2026-11-19T19:01+00:00",
+   "tipo": "outros",
+   "processo": ""
+  },
+  {
    "tribunal": "STJ",
    "titulo": "Ministro Mauro Campbell recebe a medalha Ordem do Mérito Grão-Colar",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPV1Z2c0hWbW1LUmphSUlZVEtqbUJncXRCNWFWUEhyTENHZ2czaWRCZzhIWmlEVDhKSHA4MkFpTFNXUmZoVU5CaWlZMkU2TjRRbnVvcjBCSFVmNXRMbE5BUzNaVUU0SnlROU1mTlh4MEx6SWZSa3VsR21aYTJvOGc4YTRlYmZFV29fd0QxQlQ0MGZTb2d0SjU0UE5jelE2aU84aTFhWVZrSVpld2ZBcTNfUVNGV0czZl9CeUdjdmVxTlEzSE1HajN0cG1wa08tX29uTzk1YUU2ZkVVQi1rd25mNTdQajEzVWM?oc=5",
@@ -503,19 +583,11 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
-   "tribunal": "STJ",
-   "titulo": "Rádio Decidendi: precedente sobre tributação de benefícios fiscais de ICMS é tema do podcast",
-   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQZ21vNllsTHZfOHM5UFRQdkJZb2M2cGJockVwRVFBdzNVeVM1RTAzZ3I2MGQ1M0tUdy1oVDJWem1hNGhzTHNrakd6eGFJbmlTNnlJcC1lTEZ1RTlkaVlhRFRuOGI4YTY0VXh2ekJkX0pqUzdTSy1hODFNMFBnSjR1Z1hxSEZOSzRFb3o1RmFsRXlHUE5wS3N4a0ZrUDZGaFZZaHI3MUdOcGM4V29KeEhrY3VqcXoxX25Ub19aWnRhZk9lM09vaXZzNzJvVVAtTUNCZXkycGdWRmFYLUxMZDc1YUN1VjVMQTBmd0FSeVBYMTFxVC1YOUZkMGJnU3BNZTI2bUpDY2RQYw?oc=5",
-   "data": "2026-11-19T10:40+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Terceira Turma mantém separação obrigatória em união estável de maior de 70 anos extinta antes de tese do STF",
-   "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPTFZFS0NNSXlKb045UEtLTjg3YWgxbHpEX1A4Mi1TOENJcmYyS0JOa3V6d25ZTmo0YVVXVEhsdHBsQkVjN1NPMWw4SmJkVDh1SFp2cF9XSENHeF9zMnB6VXVTeFZ6NHl3ekp6dnhqcVdIc09tbjRLSi0xd0lXazdSRF8tTVd1TTV6RTRsV01fZXNlYVdnUmx0SGZTZ3otbmJTblVWTzhtSzBLbHhCQ05yWTYtWG5Rb3pJZ0cxY1B4cVZRSGVVbTdFZk9RclBYWjJQX0lScmQwUTh1a19YX24xMEZrZmVTa0YwSnZsMTZCdWFOOGJlNU9TSFZmYTNmVDBJMmVtUldWYmFWUUhaOXBSeQ?oc=5",
-   "data": "2026-11-19T10:05+00:00",
-   "tipo": "decisao",
+   "tribunal": "STF",
+   "titulo": "Confira a pauta do STF desta quinta-feira (19)",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPa2hCMW56c3R6U3h5dEp4YUJkY1FMemttdm1FNnhhdUkzRHE0blJDQ29BWk8zTnFrcUJNZDhHMDdFbDJNOG5aOWtlTWpzaGVYS1FjZFJDNXkwX1Z5dk9BVnBjNTBuS1JkMmtMZ3dGeHpjNFEzS0ZoVHNJam93a21nZXFVT2dXTHBlS0RPVFkwWFhuOUE?oc=5",
+   "data": "2026-11-19T12:37+00:00",
+   "tipo": "pauta",
    "processo": ""
   },
   {
@@ -543,22 +615,6 @@ window.LATS_TRIBUNAIS = {
    "processo": ""
   },
   {
-   "tribunal": "STJ",
-   "titulo": "Ministro Marco Aurélio Bellizze passa a compor a Corte Especial",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRGJFNVFVUHRZX0dHN1pDdFcySkF6NzRrMmtIbmlMUW5UN0g5SW9ITFZGSkVTcWdKN1ctaGRGZEhCOVM5clBlM1VIM0sxWVJQOWFNZVNSYTI4T2VXVWlqODVTR0NVQUU2MjJTX1ZsckxBSXU4ZGJQQTdLZFdPNVRNMUtYU2VrVWh4dGlNOWI0dGRWM0FrbjNjUF9tR2U2c0ZIOHBmalVoQXQ2Z1dEajdfYnVqbUZ4SlljSDVtR0VmUVZPenNhT1hjWG1heEJHOEJKZmVHeEI0SHhyc0owNlFGWUZB?oc=5",
-   "data": "2026-11-18T22:30+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "STJ recebe reconhecimento do CNJ pelo incentivo ao uso da linguagem simples",
-   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNeDZpQWlsWk1oZUxCR2lTcnBnSWp4LThqWTM5ZXNxUEQ3LWdGUEhwVmx5NU9LZ1IzMWlPejFJZFBCbm5Mem5sZlJTcFhmanV5SjdlcUU3NVAxZlFOZmpRTnJDMnhtaV9qakJQU21kM0h3OWFkTHFTQzlLb0ZVV0dwZTVFWUtHSVRXSE5kMFdwYXo4UGVtMV94NGlValM2VVA0MHhhRUEzNHJXOUk3TEJTWjhaSTNlRFZEOUdxVFRyMDlrSmlKNWJnWXFiLWx3STlyekE5cHkxY2RlWW1CaU9yVHoxbENhMm9WaGh5THVTeGJqZw?oc=5",
-   "data": "2026-11-18T21:32+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
    "tribunal": "STF",
    "titulo": "STF declara inconstitucional redução dos honorários de procuradores de Rondônia",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZVNnR3l0ZWpIbk9TNFk0VUZTYThXdGw2d3dENDhEU3M2Sm9CSWVfZmtSTFJ1UlI1dllwenhUdF9Qc3hLUzJSV3ZlSlUzNnVlNThhVUNpZHJqV1AzOVlPSFRkTFgwYnB3d2JBVnVsM2ExSWlCNDl6N3QtNmpSOVA4bUZwckNhMENMbVlySGxZcUNtNkZydkp5akw0NGZIT3R3bzBBLTlaLW1hNVA0R09YSjBEeFp1X01CUVg1SXNQTQ?oc=5",
@@ -570,39 +626,15 @@ window.LATS_TRIBUNAIS = {
    "tribunal": "STF",
    "titulo": "Fim da isenção de pena em crimes patrimoniais entre familiares vale a partir do julgamento, decide STF",
    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORVlhZHJQNGpWYjlTdjZhTzA3elYtY2ZNMHkwUWpHSzBZc2VPQlhCOXNuNnBUQUdBM1BqcnVTeW80cGwtN0FiN2ZXTzVrTmN6dWJYZWE2NkZTbTZrOWpqZzR4SVJqZUc2V0k4Um5NRzdDd1Y3aWV3Nlhtc2dGVWhfUjlseDkwNU1NRmh3M0tVMnZGTUtXTEtVY0Q5WHczTE5JSnlYR1RDS3hQX2NjTk1JbnNNVGtYODJuczZSYVFwOHpuekxqZ0xsRUJZeHAzS3lZbjJlWVZrbnZwa0Nm?oc=5",
-   "data": "2026-11-18T20:35+00:00",
+   "data": "2026-11-18T08:00+00:00",
    "tipo": "decisao",
    "processo": ""
   },
   {
-   "tribunal": "STJ",
-   "titulo": "Relator suspende decisões judiciais sobre programa para motoristas da Uber até definição de competência",
-   "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNMF9MdGxNcXZ0cmN4YWpDdm5MTUpWeGYzeVdqMmNWNWpjYW44a0NXbjBDYTA3a3RuS0VQeTFscGIyWVE5TGptdjlhekZfX2p4c3QwSXBJMmJQUHBuSVYya001ZmQwT05zb1ZFd2toZ2V6dHRqZ19ZUExtdUdQN1EzNWU5SFFnNVgzUTk5dVppSmpIOWpXWXhXRnhXQlVXbzdRNV82bnp0ajFzYk1fLTVPa25xMVIzS3RFS09WcEViVGc5aF93bHBLaVR2TEFjT19UQjNVV2RnVzFnZ2VobzFZTjRxM2ZPcjctbktQYzhXUmh3bDRGSGpvalo0RzRLODRzS1pWVkVQYkpwTnRhZTYxVGZ3NUR0RUk?oc=5",
-   "data": "2026-11-18T19:36+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Podcast STJ No Seu Dia discute importação de animais mortos sem licença ambiental",
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNdW40X2hvYlNydVRkXzhEdkhkdEVxSGR4TlZTalE1SzBpaVVoSl83cG5oNXgtbnVTcHllcmJuNXdJOEhKbnRyRlg2a1BlNnZlbTctR3NBSlg1QVotMl9yOV85YXl6azdqVDVMc3lwQ205TmstRHFMRWx4MjdjY1ZGSEhkNHhDcmtVUWJCY2N0Tkg4ZzZRbGw3MWtXT0U1WkVQc2R3eDB0RDQzZzc3SEFHWkNjVmhDZEdjZFhXTzFyQzQxejVDMnBRQWxhQmhYMnVYeHdSdndHQXozZ1A2MmthX09UeVdWOFo0UzByN195VHplMDBnNElqT05n?oc=5",
-   "data": "2026-11-18T12:20+00:00",
-   "tipo": "institucional",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "Entender Direito aborda evolução da jurisprudência do STJ sobre agravo de instrumento",
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxON1FXRF9saXJRM2M2QUNYRlVqa3ozRnhFYlRST1JZZU5fTlBSejVyNHFuM01EalNmaWRGZzZzWEYwQUZna2lZaEJJLWlfdnZ4RjlLUVVqa04yeHVGclY1cGNXck1ZVnZMWHdTWHhCRE1WUHNWOFJ2dl9Ed180YkpzTzV5QkV4UkRyZ2owSTQ4WDZNaDNtdlc2UWZublFNdmJkWUpmVVVMdnpkcUxlQmgwektycnR4WHRscXB2dDdVWktIMVZxZzNsZUtpUG5odUFPX1lXQkFHLTdfbDlZQ1F1eHQ4Y0xzXzQ3YnZDaUt0RjBJckVJZ1JNS3ZuM0N3NlU?oc=5",
-   "data": "2026-11-18T11:50+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STJ",
-   "titulo": "STJ avança na aplicação do Protocolo para Julgamento com Perspectiva de Gênero",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNcS1peVcxZnkwNUY0ZDdfNUg1M1VhNFN6b2I2XzNNV1BpYXJfRUFUVlFNbkVIVFQ4YWVNWTJBRF9vYUVEbkM2eVcxb2k4SHRpYk1ZdXdieXFEZl9xejRMUGZxQUhVZ0hFTU8wSmVpR2szRUJ5MzRLaUFxZnlWYWZ0NG5DVmRuNEltS0EzRUtXQTlOMF9QNll6NjF1WmQ0VC1Xb3VIUlZCbkRudC1aQUliZlBDa05JZUpjSTRUSjhSXzJnSFBWaHVpUEFJNDVVcWFPVEw5S1lHWl83bEI1V05Iam90U3BjdGEtdHlRNlYwejFmelBZUmc?oc=5",
-   "data": "2026-11-18T11:15+00:00",
+   "tribunal": "STF",
+   "titulo": "Confira a pauta do STF desta quarta-feira (18)",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOd3J3M3kyUHFEQVpTLXctU3RmWVluQmJhUFgyQ0MyT1NXT0RqVjY1Si1yb3lCbVJSaDFPZjBNVjk3U241QUlaZDBaNnprWldwaDJNRFdLRERjYThvcDJrV3AzQVBOME1fRnQ0TmwtUS1xcWxoUmxIejREbEkyR2hSemZKR20tcEFGdVdxS2g1X045U2M?oc=5",
+   "data": "2026-11-18T08:00+00:00",
    "tipo": "pauta",
    "processo": ""
   },
@@ -624,9 +656,9 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
-   "titulo": "STF invalida emenda sobre eleição de dirigentes de Tribunais de Justiça",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVZONWZySFdRVC1MM0lERUVUSE5JSzllbE9JXzREWTBjeTN6UWpEWUp2MXg2dDNmVmlNNXZBRV9lQWNkQTZQNXF3WmZlX25NdnBicFRwVnFEOXF6ZGJ1OWMtR3kzbkZEeFVJQVEwQ0txMlNmQWdxTWFDUWk3dW5rVUxlalp3NE10UW9tVWhyTGxSb05JMTJNdmdpcTE5VzlENTFSY3ZCMHNOSnZvRmZYOFZ0WFc?oc=5",
-   "data": "2026-11-13T08:00+00:00",
+   "titulo": "STF mantém lei do RJ que protege dados pessoais de envolvidos em ocorrências policiais",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRDIwbkRVTWt6dDJOaWZaeGd3aUtFb0tteFBEWGktQWhmVmg1OEczWUphOEZaS0FYWFllQ053Ml9YSWszZ3BGdHpFOGZfRGU3T1FVdGlheG9xb0lSQkJ3Qm4ta0FMVExZODhoM3JpVm43ZjhkREcwZGRJQXRqbENaZWppRjdJb1VFRHM3TjJldjF4T0k2ZEdTSjBMUnV6NXlUb0R5NjhyYmFaZ0NuQ25pRG1oWGxxVURhcWJsR0ZfZWJIVXFHZ05XUA?oc=5",
+   "data": "2026-11-16T08:00+00:00",
    "tipo": "decisao",
    "processo": ""
   },
@@ -640,33 +672,9 @@ window.LATS_TRIBUNAIS = {
   },
   {
    "tribunal": "STF",
-   "titulo": "Distribuidores de energia questionam norma do DF para protesto de dívidas de serviços públicos",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMTBZQ3F3eURoSnNyQWhFdHRXQmZYb0piVmpqNzFOSW1aM3BBV1J4dnhKVXdFM1VLT1NjY0k2Q1VUZUhsaHpBNEY3MDV0cEVzV2N2YW9la1c3aDQ3aWZxSVVfNjdHcFd2em5ZZnJFWE1HU3hiVGVpZE9BNkptUXBfalYxU3VUYXZCcWdVcXBlRklBaG9tcVptOXZkcUVhQ3dVUlR1UFZqRm8wdnc2cDhxRHNUNzEyQ3k1OFJpcTRNSGd1R1Y5Rm5RM2cwb1d5N1F1M08w?oc=5",
+   "titulo": "STF invalida emenda sobre eleição de dirigentes de Tribunais de Justiça",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVZONWZySFdRVC1MM0lERUVUSE5JSzllbE9JXzREWTBjeTN6UWpEWUp2MXg2dDNmVmlNNXZBRV9lQWNkQTZQNXF3WmZlX25NdnBicFRwVnFEOXF6ZGJ1OWMtR3kzbkZEeFVJQVEwQ0txMlNmQWdxTWFDUWk3dW5rVUxlalp3NE10UW9tVWhyTGxSb05JMTJNdmdpcTE5VzlENTFSY3ZCMHNOSnZvRmZYOFZ0WFc?oc=5",
    "data": "2026-11-13T08:00+00:00",
-   "tipo": "nova_acao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "STF tem unanimidade para afastar isenção de pena em crimes patrimoniais entre familiares",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNTWNzVmNrMXQ5dU1DVzNGY2lCU0xFTklTWEVTV3pEbmFaRUstX0dJa0JJZVkzZUtsZVE4ZTh3RDQza3VNaVB5WjQzSlVOUVRkWWxZWXZiUEwyOVczbGg3NEJaU0E4dzljZzIwSDNBeGxLRWU0RHphUzBhT1lZbE5UYTVwT2NfaHV2Q2Z0N3ZJWTVCOF9vNW10NjRuX3NlVkdtb1JEVnY4X3NTcnNUVFRMNDdKMTBqazBvN0JNYXJFN0ZZbWQtdk9uU0JGcEZpdw?oc=5",
-   "data": "2026-11-12T08:00+00:00",
-   "tipo": "outros",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "STF mantém regra de transição para implementação da jornada 5×2",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYjBodllzbFpGQzUtVEhJdHM3a19oNGNLcGl0U0cyYmc4Y2xSazNuVXFkNDZTaHdoZDBEZk5QLUtweGRhRmtlVXBWN2FnZk5UdWdQVkwtcXJRckZPUDdKQVlvMXNMLUpVXzZHYUN6Z0h6ZmVNV0hwN2h6aVJMNF83U1dfMEEtUVdhREZOZ3BtdTZJblpRazNvSW5UX2VOWFRBMUpZYl9LN0cxZw?oc=5",
-   "data": "2026-11-12T08:00+00:00",
-   "tipo": "decisao",
-   "processo": ""
-  },
-  {
-   "tribunal": "STF",
-   "titulo": "Por questões processuais, relator nega pedido de segundo turno das eleições no RJ",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeFZtMFFkNEFoMVg1NmxwLVJsNTlObHEwQjR1UllzMldjVXozX0dYbmNtOC1fUWdaRjRrbjYzVnNLejkxMUtfUHRxTU1wQXFveFpLLU9qTmpZZzZrNS1WdTMtUHhXU3VQVV9ya2ZjQkVyZnZPbnBIR0h2T2tzMklYTld3cUJnWDFBNnRxc05JYUlHYWNkU1J1UzFXVDk0eUE5Y01WOXRTWGdDNlBTQTlpNWpqY1U3T3FrUlVZQWlpYzdwVWRNNXFBSmV6MGdvZlc5OWZpWk1LbDQ?oc=5",
-   "data": "2026-11-12T08:00+00:00",
    "tipo": "decisao",
    "processo": ""
   }
